@@ -314,13 +314,13 @@ const Navbar = () => {
               </li>
             </Link> */}
             {/* for mobile start */}
-            <li className="md:hidden block ">
+            {/* <li className="md:hidden block ">
               <Link href="/advisors">
                 <p className="text-white px-10">Advisors</p>
               </Link>
-            </li>
+            </li> */}
             {/* for mobile end */}
-            <Link href="/experts">
+            {/* <Link href="/experts">
               <li
                 className={
                   router.pathname == "/experts"
@@ -330,13 +330,13 @@ const Navbar = () => {
               >
                 Our Experts
               </li>
-            </Link>
+            </Link> */}
             {/* for mobile start */}
-            <li className="md:hidden block ">
+            {/* <li className="md:hidden block ">
               <Link href="/experts">
                 <p className="text-white px-10">Our Experts</p>
               </Link>
-            </li>
+            </li> */}
             {/* for mobile end */}
             <Link href="/moments">
               <li
