@@ -26,11 +26,11 @@ const index = () => {
       <About />
       <OurServices />
       <OurGroups />
-      <Advisors />
+      {/* <Advisors /> */}
       <Memories />
       <Card />
       <Portfolio />
-      <Leaders />
+      {/* <Leaders /> */}
       <Videos />
       <Clients />
       <Blogs />
