@@ -217,6 +217,11 @@ const Navbar = () => {
             </li>
             {/* for mobile start */}
             <li className="md:hidden block ">
+              <Link href="/services">
+                <p className="text-white px-10">Services</p>
+              </Link>
+            </li>
+            {/* <li className="md:hidden block ">
               <Disclosure>
                 {({ open }) => (
                   <>
@@ -299,7 +304,7 @@ const Navbar = () => {
                   </>
                 )}
               </Disclosure>
-            </li>
+            </li> */}
             {/* for mobile end */}
           
             {/* <Link href="/advisors">
