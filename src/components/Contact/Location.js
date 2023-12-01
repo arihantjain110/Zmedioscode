@@ -37,12 +37,12 @@ const Location = () => {
                   India
                 </h2>
                 <div className="grid gap-4 pb-4">
-                  <Link href="tel:+91-9340609004">
+                  <Link href="tel:+91-9319062156">
                     <div className="flex space-x-2">
                       <BiPhoneCall size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">PHONE</h2>
-                        <p className="text-primary">+91-9340609004</p>
+                        <p className="text-primary">+91-9319062156</p>
                       </div>
                     </div>
                   </Link>
@@ -55,12 +55,12 @@ const Location = () => {
                       </p>
                     </div>
                   </div>
-                  <Link href="mailto:info@Zmedios.com">
+                  <Link href="mailto:info@zmediostech.com">
                     <div className="flex space-x-2">
                       <MdOutlineMail size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">EMAIL</h2>
-                        <p className="text-primary">info@Zmedios.com</p>
+                        <p className="text-primary">info@zmediostech.com</p>
                       </div>
                     </div>
                   </Link>
@@ -87,7 +87,7 @@ const Location = () => {
                       <BiPhoneCall size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">PHONE</h2>
-                        <p className="text-primary">+91-9340609004</p>
+                        <p className="text-primary">+91-9319062156</p>
                       </div>
                     </div>
                   </Link>
@@ -100,7 +100,7 @@ const Location = () => {
                       </p>
                     </div>
                   </div>
-                  <Link href="mailto:info@Zmedios.com">
+                  <Link href="mailto:info@zmediostech.com">
                     <div className="flex space-x-2">
                       <MdOutlineMail size={20} />
                       <div className="text-xs">
@@ -127,12 +127,12 @@ const Location = () => {
                   USA
                 </h2>
                 <div className="grid gap-4 pb-4">
-                  <Link href="tel:+91-9340609004">
+                  <Link href="tel:+91-9319062156">
                     <div className="flex space-x-2">
                       <BiPhoneCall size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">PHONE</h2>
-                        <p className="text-primary">+91-9340609004</p>
+                        <p className="text-primary">+91-9319062156</p>
                       </div>
                     </div>
                   </Link>
@@ -145,7 +145,7 @@ const Location = () => {
                       </p>
                     </div>
                   </div>
-                  <Link href="mailto:info@Zmedios.com">
+                  <Link href="mailto:info@zmediostech.com">
                     <div className="flex space-x-2">
                       <MdOutlineMail size={20} />
                       <div className="text-xs">
@@ -172,12 +172,12 @@ const Location = () => {
                   UK
                 </h2>
                 <div className="grid gap-4 pb-4">
-                  <Link href="tel:+91-9340609004">
+                  <Link href="tel:+91-9319062156">
                     <div className="flex space-x-2">
                       <BiPhoneCall size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">PHONE</h2>
-                        <p className="text-primary">+91-9340609004</p>
+                        <p className="text-primary">+91-9319062156</p>
                       </div>
                     </div>
                   </Link>
@@ -190,12 +190,12 @@ const Location = () => {
                       </p>
                     </div>
                   </div>
-                  <Link href="mailto:info@Zmedios.com">
+                  <Link href="mailto:info@zmediostech.com">
                     <div className="flex space-x-2">
                       <MdOutlineMail size={20} />
                       <div className="text-xs">
                         <h2 className="font-semibold">EMAIL</h2>
-                        <p className="text-primary">info@Zmedios.com</p>
+                        <p className="text-primary">info@zmediostech.com</p>
                       </div>
                     </div>
                   </Link>
