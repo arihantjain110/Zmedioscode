@@ -7,15 +7,15 @@ const FloatingButtons = () => {
   return (
     <div className=" fixed flex items-center justify-between py-5 top-60 right-0 z-50">
       <div className="bg-[#F1F1F1] p-3 rounded-l-md shadow-inner">
-        <Link href="mailto:info@Zmedios.com">
+        <Link href="mailto:info@zmediostech.com">
           <IoMdMail size={24} className="text-black hover:text-primary" />
         </Link>
         <hr className="mt-3 " />
-        <Link href="tel:+91-9340609004">
+        <Link href="tel:+91-9319062156">
           <IoMdCall size={24} className="text-black hover:text-primary mt-3" />
         </Link>
         <hr className="mt-3 " />
-        <Link href="https://wa.me/91-9340609004 ">
+        <Link href="https://wa.me/91-9319062156 ">
           <FiMessageSquare
             size={24}
             className="text-black hover:text-primary mt-3"

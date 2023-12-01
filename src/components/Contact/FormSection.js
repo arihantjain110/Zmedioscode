@@ -84,17 +84,17 @@ const FormSection = () => {
               <h1 className="font-extrabold text-3xl mb-5">Connect with Our Experts for Expert Advice and Supports</h1>
               <p>When you choose to connect with our experts, you gain access to a wealth of knowledge and experience. Our team comprises professionals who have excelled in their respective fields and possess a deep understanding of the challenges and complexities you may face.</p>
               
-              <Link href="mailto:info@Zmedios.com">
+              <Link href="mailto:info@zmediostech.com">
               {/* <Link href="mailto:sumitk.swarnkar@gmail.com"> */}
                 <div className="flex space-x-2 mb-3 mt-5">
                   <MdOutlineMail size={25} />
-                    <p className="text-primary ">info@Zmedios.com</p>
+                    <p className="text-primary ">info@zmediostech.com</p>
                 </div>
               </Link>
-              <Link href="tel:+91-9340609004" >
+              <Link href="tel:+91-9319062156" >
                 <div className="flex space-x-2 mb-2 " >
                   <BiPhoneCall size={25} />
-                    <p className="text-primary mb-2">+91-9340609004</p>
+                    <p className="text-primary mb-2">+91-9319062156</p>
                 </div>
               </Link>
               <div className="flex space-x-2 cursor-pointer ">

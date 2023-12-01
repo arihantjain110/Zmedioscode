@@ -141,16 +141,16 @@ const Footer = () => {
                       JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram, Haryana 122018
                     </h2>
                   </li>
-                  <Link href="tel:+91-9340609004">
+                  <Link href="tel:+91-9319062156">
                     <li className="flex space-x-2 items-center pt-6 group">
                       <IoMdCall
                         size={28}
                         className="text-black group-hover:text-primary mt-3"
                       />
-                      <span className="text-sm">+91-9340609004</span>
+                      <span className="text-sm">+91-9319062156</span>
                     </li>
                   </Link>
-                  <Link href="mailto:info@Zmedios.com">
+                  <Link href="mailto:info@zmediostech.com">
                     <li className="flex space-x-2 items-center pt-6 group">
                       <IoMdMail
                         size={28}
