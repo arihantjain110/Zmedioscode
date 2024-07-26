@@ -30,7 +30,7 @@ const Videos = () => {
           className="object-cover max-h-[500px] w-full"
           autoPlay muted controls loop
           src={"/assets/images/Zmedios.mp4"}>
-          <source src={"/assets/images/ZmediosVideoNew.mp4"} />
+          {/* <source src={"/assets/images/ZmediosVideoNew.mp4"} /> */}
         </video>
       </div>
     </>

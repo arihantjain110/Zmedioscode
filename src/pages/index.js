@@ -31,7 +31,7 @@ const index = () => {
       <Card />
       <Portfolio />
       {/* <Leaders /> */}
-      <Videos />
+      {/* <Videos /> */}
       <Clients />
       <Blogs />
       <Testimonial />
