@@ -47,7 +47,7 @@ const Card = () => {
                 <div className="card-slider-items">
                   <div className="item">
                     <img
-                      src="https://source.unsplash.com/random/300x450/?earth,1"
+                      src="/assets/images/contact_1.jpeg"
                       alt=""
                       width="300"
                       height="450"
@@ -55,7 +55,7 @@ const Card = () => {
                   </div>
                   <div className="item">
                     <img
-                      src="https://source.unsplash.com/random/300x450/?earth,2"
+                      src="/assets/images/contact_2.jpeg "
                       alt=""
                       width="300"
                       height="450"
@@ -63,7 +63,7 @@ const Card = () => {
                   </div>
                   <div className="item">
                     <img
-                      src="https://source.unsplash.com/random/300x450/?earth,3"
+                      src="/assets/images/contact_3.jpeg "
                       alt=""
                       width="300"
                       height="450"
@@ -71,7 +71,7 @@ const Card = () => {
                   </div>
                   <div className="item">
                     <img
-                      src="https://source.unsplash.com/random/300x450/?earth,4"
+                      src="/assets/images/contact_4.jpeg "
                       alt=""
                       width="300"
                       height="450"
@@ -86,7 +86,7 @@ const Card = () => {
                       return (
                         <div key={index} className="item">
                           <img
-                            src="https://source.unsplash.com/random/300x450/?fire,1"
+                           src="/assets/images/contact_5.jpeg "
                             alt=""
                             width="300"
                             height="450"
@@ -104,7 +104,7 @@ const Card = () => {
                       return (
                         <div key={index} className="item">
                           <img
-                            src="https://source.unsplash.com/random/300x450/?fire,1"
+                            src="/assets/images/contact_1.jpeg "
                             alt=""
                             width="300"
                             height="650"
