@@ -1,12 +1,9 @@
 "use client"
-import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import React, {useState, useCallback} from "react";
 import Image from "next/image";
 import {useDropzone} from 'react-dropzone'
-import { getFileLink, submitRegistrationForm } from "../lib/actions";
-import axios from 'axios'
-// import { getFileLink } from '../lib/actions'
+import { getFileLink, submitRegistrationForm, subscribeNewsletter } from "../../lib/actions";
 
 const DeveloperRegistrationSection = () => {
 
@@ -57,7 +54,7 @@ const DeveloperRegistrationSection = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleRegistrationSubmit = async (e) => {
         e.preventDefault();
         
         const data = new FormData()
@@ -71,6 +68,7 @@ const DeveloperRegistrationSection = () => {
         }
 
         data.append('ndaCheck', ndaCheck);
+
         Object.keys(formData).forEach(key => {
             data.append(key, formData[key]);
         });
@@ -78,13 +76,18 @@ const DeveloperRegistrationSection = () => {
         data.append('userType', pathname==="/hireme" ? "individual" : "company");
         data.append("companyName", pathname==="/hireme" ? "" : formData.companyName);
 
-        // console.log("Data is: ", data);
-
-        console.log(Object.fromEntries(data.entries())); // for debugging
-
+        
         const response = await submitRegistrationForm(data)
-
     };
+
+    const handleNewsletterSubmit = async (e) => {
+        e.preventDefault();
+        const subscribedEmail = e.target.email.value;
+        const formData = new FormData();
+        formData.append('email', subscribedEmail);
+
+        const response = await subscribeNewsletter(formData);
+    }
 
     return (
         <>
@@ -98,7 +101,7 @@ const DeveloperRegistrationSection = () => {
                         
                         {/* form start */}
                         <form 
-                            onSubmit={handleSubmit}
+                            onSubmit={handleRegistrationSubmit}
                             className="md:pt-0 pt-7 text-[#8E8E8E]"
                         >
                             <div className="space-y-2 md:pr-16 py-8 text-sm">
@@ -196,18 +199,6 @@ const DeveloperRegistrationSection = () => {
                                         <option value="DE">Germany</option>
                                     </select>
                                 </div>
-                                {/* <div className="flex items-center justify-center w-[548px]">
-                                    <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-28 border border-[#8E8E8E] border-dashed rounded-lg cursor-pointer ">
-                                        <div className="flex flex-col items-center justify-center ">
-                                            <svg className="w-8 h-8 mb-4  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
-                                            </svg>
-                                            <p className="mb-2 text-sm  "><span className="font-semibold">Click to upload</span> or drag and drop</p>
-                                            <p className="text-xs  ">Attach file. File size of your documents should not exceed 10MB.</p>
-                                        </div>
-                                        <input id="dropzone-file" name="file" type="file" onChange={handleInputChange} className="" />
-                                    </label>
-                                </div>  */}
                                 <div {...getRootProps()}>
                                     <input {...getInputProps()} />
                                     <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-28 border border-[#8E8E8E] border-dashed rounded-lg cursor-pointer ">
@@ -227,22 +218,6 @@ const DeveloperRegistrationSection = () => {
                                             }
                                         </div>
                                     </label>
-                                    {/* {
-                                        isDragActive ?
-                                        <p>Drop the files here ...</p> :
-                                        <p>Drag 'n' drop some files here, or click to select files</p>
-                                    } */}
-                                    {/* <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-28 border border-[#8E8E8E] border-dashed rounded-lg cursor-pointer ">
-                                        <div className="flex flex-col items-center justify-center ">
-                                           
-
-                                            <svg className="w-8 h-8 mb-4  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
-                                            </svg>
-                                            <p className="mb-2 text-sm  "><span className="font-semibold">Click to upload</span> or drag and drop</p>
-                                            <p className="text-xs  ">Attach file. File size of your documents should not exceed 10MB.</p>
-                                        </div>
-                                    </label> */}
                                 </div>
                                 <button type="submit" className="bg-[#008F17]  text-white px-8 py-2 rounded-md w-[548px] flex justify-center items-center  ">
                                     <span className="text-base"> SUBMIT </span>
@@ -274,7 +249,9 @@ const DeveloperRegistrationSection = () => {
                         </div>
                         <div className="w-[357px]">
                             <h1 className="font-bold mb-5">Would you like to join our newsletter ?</h1>
-                            <form className="flex justify-between items-start">
+                            <form 
+                                onSubmit={handleNewsletterSubmit}
+                                className="flex justify-between items-start">
                                 <div className="w-[262px] h-[76px]">
                                     <input
                                         type="email"

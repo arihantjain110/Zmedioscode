@@ -47,7 +47,7 @@ const Card = () => {
               <div className="card-slider sliderOne">
                 <div className="card-slider-items">
                   <div className="item">
-                    <Image
+                    <img
                       src="/assets/images/contact_1.jpeg"
                       alt=""
                       width="300"
@@ -55,7 +55,7 @@ const Card = () => {
                     />
                   </div>
                   <div className="item">
-                    <Image
+                    <img
                       src="/assets/images/contact_2.jpeg "
                       alt=""
                       width="300"
@@ -63,7 +63,7 @@ const Card = () => {
                     />
                   </div>
                   <div className="item">
-                    <Image
+                    <img
                       src="/assets/images/contact_3.jpeg "
                       alt=""
                       width="300"
@@ -71,7 +71,7 @@ const Card = () => {
                     />
                   </div>
                   <div className="item">
-                    <Image
+                    <img
                       src="/assets/images/contact_4.jpeg "
                       alt=""
                       width="300"
@@ -86,7 +86,7 @@ const Card = () => {
                     [1, 1, 1, 1, 1]?.map((item, index) => {
                       return (
                         <div key={index} className="item">
-                          <Image
+                          <img
                            src="/assets/images/contact_5.jpeg "
                             alt=""
                             width="300"
@@ -104,7 +104,7 @@ const Card = () => {
                     [1, 1, 1, 1, 1]?.map((item, index) => {
                       return (
                         <div key={index} className="item">
-                          <Image
+                          <img
                             src="/assets/images/contact_1.jpeg "
                             alt=""
                             width="300"

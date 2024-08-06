@@ -32,7 +32,7 @@ const ValuesMissions = () => {
             <div className="group p-3" key="id">
               <div className="relative text-left px-6  py-3 duration duration-200 group-hover:-translate-y-2 bg-gray-50 hover:bg-white hover:drop-shadow-xl bg-transparent rounded-xl ">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/mission.png"
                     alt=""
                     className="  rounded-lg w-20 h-20 mx-auto "
@@ -51,7 +51,7 @@ const ValuesMissions = () => {
             <div className="group p-3" key="id">
               <div className="relative text-left px-6  py-3 duration duration-200 group-hover:-translate-y-2  bg-gray-50 hover:bg-white hover:drop-shadow-xl bg-transparent rounded-xl  ">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/value.png"
                     alt=""
                     className="  rounded-lg w-20 h-20 mx-auto "
@@ -73,7 +73,7 @@ const ValuesMissions = () => {
             <div className="group p-3" key="id">
               <div className="relative text-left px-6  py-3  duration duration-200 group-hover:-translate-y-2 bg-gray-50 hover:bg-white hover:drop-shadow-xl bg-transparent rounded-xl ">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/vision.png"
                     alt=""
                     className="  rounded-lg w-20 h-20 mx-auto "

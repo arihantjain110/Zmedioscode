@@ -30,7 +30,7 @@ const ProccessHead = ({processhead, processsub, processdesc, processimg}) => {
   
               <div className="pb-5 md:pt-10  ">
                 <div className="  relative ">
-                  <Image
+                  <img
                     src={processimg}
                     alt=""
                     className=""

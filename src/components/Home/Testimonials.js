@@ -123,11 +123,11 @@ const Testimonial = () => {
           <div className="">
             <Slider {...settings} className="testimonialSlider mx-auto">
               {clientsData.map((item, index) => (
-                <>
-                  <div className="testimonial group py-10 relative" key={index}>
+                // <>
+                  <div key={index} className="testimonial group py-10 relative" >
                     <div className="hover:bg-[#F6F8F9] border-2 border-[#F6F8F9] text-left mx-3 py-8 rounded-md  hovertestimonial">
                       <div className="flex flex-col items-center justify-left">
-                        <Image
+                        <img
                           src={item.image}
                           alt=" "
                           className="  rounded-lg w-[25%] absolute top-0  left-[9rem]"
@@ -146,7 +146,7 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
-                </>
+                // </>
               ))}
             </Slider>
           </div>

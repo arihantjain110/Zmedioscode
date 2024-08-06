@@ -27,7 +27,7 @@ const VideoSection = () => {
       </div>
 
       <div className="  relative md:pt-0 pt-5">
-        <Image src="/assets/images/video.png" alt="" className="" />
+        <img src="/assets/images/video.png" alt="" className="" />
         <div className=" absolute md:top-72 top-24 left-44 md:left-[32rem]">
           <div className="relative inline-flex">
             <span className="flex h-16 w-16">

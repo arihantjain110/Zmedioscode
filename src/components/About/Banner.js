@@ -11,8 +11,8 @@ const Banner = () => {
       }}
     >
       <div className="md:grid grid-cols-2 gap-6 items-center container-ack  ">
-        <div className="pb-5 pt-10 ">
-          <Image src="/assets/images/aboutusimg.png" alt="" />
+        <div className="pb-5 pt-10 relative ">
+          <Image width={600} height={600} src="/assets/images/aboutusimg.png" alt="" />
         </div>
 
         <div className=" md:px-0 px-5 pb-10 md:pb-0  relative">

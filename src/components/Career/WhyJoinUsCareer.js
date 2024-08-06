@@ -24,7 +24,7 @@ function WhyJoinUsCareer() {
         <div className="md:flex justify-between w-full gap-5 whyJoinUs">
           <div className="col4WhyJon">
             <div className="Icon">
-              <Image src="/assets/images/career-img/3square.png" alt="" />
+              <img src="/assets/images/career-img/3square.png" alt="" />
             </div>
             <div className="CntWhyJoinUs">
               <h5>Collaborative environment </h5>
@@ -37,7 +37,7 @@ function WhyJoinUsCareer() {
 
           <div className="col4WhyJon">
             <div className="Icon">
-              <Image src="/assets/images/career-img/calendar-tick.png" alt="" />
+              <img src="/assets/images/career-img/calendar-tick.png" alt="" />
             </div>
             <div className="CntWhyJoinUs">
               <h5> Open Communication </h5>
@@ -50,7 +50,7 @@ function WhyJoinUsCareer() {
 
           <div className="col4WhyJon">
             <div className="Icon">
-              <Image src="/assets/images/career-img/money-tick.png" alt=""/>
+              <img src="/assets/images/career-img/money-tick.png" alt=""/>
             </div>
             <div className="CntWhyJoinUs">
               <h5> Company Culture and Values </h5>

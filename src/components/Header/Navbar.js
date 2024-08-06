@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="header text-black duration-300  w-full z-20  header-home py-2">
       <nav className="navbar ">
         <Link href="/" className="md:hidden block">
-          <Image width={128} height={128} src="/assets/images/ZmediosLogo.png" alt="image" />
+          <img width={128} height={128} src="/assets/images/ZmediosLogo.png" alt="image" />
         </Link>
         <div>
           <ul

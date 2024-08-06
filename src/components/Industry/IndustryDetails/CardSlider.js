@@ -11,7 +11,7 @@ function CardSlider() {
           <div className="Protfolicol-12">
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -30,7 +30,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -49,7 +49,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -71,7 +71,7 @@ function CardSlider() {
           <div className="Protfolicol-12">
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -90,7 +90,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -109,7 +109,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <Image
+                <img
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />

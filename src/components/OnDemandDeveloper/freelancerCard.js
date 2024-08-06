@@ -12,7 +12,7 @@ const FreelancerCard = ({user}) => {
         <div className="border rounded-xl p-4 bg-white flex flex-col gap-2">
             <div className='flex justify-between px-2 py-2'>
                 <div className='flex justify-between items-center gap-2'>
-                    <Image 
+                    <img 
                         width={40} height={40} 
                         src={"/assets/images/avatar.jpg"} alt='Picture of freelancer'
                         className='rounded-full'
@@ -52,7 +52,7 @@ const FreelancerCard = ({user}) => {
                 {user.skills.map((skill, i)=>(
                     <div key={i} className='flex gap-1 justify-between items-center text-xs bg-[#F3F1FF] px-2 py-1 w-fit rounded-md'>
                         {skillIconsImage[skill] && 
-                            <Image  
+                            <img  
                                 width={14} height={14}
                                 src={skillIconsImage[skill]} alt={`${skill} Logo`}
                             />

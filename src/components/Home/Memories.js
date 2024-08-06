@@ -97,7 +97,7 @@ function Memories() {
         <Slider {...settings}>
           {resumeData.map((item, idx) => (
             <div className={idx === imgIndex ? "m_slide activeSlide" : "m_slide"} key={idx}>
-              {/* { <Image src={item.sliderImg} alt={idx} /> } */}
+              {/* { <img src={item.sliderImg} alt={idx} /> } */}
             </div>
           ))}
         </Slider>

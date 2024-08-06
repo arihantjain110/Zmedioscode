@@ -28,7 +28,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/india.png"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -73,7 +73,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/UAEflag.jpg"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -118,7 +118,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/USAflag.jpg"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -163,7 +163,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src="/assets/images/uk.png"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "

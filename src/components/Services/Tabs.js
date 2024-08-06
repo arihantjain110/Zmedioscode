@@ -184,7 +184,7 @@ const Tabs = () => {
                     <div className="group p-6 " key="id">
                       <div className="sservice-content relative text-center  flex flex-col justify-between border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-[0px_0px_20px#f7ce4680] hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[28rem] ">
                         <div className=" ">
-                          <Image
+                          <img
                             src={item.image}
                             alt=""
                             className="  rounded-lg  "
@@ -222,7 +222,7 @@ const Tabs = () => {
                     <div className="group p-6 md:h-[33rem]" key="id">
                       <div className="service-content relative text-center  flex flex-col justify-between  border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-[0px_0px_20px#f7ce4680] hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[26rem]">
                         <div className=" ">
-                          <Image
+                          <img
                             src={item.image}
                             alt=""
                             className="  rounded-lg  "
@@ -260,7 +260,7 @@ const Tabs = () => {
                     <div className="group p-6 md:h-[39rem]" key="id">
                       <div className="service-content flex flex-col justify-between relative text-center  border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-[0px_0px_20px#f7ce4680] hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl ">
                         <div className=" ">
-                          <Image
+                          <img
                             src={item.image}
                             alt=""
                             className="  rounded-lg  "
