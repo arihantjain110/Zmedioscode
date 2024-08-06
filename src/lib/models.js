@@ -7,7 +7,7 @@ const registrationFormSchema = new mongoose.Schema({
     technology: String,
     joiningDays: String,
     jobTitle: String,
-    preferredLocation: String,
+    preferredLocation: String,  
     fileLink : String,
     ndaCheck : Boolean,         
     userType: {

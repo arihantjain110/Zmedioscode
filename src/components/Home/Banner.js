@@ -105,31 +105,33 @@ const Banner = () => {
       <div className=" md:px-0 px-5 HomePageSlider md:pb-20 pb-5 md:pt-0 pt-5">
         <Slider {...settings} className="mx-auto relative">
           {clientsData.map((item, index) => (
-            <>
+            // <>
               <div className="group SldrImgDta" key={index}>
                 <div className="relative text-center">
                   <div className="">
-                    <Image
+                    <img
                       src={item.image}
                       alt=" "
+                      height={450}
+                      width={450}
                       className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
                     />
                   </div>
                 </div>
               </div>
-            </>
+            // </>
           ))}
         </Slider>
         <div className="">
           <div className="bg-zinc-100/80	 boxshadowbanner  md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-0 top-6 md:left-[3.6rem] left-7 rounded-lg  mt-2  px-5 ">
-            <ul id="text-slider" class="container">
-              <li class="active">
+            <ul id="text-slider" className="container">
+              <li className="active">
                 <div className="flex justify-start items-center space-x-1">
                   <span className="text-primary md:text-sm text-base uppercase font-semibold">
                     {" "}
                     Innovation at its finest{" "}
                   </span>{" "}
-                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
+                  <img src="/assets/icons/icon.png" width={16} height={16}  className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Product Conceptualization & Development
@@ -156,7 +158,7 @@ const Banner = () => {
                     {" "}
                     Where Ideas Come to Life{" "}
                   </span>{" "}
-                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
+                  <img src="/assets/icons/icon.png" width={16} height={16} className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Empowering The Web With Innovative Development
@@ -183,7 +185,7 @@ const Banner = () => {
                     {" "}
                     Crafting Cutting-Edge Apps{" "}
                   </span>{" "}
-                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
+                  <img src="/assets/icons/icon.png" width={16} height={16} className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Transforming Your Brand With Mobile App Development

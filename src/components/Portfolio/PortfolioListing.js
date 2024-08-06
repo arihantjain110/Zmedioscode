@@ -233,10 +233,10 @@ function PortfolioListing() {
                   </div>
                   <div className='grid grid-cols-12 gap-4 py-5'>
                     <div className='col-span-6'>
-                      <Image src={item.img2} className="rounded-md h-100 w-full" alt="" />
+                      <img src={item.img2} className="rounded-md h-100 w-full" alt="" />
                     </div>
                     <div className='col-span-6'>
-                      <Image src={item.img} className="rounded-md h-100 w-full" alt="" />
+                      <img src={item.img} className="rounded-md h-100 w-full" alt="" />
                     </div>
                   </div>
                 </div>

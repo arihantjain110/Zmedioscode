@@ -56,7 +56,7 @@ const Bloglist = () => {
             className="group relative text-center px-5 pt-4 border-2 border-[#F6F8F9] hover:drop-shadow-sm hover:bg-[#F6F8F9] hover:border-2 rounded-xl"
             key={e}
           >
-            <Image src={item.src} alt="" className="rounded-md" />
+            <img src={item.src} alt="" className="rounded-md" />
 
             <div className="pt-5">
               <p className="w-full text-sm text-textcolor text-justify font-text  ">

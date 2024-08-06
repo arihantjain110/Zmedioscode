@@ -99,7 +99,7 @@ const Section = () => {
                 className={`${item.bgcolor} px-3 py-5 h-full  rounded-2xl shadow-box`}
               >
                 <div className={`${item.display}`}>
-                  {item.icon ? <Image src={item.icon} className=" " alt="" /> : null}
+                  {item.icon ? <img src={item.icon} className=" " alt="" /> : null}
                 </div>
                 <div className="relative">
                   <div className={`${item.main}`}>
@@ -140,7 +140,7 @@ const Section = () => {
             <>
               <div className={`${item.cols} `} key={e}>
                 <div>
-                  {item.icon ? <Image src={item.icon} className=" " alt="" /> : null}
+                  {item.icon ? <img src={item.icon} className=" " alt="" /> : null}
                 </div>
                 <div
                   className={`${item.bgcolor} px-3 py-5 h-full  rounded-2xl shadow-box mt-10`}

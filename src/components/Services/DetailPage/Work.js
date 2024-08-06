@@ -15,70 +15,70 @@ const Work = () => {
         />
         <div className="masonry-grid pb-2">
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/jindal.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/EB.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/vivo.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/insaano.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/toir.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/milestone.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/kazuki.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/c1india.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/discovery.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <Image
+            <img
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/mr-furniture.jpg"
               alt=""

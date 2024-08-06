@@ -22,12 +22,12 @@ const Band = () => {
         </div>
       </div>
       <div>
-        <Image
+        <img
           src="/assets/icons/dotsimg.png"
           alt=""
           className=" absolute top-6 left-16 w-24"
         />
-        <Image
+        <img
           src="/assets/icons/dotsimg.png"
           alt=""
           className=" absolute bottom-6 right-16 w-24"

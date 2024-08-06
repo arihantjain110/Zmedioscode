@@ -9,7 +9,7 @@ const HeaderLogo = () => {
             <div className="flex items-center gap-20 col-span-5">   
                 <Link href="/">
                     <div>
-                        <Image
+                        <img
                             height={64}
                             width={304}
                             src="/assets/images/ZmediosLogo.png" 

@@ -9,7 +9,7 @@ const BlogDetail = () => {
         Etiam nulla lectus amet nunc molestie at vulputate.
       </div>
 
-      <Image src="/assets/images/blog/blogdetail.png" alt="" className="pt-10" />
+      <img src="/assets/images/blog/blogdetail.png" alt="" className="pt-10" />
 
       <div className="flex justify-between items-center pt-3">
         <p className="w-full text-base text-textcolor text-justify font-text  ">
@@ -82,7 +82,7 @@ const BlogDetail = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 pt-8">
-        <Image src="/assets/images/blog/blogdetailtwo.png" alt="" />
+        <img src="/assets/images/blog/blogdetailtwo.png" alt="" />
         <div>
           <p className="pt-2 text-textcolor md:text-left text-justify tracking-tighter md:tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Odio amet et tortor

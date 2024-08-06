@@ -1,7 +1,5 @@
-// pages/api/upload.js
-"use server"
+
 import { google } from 'googleapis';
-import { google_config as apiKeys } from '../../lib/google_config';
 import * as formidable from 'formidable';
 import fs from 'fs';
 
@@ -14,43 +12,44 @@ export const config = {
 const SCOPE = ['https://www.googleapis.com/auth/drive'];
 
 const googleAuthorize = async () => {
-  const jwtClient = new google.auth.JWT(
-    apiKeys.client_email,
-    null,
-    apiKeys.private_key,
-    SCOPE
-  );
-  await jwtClient.authorize();
-  return jwtClient;
+
+    const jwtClient = new google.auth.JWT(
+        process.env.GDRIVE_CLIENT_EMAIL,
+        null,
+        process.env.GDRIVE_PRIVATE_KEY,
+        SCOPE
+    );
+
+    await jwtClient.authorize();
+    return jwtClient;
 };
 
 const uploadFile = (authClient, file) => {
-    // console.log(file)
-  return new Promise((resolve, reject) => {
-    const drive = google.drive({ version: 'v3', auth: authClient });
-    const fileMetaData = {
-      name: file.originalFilename,
-      parents: ['1MWfYWTmWUPluwCY6z9PjhrK0Wvd0pdmM'], // Your Google Drive folder ID
-    };
-    const media = {
-        mimeType: file.mimetype,
-        // body: Buffer.from(file.buffer),
-        body: fs.createReadStream(file.filepath),
-    };
-    drive.files.create(
-      {
-        resource: fileMetaData,
-        media: media,
-        fields: 'id, webViewLink',
-      },
-      (error, file) => {
-        if (error) {
-          return reject(error);
+    return new Promise((resolve, reject) => {
+        const drive = google.drive({ version: 'v3', auth: authClient });
+        const fileMetaData = {
+        name: file.originalFilename,
+        parents: [process.env.GDRIVE_FOLDER_ID], // Your Google Drive folder ID
+        };
+        const media = {
+            mimeType: file.mimetype,
+            // body: Buffer.from(file.buffer),
+            body: fs.createReadStream(file.filepath),
+        };
+        drive.files.create(
+        {
+            resource: fileMetaData,
+            media: media,
+            fields: 'id, webViewLink',
+        },
+        (error, file) => {
+            if (error) {
+            return reject(error);
+            }
+            resolve(file.data);
         }
-        resolve(file.data);
-      }
-    );
-  });
+        );
+    });
 };
 
 export default async function handler(req, res) {

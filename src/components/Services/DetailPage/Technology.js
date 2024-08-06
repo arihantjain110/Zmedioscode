@@ -9,7 +9,7 @@ const Technology = ({tech}) => {
     {tech.map((item, e) => (
         <>
             <div key={e} className="group tech flex justify-start items-center border rounded-md p-3 gap-3">
-                <Image src={item.img} alt="" className='w-[34px]' />
+                <img src={item.img} alt="" className='w-[34px]' />
                 <div>
                     <span className="font-semibold text-lg pt-3 text-black ">
                         {item.name}

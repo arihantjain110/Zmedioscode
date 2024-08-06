@@ -35,7 +35,7 @@ const CareerDetails = ()=> {
           </div>
           <div className="grid grid-cols-2 gap-10 ">
             <div>
-              <Image src="/assets/images/Rectangle 548.png" alt="" />
+              <img src="/assets/images/Rectangle 548.png" alt="" />
             </div>
             <div className="space-y-6">
               <div className="flex space-x-4">

@@ -9,16 +9,16 @@ const Banner = () => {
         <div className="">
           <div className="md:grid grid-cols-2 gap-10 items-center container-ack">
             <div className="pb-5 pt-10 relative ">
-              <Image
+              <img
                 src="/assets/images/industry/lineCircle.png" alt=""
                 className="absolute top-4 -left-8 w-24"
               />
-              <Image
+              <img
                 src="/assets/images/aboutusimg3.png"
                 alt=""
                 className="rounded-md"
               />
-              <Image
+              <img
                 src="/assets/images/industry/Frame.png" alt=""
                 className="absolute bottom-0 -right-8 w-24"
               />

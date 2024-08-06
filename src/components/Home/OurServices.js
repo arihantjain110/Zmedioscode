@@ -45,7 +45,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <Image
+          <img
             alt="product-concept"
             className=" object-cover h-full w-full object-left-top"
             src="/assets/images/product-concept.jpg"
@@ -82,7 +82,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <Image
+          <img
             alt=""
             className="grayscale-0 group-hover:grayscale object-cover h-80 w-full object-left-top"
             src="/assets/images/product-develop.jpg"
@@ -118,7 +118,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <Image
+          <img
             alt=""
             className="grayscale-0 group-hover:grayscale object-cover h-80 w-full object-left-top"
             src="/assets/images/product-develop.jpg"

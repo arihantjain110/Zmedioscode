@@ -132,17 +132,15 @@ const About = () => {
         <div className="col-span-3 AboutSliderSection">
           <Slider {...settings} className=" mx-auto">
             {aboutdata?.map((item, index) => (
-              <>
                 <div className="group py-2 relative SldrDtaAbout" key={index}>
                   <div className="px-2">
-                    <Image
+                    <img
                       src={item.image}
                       alt=" "
                       className="  rounded-lg  w-full"
                     />
                   </div>
                 </div>
-              </>
             ))}
           </Slider>
         </div>
@@ -197,17 +195,15 @@ const About = () => {
         <div className="pb-5">
           <Slider {...settings} className=" mx-auto">
             {aboutdata.map((item) => (
-              <>
                 <div className="group relative" key={item}>
                   <div className="px-2">
-                    <Image
+                    <img
                       src={item.image}
                       alt=" "
                       className="  rounded-lg  md:w-[90%]"
                     />
                   </div>
                 </div>
-              </>
             ))}
           </Slider>
         </div>

@@ -48,7 +48,7 @@ const List = () => {
             <div className="group " key={index}>
               <div className="relative text-center py-6 border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-sm hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[27rem]">
                 <div className="inline-flex justify-center items-center rounded-md md:mt-8 ">
-                  <Image
+                  <img
                     src={item.image}
                     alt=""
                     className="  rounded-lg w-20 h-20 mx-auto "
