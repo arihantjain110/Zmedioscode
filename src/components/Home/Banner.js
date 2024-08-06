@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 // import { HiLightBulb } from "react-icons/hi";
 import Link from "next/link";
+import Image from "next/image";
 const Banner = () => {
   const settings = {
     className: "center",
@@ -108,7 +109,7 @@ const Banner = () => {
               <div className="group SldrImgDta" key={index}>
                 <div className="relative text-center">
                   <div className="">
-                    <img
+                    <Image
                       src={item.image}
                       alt=" "
                       className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
@@ -128,7 +129,7 @@ const Banner = () => {
                     {" "}
                     Innovation at its finest{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" className="w-9 bulb" />
+                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Product Conceptualization & Development
@@ -155,7 +156,7 @@ const Banner = () => {
                     {" "}
                     Where Ideas Come to Life{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" className="w-9 bulb" />
+                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Empowering The Web With Innovative Development
@@ -182,7 +183,7 @@ const Banner = () => {
                     {" "}
                     Crafting Cutting-Edge Apps{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" className="w-9 bulb" />
+                  <Image src="/assets/icons/icon.png" className="w-9 bulb" alt="" />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Transforming Your Brand With Mobile App Development

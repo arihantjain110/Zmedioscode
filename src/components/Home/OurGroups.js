@@ -1,5 +1,6 @@
 import React from 'react'
 import ComponentHead from '../Common/ComponentHead'
+import Image from "next/image";
 
 const OurGroups = () => {
 
@@ -144,7 +145,7 @@ const OurGroups = () => {
           {clientsData.map((item, index) => (
             <>
               <li key={index} className="clientzoom  p-4 border border-gray-200 border-dashed">
-                <img
+                <Image
                   src={item.image}
                   alt="Clients"
                   className="rounded-lg w-[70%] mx-auto zoom-client"

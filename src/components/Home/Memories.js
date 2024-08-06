@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
+import Image from "next/image";
 import ComponentHead from "../Common/ComponentHead";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -96,7 +97,7 @@ function Memories() {
         <Slider {...settings}>
           {resumeData.map((item, idx) => (
             <div className={idx === imgIndex ? "m_slide activeSlide" : "m_slide"} key={idx}>
-              {/* { <img src={item.sliderImg} alt={idx} /> } */}
+              {/* { <Image src={item.sliderImg} alt={idx} /> } */}
             </div>
           ))}
         </Slider>

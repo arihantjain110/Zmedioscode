@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -24,21 +25,21 @@ const Banner = () => {
         <div className="md:grid grid-cols-4 gap-4 py-5 md:space-y-0 space-y-4">
           <div className="col-span-3"></div>
           <div className="shadow rounded-lg">
-            {/* <img src="/assets/images/memories/img1.png" /> */}
+            {/* <Image src="/assets/images/memories/img1.png" /> */}
           </div>
           <div className="col-span-2"></div>
           <div className="rounded-lg row-span-2">
-            <img src="/assets/images/memories/img4.png" />
+            <Image src="/assets/images/memories/img4.png" alt="" />
           </div>
           <div className="rounded-lg">
-            <img src="/assets/images/memories/img3.png" />
+            <Image src="/assets/images/memories/img3.png" alt="" />
           </div>
           <div className="rounded-lg"></div>
           <div className="rounded-lg">
-            {/* <img src="/assets/images/memories/img4.png" /> */}
+            {/* <Image src="/assets/images/memories/img4.png" /> */}
           </div>
           <div className="rounded-lg">
-            <img src="/assets/images/memories/img5.png" />
+            <Image src="/assets/images/memories/img5.png" alt="" />
           </div>
         </div>
         {/* images section end */}

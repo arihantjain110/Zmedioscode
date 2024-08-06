@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Band = () => {
   return (
@@ -21,12 +22,12 @@ const Band = () => {
         </div>
       </div>
       <div>
-        <img
+        <Image
           src="/assets/icons/dotsimg.png"
           alt=""
           className=" absolute top-6 left-16 w-24"
         />
-        <img
+        <Image
           src="/assets/icons/dotsimg.png"
           alt=""
           className=" absolute bottom-6 right-16 w-24"

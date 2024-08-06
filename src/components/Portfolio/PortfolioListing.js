@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import Image from "next/image";
 
 function PortfolioListing() {
   const filterData = [
@@ -232,10 +233,10 @@ function PortfolioListing() {
                   </div>
                   <div className='grid grid-cols-12 gap-4 py-5'>
                     <div className='col-span-6'>
-                      <img src={item.img2} className="rounded-md h-100 w-full" />
+                      <Image src={item.img2} className="rounded-md h-100 w-full" alt="" />
                     </div>
                     <div className='col-span-6'>
-                      <img src={item.img} className="rounded-md h-100 w-full" />
+                      <Image src={item.img} className="rounded-md h-100 w-full" alt="" />
                     </div>
                   </div>
                 </div>

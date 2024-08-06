@@ -7,6 +7,7 @@ import { FaBars, FaCross, FaTimes } from "react-icons/fa";
 import {RiArrowDropDownLine}from "react-icons/ri";
 import {BsChevronDown}from "react-icons/bs";
 import { useRouter } from "next/router";
+import Image from "next/image";
 const Navbar = () => {
   // setting mobile nav
   const [click, setClick] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     <div className="header text-black duration-300  w-full z-20  header-home py-2">
       <nav className="navbar ">
         <Link href="/" className="md:hidden block">
-          <img src="/assets/images/ZmediosLogo.png" alt="image" />
+          <Image width={128} height={128} src="/assets/images/ZmediosLogo.png" alt="image" />
         </Link>
         <div>
           <ul

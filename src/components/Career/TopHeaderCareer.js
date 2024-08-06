@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function TopHeaderCareer() {
   return (
@@ -7,7 +8,7 @@ export default function TopHeaderCareer() {
         <div className="w-full relative">
          
           <div className="TopCarerBnr">
-            <img
+            <Image
               src="/assets/images/career-img/bnnnrContactus-bnr.jpg"
               alt="Carimg"
             />

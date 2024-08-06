@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import { IoMdThermometer } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 
 const aboutdata = [
   {
@@ -134,7 +135,7 @@ const About = () => {
               <>
                 <div className="group py-2 relative SldrDtaAbout" key={index}>
                   <div className="px-2">
-                    <img
+                    <Image
                       src={item.image}
                       alt=" "
                       className="  rounded-lg  w-full"
@@ -199,7 +200,7 @@ const About = () => {
               <>
                 <div className="group relative" key={item}>
                   <div className="px-2">
-                    <img
+                    <Image
                       src={item.image}
                       alt=" "
                       className="  rounded-lg  md:w-[90%]"

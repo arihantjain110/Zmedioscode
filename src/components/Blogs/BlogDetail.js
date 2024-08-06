@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 const BlogDetail = () => {
   return (
     <div className="container-ack pt-16 md:px-0 px-5">
@@ -7,7 +9,7 @@ const BlogDetail = () => {
         Etiam nulla lectus amet nunc molestie at vulputate.
       </div>
 
-      <img src="/assets/images/blog/blogdetail.png" alt="" className="pt-10" />
+      <Image src="/assets/images/blog/blogdetail.png" alt="" className="pt-10" />
 
       <div className="flex justify-between items-center pt-3">
         <p className="w-full text-base text-textcolor text-justify font-text  ">
@@ -80,7 +82,7 @@ const BlogDetail = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 pt-8">
-        <img src="/assets/images/blog/blogdetailtwo.png" alt="" />
+        <Image src="/assets/images/blog/blogdetailtwo.png" alt="" />
         <div>
           <p className="pt-2 text-textcolor md:text-left text-justify tracking-tighter md:tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Odio amet et tortor

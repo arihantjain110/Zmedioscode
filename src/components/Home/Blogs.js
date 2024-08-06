@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import ComponentHead from "../Common/ComponentHead";
 
 const Blogs = () => {
@@ -13,7 +14,7 @@ const Blogs = () => {
           head="Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi."
         />
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/blogone.png" alt="" className="rounded-md" />
+          <Image src="/assets/images/blogone.png" alt="" className="rounded-md" />
 
           <div>
             <p className="w-full text-sm font-semibold text-primary text-justify font-text">
@@ -137,7 +138,7 @@ const Blogs = () => {
             </div>
           </div>
           <div>
-            <img
+            <Image
               src="/assets/images/blogtwo.png"
               alt=""
               className="rounded-md"
@@ -147,7 +148,7 @@ const Blogs = () => {
 
         <div className="grid md:grid-cols-2 gap-8 items-center pt-10 md:hidden">
           <div>
-            <img
+            <Image
               src="/assets/images/blogtwo.png"
               alt=""
               className="rounded-md"
@@ -214,7 +215,7 @@ const Blogs = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-center pt-10 pb-16">
-          <img
+          <Image
             src="/assets/images/blogthree.png"
             alt=""
             className="rounded-md"

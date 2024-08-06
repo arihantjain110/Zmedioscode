@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const List = () => {
   const clientsData = [
@@ -82,7 +83,7 @@ const List = () => {
                 <div className="group py-10 relative" key={e}>
                   <div className="hover:bg-[#F6F8F9] border-2 border-[#F6F8F9] text-left mx-3 py-8 rounded-md  hovertestimonial">
                     <div className="flex flex-col items-center justify-left">
-                      <img
+                      <Image
                         src={item.image}
                         alt=" "
                         className="  rounded-lg w-[25%] absolute top-0  left-[9rem]"

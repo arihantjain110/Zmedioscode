@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -126,7 +127,7 @@ const Testimonial = () => {
                   <div className="testimonial group py-10 relative" key={index}>
                     <div className="hover:bg-[#F6F8F9] border-2 border-[#F6F8F9] text-left mx-3 py-8 rounded-md  hovertestimonial">
                       <div className="flex flex-col items-center justify-left">
-                        <img
+                        <Image
                           src={item.image}
                           alt=" "
                           className="  rounded-lg w-[25%] absolute top-0  left-[9rem]"

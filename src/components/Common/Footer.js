@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { IoMdCall, IoMdMail } from "react-icons/io";
 import { GoLocation } from "react-icons/go";
 import Subscription from "../Home/Subscription";
@@ -20,7 +21,7 @@ const Footer = () => {
             <div className="md:col-span-4  space-y-4">
               <Link href="/">
                 <div>
-                  <img src="/assets/images/ZmediosLogo.png" className="w-48" />
+                  <Image width={192} height={16} src="/assets/images/ZmediosLogo.png" className="w-48" alt="" />
                 </div>
               </Link>
               <p className="text-sm text-justify">

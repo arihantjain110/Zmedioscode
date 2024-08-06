@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
+import Image from "next/image";
+
 const SingleBlog = () => {
   return (
     <div className='container-ack  pt-5 md:pt-16 md:px-0 px-5 md:pb-0 pb-10'>
         <div className="grid md:grid-cols-2 gap-12 items-center  border-2 border-[#F6F8F9] hover:drop-shadow-sm hover:bg-[#F6F8F9] rounded-xl p-4">
-          <img src="/assets/images/blog/blogone.png" alt="" className="rounded-md" />
+          <Image src="/assets/images/blog/blogone.png" alt="" className="rounded-md" />
 
           <div className=''>
 

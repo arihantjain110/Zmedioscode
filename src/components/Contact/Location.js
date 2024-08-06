@@ -3,6 +3,7 @@ import React from "react"
 import { BiPhoneCall } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import Image from "next/image";
 
 const Location = () => {
   return (
@@ -27,7 +28,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <img
+                  <Image
                     src="/assets/images/india.png"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -72,7 +73,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <img
+                  <Image
                     src="/assets/images/UAEflag.jpg"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -117,7 +118,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <img
+                  <Image
                     src="/assets/images/USAflag.jpg"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
@@ -162,7 +163,7 @@ const Location = () => {
             
               <div className="relative text-left px-6  py-3 bg-gray-50 rounded-xl border mb-5">
                 <div className="inline-flex justify-left items-center rounded-md md:mt-8 ">
-                  <img
+                  <Image
                     src="/assets/images/uk.png"
                     alt=""
                     className="  rounded-lg w-12 h-12 mx-auto "
