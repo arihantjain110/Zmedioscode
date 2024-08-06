@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 const Advisors = () => {
   const advisor = [
     {
@@ -112,7 +113,7 @@ const Advisors = () => {
               <div className="group p-6" key={index}>
                 <div className="relative text-center py-6 border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-sm hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl">
                   <div className="inline-flex justify-center items-center rounded-md md:mt-8 ">
-                    <img
+                    <Image
                       src={item.image}
                       alt=""
                       className="  rounded-lg w-20 h-20 mx-auto "

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DetailPage = () => {
   const employment = [
@@ -84,9 +85,9 @@ const DetailPage = () => {
       <div className="group py-10 relative">
         <div className="hover:bg-[#F6F8F9] bg-white  border-2 border-[#D2D2D2] text-left mx-3 py-8 rounded-md  hovertestimonial">
           <div className="flex flex-col items-center justify-left">
-            <img
+            <Image
               src="/assets/images/advisor/advisorone.png"
-              alt=" "
+              alt=""
               className=" w-[200px] rounded-lg md:absolute -top-10  right-[2rem]"
             />
             <div className=" pt-8 md:px-12 px-5">

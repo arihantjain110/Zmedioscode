@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const clientsData = [
   {
@@ -290,7 +291,7 @@ const Clients = () => {
           {clientsData.map((item, index) => (
             <>
               <li key={index} className="clientzoom">
-                <img
+                <Image
                   src={item.image}
                   alt="Clients"
                   className="rounded-lg w-[70%] mx-auto zoom-client"
@@ -306,7 +307,7 @@ const Clients = () => {
               <div className="group " key={index}>
                 <div className="relative text-center">
                   <div className="">
-                    <img
+                    <Image
                       src={item.image}
                       alt=" "
                       className="  rounded-lg w-[70%] mx-auto "

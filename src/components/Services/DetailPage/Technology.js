@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Technology = ({tech}) => {
 
@@ -8,7 +9,7 @@ const Technology = ({tech}) => {
     {tech.map((item, e) => (
         <>
             <div key={e} className="group tech flex justify-start items-center border rounded-md p-3 gap-3">
-                <img src={item.img} alt="" className='w-[34px]' />
+                <Image src={item.img} alt="" className='w-[34px]' />
                 <div>
                     <span className="font-semibold text-lg pt-3 text-black ">
                         {item.name}

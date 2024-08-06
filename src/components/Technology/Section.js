@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Section = () => {
@@ -9,7 +10,7 @@ const Section = () => {
         <div>
           <div className="md:grid grid-cols-2 gap-6 items-center container-ack  ">
             <div className="pb-5 pt-10">
-              <img src="/assets/images/aboutusimg3.png" alt="" width={500} height={500} />
+              <Image src="/assets/images/aboutusimg3.png" alt="" width={500} height={500} />
             </div>
 
             <div className=" md:px-0 px-5 pb-10 md:pb-0  relative">

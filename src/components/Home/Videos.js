@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const Videos = () => {
@@ -19,7 +20,7 @@ const Videos = () => {
               <span className="flex h-20 w-20">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white bg-opacity-50 opacity-75 duration-1000"></span>
                 <span className="">
-                  <img className="relative inline-flex h-20 w-20" alt="play" src="/assets/svg/videoPlay.svg" />
+                  <Image className="relative inline-flex h-20 w-20" alt="play" src="/assets/svg/videoPlay.svg" />
                 </span>
               </span>
             </div>

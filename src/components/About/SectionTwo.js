@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaBalanceScaleRight, FaRegHandshake } from "react-icons/fa";
 
 const SectionTwo = () => {
@@ -12,7 +13,7 @@ const SectionTwo = () => {
       <div className="container-ack">
         <div className="grid md:grid-cols-2 gap-6 items-center container-ack  ">
           <div className="pb-5 pt-10 ">
-            <img src="/assets/images/aboutusimg3.png" alt="" />
+            <Image src="/assets/images/aboutusimg3.png" alt="" />
           </div>
 
           <div className=" md:px-0 px-5 pb-10 md:pb-0  relative">
@@ -100,7 +101,7 @@ const SectionTwo = () => {
 
         <div className="md:flex justify-center md:space-x-20 md:px-20 px-5 md:space-y-0 space-y-5  pt-5 md:absolute -bottom-20">
           <div className="flex justify-start space-x-6 px-12 py-4 bg-white drop-shadow-md rounded-md">
-            {/* <img
+            {/* <Image
               className=" w-10 h-10"
               src="/assets/images/vision.png"
               alt=""
@@ -118,7 +119,7 @@ const SectionTwo = () => {
           </div>
 
           <div className="flex justify-start space-x-6 px-12 py-4 bg-white drop-shadow-md rounded-md">
-            {/* <img className="w-10 h-10" src="/assets/images/vision.png" alt="" /> */}
+            {/* <Image className="w-10 h-10" src="/assets/images/vision.png" alt="" /> */}
 
             <FaRegHandshake size={95} />
             <div className="">

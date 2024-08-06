@@ -37,7 +37,7 @@ const Leaders = () => {
                 <div className="front">
                   <div className="flex flex-col justify-center items-center pt-8">
                     <div>
-                      <img
+                      <Image
                         src={item.img}
                         alt=""
                         className="w-40 h-40 flex justify-center ml-50%"

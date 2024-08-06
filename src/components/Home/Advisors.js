@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ComponentHead from "../Common/ComponentHead";
+import Image from "next/image";
 
 const Advisors = () => {
   const advisor = [
@@ -61,7 +62,7 @@ const Advisors = () => {
               <div className="group advisors" key={e}>
                 <div className="advisor-card relative text-center py-4 border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2 hover:drop-shadow-sm hover:bg-[#F6F8F9] hover:border-2 rounded-xl md:h-[22rem]">
                   <div className="inline-flex justify-center items-center rounded-md md:mt-4 ">
-                    <img
+                    <Image
                       src={item.image}
                       alt="advisor"
                       className="rounded-[100%] w-20 h-20 mx-auto rounded-[100%]"

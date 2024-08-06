@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ComponentHead from "../Common/ComponentHead";
 
@@ -14,70 +15,70 @@ const Portfolio = () => {
         />
         <div className="masonry-grid pb-2">
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/jindal.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/EB.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/vivo.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/insaano.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/toir.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/milestone.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/kazuki.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/c1india.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/discovery.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/mr-furniture.jpg"
               alt=""
@@ -88,37 +89,37 @@ const Portfolio = () => {
         {/* <section className="portfolio_block">
           <div className="gallery">
             <div className=" img_box containerzoom pic">
-              <img className="zoomimg drop-shadow-md" src="/assets/images/portfolio/jindal.jpg" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="/assets/images/portfolio/jindal.jpg" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="/assets/images/portfolio/insaano.jpg" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="/assets/images/portfolio/insaano.jpg" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="/assets/images/portfolio/EB.jpg" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="/assets/images/portfolio/EB.jpg" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=767" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=767" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=296" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=296" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=168" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=168" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=871" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=871" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=821" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=821" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=164" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=164" alt="" />
             </div>
             <div className=" img_box containerzoom">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=872" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=872" alt="" />
             </div>
             <div className=" img_box containerzoom ">
-              <img className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=826" alt="" />
+              <Image className="zoomimg drop-shadow-md" src="https://unsplash.it/600/400?image=826" alt="" />
             </div>
           </div>
         </section> */}
@@ -127,14 +128,14 @@ const Portfolio = () => {
           <div className="md:col-span-5">
             <div className="md:flex md:space-x-4 items-baseline">
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/jindal.jpg"
                   className="md:w-60 md:h-80 w-full h-full object-fill zoomimg drop-shadow-md"
                   alt="jindal"
                 />
               </div>
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/insaano.jpg"
                   className="md:w-80 md:h-60 w-full object-fill object-top zoomimg drop-shadow-md"
                   alt="Insano Health"
@@ -143,14 +144,14 @@ const Portfolio = () => {
             </div>
             <div className="md:flex md:space-x-4 pt-4">
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/EB.jpg"
                   className="md:w-60 md:h-80 w-full h-full object-fill zoomimg drop-shadow-md"
                   alt="Expert Buddy"
                 />
               </div>
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/vivo.png"
                   className=" md:w-80 md:h-60 w-full h-full object-fill md:pt-0 pt-4 zoomimg drop-shadow-md"
                   alt="Vivo health"
@@ -161,7 +162,7 @@ const Portfolio = () => {
           </div>
           <div className="md:col-span-2 flex flex-col justify-center">
             <div className="containerzoom">
-              <img
+              <Image
                 src="/assets/images/portfolio/milestone.jpg"
                 className="md:w-72 md:h-80 w-full h-full object-fill object-left zoomimg drop-shadow-md"
                 alt="milestone"
@@ -171,14 +172,14 @@ const Portfolio = () => {
           <div className="md:col-span-5">
             <div className="md:flex md:space-x-4 items-baseline">
               <div className="containerzoom ">
-                <img
+                <Image
                   src="/assets/images/portfolio/toir.jpg"
                   className="md:w-60  md:h-48 w-full h-full object-fill zoomimg drop-shadow-md"
                   alt="Toir"
                 />
               </div>
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/kazuki.png"
                   className=" md:w-60 md:h-80 w-full h-full object-fill md:pt-0 pt-4 zoomimg drop-shadow-md "
                   alt="kazuki"
@@ -187,14 +188,14 @@ const Portfolio = () => {
             </div>
             <div className="md:flex md:space-x-4 pt-4">
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/mr-furniture.jpg"
                   className="md:w-60 md:h-80 w-full h-full object-fill zoomimg drop-shadow-md"
                   alt="mr-furniture"
                 />
               </div>
               <div className="containerzoom">
-                <img
+                <Image
                   src="/assets/images/portfolio/c1india.jpg"
                   className="md:w-80 md:h-60 w-full h-full object-fill md:pt-0 pt-4 zoomimg drop-shadow-md"
                   alt="c1india"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ComponentHead from "../Common/ComponentHead";
 
@@ -44,7 +45,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             alt="product-concept"
             className=" object-cover h-full w-full object-left-top"
             src="/assets/images/product-concept.jpg"
@@ -81,7 +82,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             alt=""
             className="grayscale-0 group-hover:grayscale object-cover h-80 w-full object-left-top"
             src="/assets/images/product-develop.jpg"
@@ -117,7 +118,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             alt=""
             className="grayscale-0 group-hover:grayscale object-cover h-80 w-full object-left-top"
             src="/assets/images/product-develop.jpg"

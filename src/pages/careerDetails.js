@@ -7,6 +7,7 @@ import JobListingCareers from "../components/Career/JobListingCareers";
 import Footer from "../components/Common/Footer";
 import { AiOutlineClose } from "react-icons/ai";
 import Head from "next/head";
+import Image from "next/image";
 
 const CareerDetails = ()=> {
   let [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const CareerDetails = ()=> {
           </div>
           <div className="grid grid-cols-2 gap-10 ">
             <div>
-              <img src="/assets/images/Rectangle 548.png" />
+              <Image src="/assets/images/Rectangle 548.png" alt="" />
             </div>
             <div className="space-y-6">
               <div className="flex space-x-4">

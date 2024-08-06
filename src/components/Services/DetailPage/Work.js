@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ComponentHead from "../../Common/ComponentHead";
+import Image from "next/image";
 
 const Work = () => {
   return (
@@ -14,70 +15,70 @@ const Work = () => {
         />
         <div className="masonry-grid pb-2">
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/jindal.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/EB.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/vivo.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/insaano.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/toir.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/milestone.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/kazuki.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/c1india.jpg"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/discovery.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
-            <img
+            <Image
               className="zoomimg drop-shadow-md"
               src="/assets/images/portfolio/mr-furniture.jpg"
               alt=""

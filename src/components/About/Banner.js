@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Banner = () => {
@@ -11,7 +12,7 @@ const Banner = () => {
     >
       <div className="md:grid grid-cols-2 gap-6 items-center container-ack  ">
         <div className="pb-5 pt-10 ">
-          <img src="/assets/images/aboutusimg.png" alt="" />
+          <Image src="/assets/images/aboutusimg.png" alt="" />
         </div>
 
         <div className=" md:px-0 px-5 pb-10 md:pb-0  relative">

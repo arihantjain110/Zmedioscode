@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 function CardSlider() {
@@ -10,7 +11,7 @@ function CardSlider() {
           <div className="Protfolicol-12">
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -29,7 +30,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -48,7 +49,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -70,7 +71,7 @@ function CardSlider() {
           <div className="Protfolicol-12">
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -89,7 +90,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />
@@ -108,7 +109,7 @@ function CardSlider() {
 
             <div className="col4RptProfolio">
               <div className="BacimgDtls">
-                <img
+                <Image
                   alt="Lngo"
                   src="/assets/images/protfolio/fornt-protfilo.webp"
                 />

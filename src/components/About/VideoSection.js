@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const VideoSection = () => {
@@ -26,7 +27,7 @@ const VideoSection = () => {
       </div>
 
       <div className="  relative md:pt-0 pt-5">
-        <img src="/assets/images/video.png" alt="" className="" />
+        <Image src="/assets/images/video.png" alt="" className="" />
         <div className=" absolute md:top-72 top-24 left-44 md:left-[32rem]">
           <div className="relative inline-flex">
             <span className="flex h-16 w-16">
