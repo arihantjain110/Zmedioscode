@@ -8,7 +8,7 @@ const FloatingButtons = () => {
     <div className="fixed flex items-center justify-between py-5 top-60 right-0 z-10">
       <div className="bg-[#F1F1F1] p-3 rounded-l-md shadow-inner">
         <div className="relative group">
-          <Link href="mailto:info@zmediostech.com">
+          <Link href="mailto:info@zmediostech.com" target="_blank">
             <IoMdMail
               size={24}
               className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
@@ -20,7 +20,7 @@ const FloatingButtons = () => {
         </div>
         <hr className="mt-3" />
         <div className="relative group mt-3">
-          <Link href="tel:+91-9319062156">
+          <Link href="tel:+91-9319062156" target="_blank">
             <IoMdCall
               size={24}
               className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
@@ -32,7 +32,7 @@ const FloatingButtons = () => {
         </div>
         <hr className="mt-3" />
         <div className="relative group mt-3">
-          <Link href="https://wa.me/91-9319062156">
+          <Link href="https://wa.me/91-9319062156" target="_blank">
             <FaWhatsapp
               size={24}
               className="text-black hover:text-primary transition-transform transform group-hover:scale-150"

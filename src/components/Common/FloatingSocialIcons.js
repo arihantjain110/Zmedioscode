@@ -8,7 +8,7 @@ const FloatingSocialIcons = () => {
         <div className="fixed flex items-center justify-between py-5 top-60 left-0 z-10">
             <div className="bg-[#F1F1F1] p-3 rounded-l-md shadow-inner">
                 <div className="relative group">
-                    <Link href="">
+                    <Link href="https://www.instagram.com/zmedios_technology_pvt_ltd_/?hl=en" target="_blank">
                         <FaFacebook
                             size={24}
                             className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
@@ -20,7 +20,7 @@ const FloatingSocialIcons = () => {
                 </div>
                 <hr className="mt-3" />
                 <div className="relative group mt-3">
-                    <Link href="">
+                    <Link href="https://www.instagram.com/zmedios_technology_pvt_ltd_/?hl=en" target="_blank">
                         <FaInstagram
                             size={24}
                             className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
@@ -32,7 +32,7 @@ const FloatingSocialIcons = () => {
                 </div>
                 <hr className="mt-3" />
                 <div className="relative group mt-3">
-                    <Link href="">
+                    <Link href="https://www.linkedin.com/company/zmedios-technology-pvt-ltd/" target="_blank">
                         <CiLinkedin
                             size={24}
                             className="text-black hover:text-primary transition-transform transform group-hover:scale-150"

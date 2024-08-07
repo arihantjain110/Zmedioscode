@@ -35,6 +35,14 @@ const contactUsSchema = new mongoose.Schema({
     message: String
 });
 
+const enquiryFormSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    mobile: String,
+    message: String
+});
+
 export const RegistrationForm = mongoose.models?.RegistrationForm || mongoose.model('RegistrationForm', registrationFormSchema);
 export const Newsletter = mongoose.models?.Newsletter || mongoose.model('Newsletter', newsletterSchema);
 export const ContactUs = mongoose.models?.ContactUs || mongoose.model('ContactUs', contactUsSchema);
+export const EnquiryForm = mongoose.models?.EnquiryForm || mongoose.model('EnquiryForm', enquiryFormSchema);

@@ -1,16 +1,74 @@
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import { subscribeNewsletter } from "../../lib/actions";
+import { ImSpinner3 } from "react-icons/im";
 
 const Subscription = () => {
+
+    const [subscribed, setSubscribed] = useState({
+        error: false,
+        loading: false,
+        status: 'Subscribe'        
+    });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         const subscribedEmail = e.target.email.value;
+
+        if(!subscribedEmail){
+            setSubscribed({
+                error: true,
+                loading: false,
+                status: 'Please enter your email'
+            });
+            setTimeout(()=>{
+                setSubscribed((prevState)=>({
+                    ...prevState,
+                    error: false,
+                    status: 'Subscribe'
+                }))
+            }, 3000)
+            return;
+        }
+
         const formData = new FormData();
         formData.append('email', subscribedEmail);
 
+        setSubscribed({
+            error: false,
+            loading: true,
+            status: 'Subscribing...'
+        });
+
         const response = await subscribeNewsletter(formData);
+
+        if(response.success){
+            setTimeout(()=>{
+                setSubscribed((prevState) => ({
+                    ...prevState,
+                    loading: false,
+                    status: 'Subscribed!!'
+                }));
+                e.target.email.value = '';
+            }, 4000)
+        }
+        else{
+            setTimeout(() => {
+                setSubscribed({
+                    error: true,
+                    loading: false,
+                    status: response.message
+                });
+                e.target.email.value = '';
+            },4000)
+        }
+        setTimeout(() => {
+            setSubscribed({
+                loading: false,
+                error: false,
+                status: 'Subscribe'
+            });
+        }, [8000])
     }
 
     return (
@@ -39,10 +97,16 @@ const Subscription = () => {
                         <div className="flex justify-end w-full">
                             <button className=" button-1  px-12 py-2 rounded-md">
                                 <div className="eff-1"></div>
-                                <span className="text-base flex items-center font-semibold">Subscribe</span>
+                                <span className="text-base flex items-center font-semibold">
+                                    {subscribed.loading ?? <ImSpinner3 />}
+                                    {subscribed.error ? "Subscribe" : subscribed.status}
+                                </span>
                             </button>
                         </div>
                     </form>
+                    <div className={`pl-2 mt-2 ${!subscribed.error ? "text-orange-500" : "text-red-500"}`}>
+                        {subscribed.error && subscribed.status}
+                    </div>
                 </div>
             </div>
         </div>

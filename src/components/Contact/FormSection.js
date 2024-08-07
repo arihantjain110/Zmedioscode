@@ -5,6 +5,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { GrMapLocation } from "react-icons/gr";
 import { MdOutlineMail } from "react-icons/md";
 import { submitContactUsForm } from "../../lib/actions";
+import { ImSpinner3 } from "react-icons/im";
 
 const FormSection = () => {
 
@@ -15,6 +16,12 @@ const FormSection = () => {
         service: '',
         message: '',
     });
+    const [formSubmission, setFormSubmission] = useState({
+        loading: false,
+        error: false,
+        status: 'SEND'
+    })
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -23,15 +30,67 @@ const FormSection = () => {
         });
     };
 
+    const checkFields = () => {
+        if(!formData.name || !formData.email || !formData.mobile || !formData.service || !formData.message ){
+            return false;
+        }
+        return true;
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const isFormValid = checkFields();
+        if(!isFormValid){
+            setFormSubmission((prevState)=>({...prevState, error: true, status: 'Please fill all the fields'}));
+            setTimeout(()=>{
+                setFormSubmission((prevState)=>({...prevState, error: false, status: 'SEND'}));
+            },4000)
+            return;
+        }
         const data = new FormData();
-
+        
         Object.keys(formData).forEach(key => {
             data.append(key, formData[key]);
         });
-
-        const response = await submitContactUsForm(data);   
+        
+        setFormSubmission((prevState)=>({...prevState, loading: true, status: 'Sending...'}));
+        const response = await submitContactUsForm(data);
+        
+        if(response.success){
+            setTimeout(()=>{
+                setFormSubmission((prevState)=>({...prevState, loading:false, status: response.message}));
+                setFormData({
+                    name: '',
+                    email: '',
+                    mobile: '',
+                    service: '',
+                    message: '',
+                });
+            },4000)
+        }
+        else{
+            setTimeout(()=>{
+                setFormSubmission({
+                    error: true, 
+                    loading:false, 
+                    status: response.message
+                });
+                setFormData({
+                    name: '',
+                    email: '',
+                    mobile: '',
+                    service: '',
+                    message: '',
+                });
+            },4000)
+        }
+        setTimeout(()=>{
+            setFormSubmission({
+                error: false,
+                loading:false,
+                status: 'SEND'
+            })
+        },8000)
     }
 
     return (
@@ -52,7 +111,7 @@ const FormSection = () => {
                 </div>
                 <div className="container-ack md:grid grid-cols-2 md:px-0 md:pt-0 ">
                     <div className="col-span-1 border mt-10 pt-10 px-8  rounded-xl hover:border-[#FDDA0D] border-gray-300 ">
-                        <p style={{ width: '113%' }} className=" md:text-start text-center text-sm md:pr-12 md:top-[5.8rem] font-bold top-10 left-16 text-[46px]  flex flex-col md:space-y-6 ">
+                        <p  className=" md:text-start text-center text-sm md:pr-12 md:top-[5.8rem] font-bold top-10 left-16 text-[46px]  flex flex-col md:space-y-6 ">
                             {"We appreciate your interest in Zmedios. We're available to respond to any queries you may have."}
                         </p>
                         
@@ -64,6 +123,7 @@ const FormSection = () => {
                                     type="text"
                                     name="name"
                                     id="name"
+                                    value={formData.name}
                                     onChange={handleInputChange}
                                     placeholder="Name"
                                     className=" rounded-md border border-[#e0e0e0] bg-white py-2 px-6 text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
@@ -73,6 +133,7 @@ const FormSection = () => {
                                     type="email"
                                     name="email"
                                     id="email"
+                                    value={formData.email}
                                     onChange={handleInputChange}
                                     placeholder="Email"
                                     className="rounded-md border border-[#e0e0e0] bg-white py-2 px-6  text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
@@ -82,6 +143,7 @@ const FormSection = () => {
                                     type="text"
                                     name="mobile"
                                     id="mobile"
+                                    value={formData.mobile}
                                     onChange={handleInputChange}
                                     placeholder="Phone Number"
                                     className="rounded-md border border-[#e0e0e0] bg-white py-2 px-6  text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
@@ -91,6 +153,7 @@ const FormSection = () => {
                                     type="text"
                                     name="service"
                                     id="service"
+                                    value={formData.service}
                                     onChange={handleInputChange}
                                     placeholder="Service you looking for?"
                                     className="rounded-md border border-[#e0e0e0] bg-white py-2 px-6  text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
@@ -101,17 +164,27 @@ const FormSection = () => {
                                     rows={5}
                                     name="message"
                                     id="mesage"
+                                    value={formData.message}
                                     onChange={handleInputChange}
                                     placeholder="Write your message"
                                     className="rounded-md border border-[#e0e0e0] bg-white py-2 px-6  text-[#6B7280] outline-none focus:border-primary focus:shadow-md"
                                 />
                                 <button style={{ width: '113%' }} className="bg-secondary hover:bg-primary text-white px-8 py-2 rounded-md w-full flex justify-center items-center  ">
-                                    <span className="text-base"> SEND </span>
+                                    <span className="text-base flex items-center space-x-4"> 
+                                        {formSubmission.loading && <ImSpinner3 />}
+                                        {formSubmission.error ? "SEND" : formSubmission.status} 
+                                    </span>
                                 </button>
+
+                                {formSubmission.error && 
+                                    <div style={{ width: '113%' }} className='text-center mt-4 text-red-600 w-full'>
+                                        {formSubmission.status}
+                                    </div>
+                                }
                             </div>
                         </form>
                         {/* form end */}
-
+                        
                     </div>
                     <div className="grid pl-16 justify-items items-center ">
                         <div className="">

@@ -6,10 +6,17 @@ export const subscribeNewsletter = async (formData) => {
 
     try{
         const response = await axios.post('/api/form-submit/newsletter', { email });
-        return response.data;
+        return {
+            success: response.status===200 ? true : false,
+            message: response.status===200 ? 'Successfully subscribed!' : "Error in subscribing! Please try again later"
+        };
     }
     catch(error){
         console.error(`Error in subscribeNewsletter: ${error.message}`)
+        return {
+            success: false,
+            message: "Error in subscribing! Please try again later"
+        }
     }
 }
 
@@ -18,10 +25,17 @@ export const submitContactUsForm = async (formData) => {
 
     try{
         const response = await axios.post('/api/form-submit/contact-us', { name, email, mobile, service, message });
-        return response.data;
+        return {
+            success: response.status===200 ? true : false,
+            message: response.status===200 ? 'Details Sent Successfully!' : "Error in sending details! Please try again later"
+        };
     }
     catch(error){
         console.error(`Error in submitContactUsForm: ${error.message}`)
+        return {
+            success: false,
+            message: "Error in sending details! Please try again later"
+        }
     }
 }
 
@@ -32,12 +46,38 @@ export const submitRegistrationForm = async (formData) => {
         const response = await axios.post('/api/form-submit/registration', {
             fullname, email, mobile, technology, joiningDays, jobTitle, preferredLocation, fileLink, userType, companyName
         });
-
-        return response.data;
+        return {
+            success: response.status===200 ? true : false,
+            message: response.status===200 ? 'Registration successful!' : "Error! Please try again later"
+        };
     }
     catch(error){
         console.error(`Error in submitRegistrationForm: ${error.message}`)
+        return {
+            success: false,
+            message: "Error! Please try again later"
+        }
     }
+}
+
+export const submitEnquiryForm = async (formData) => {
+    const { name, email, mobile, message } = Object.fromEntries(formData);
+
+    try{
+        const response = await axios.post('/api/form-submit/enquiry', { name, email, mobile, message });
+        return {
+            success: response.status===200 ? true : false,
+            message: response.status===200 ? 'Enquiry submitted successfully' : "Error! Please try again later"
+        };
+    }
+    catch(error){
+        console.error(`Error in submitEnquiryForm: ${error.message}`)
+        return {
+            success: false,
+            message: "Error! Please try again later"
+        }
+    }
+
 }
 
 export const getFileLink = async (file) => {

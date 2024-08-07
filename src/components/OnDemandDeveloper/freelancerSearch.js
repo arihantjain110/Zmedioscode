@@ -23,12 +23,12 @@ const FreelancerSearch = () => {
                         onChange={(e) => setSearchQuery(e.target.value)}
                     /> */}
                     <select id="technology" className="px-6 py-1 border-2 rounded-lg bg-white focus:outline-none">
-                        <option selected>Technology</option>
+                        <option value="">Technology</option>
                         <option value="reactjs">React</option>
                         <option value="nodejs">NodeJs</option>
                     </select>
                     <select id="technology" className="px-6 py-1 border-2 rounded-lg bg-white focus:outline-none">
-                        <option selected>Role</option>
+                        <option value="">Role</option>
                         <option value="backend">Core backend programming</option>
                         <option value="frontend">Core frontend programming</option>
                     </select>
