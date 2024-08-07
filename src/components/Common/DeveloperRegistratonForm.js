@@ -3,23 +3,45 @@ import { usePathname } from 'next/navigation'
 import React, {useState, useCallback} from "react";
 import Image from "next/image";
 import {useDropzone} from 'react-dropzone'
+import { ImSpinner3 } from "react-icons/im";
 import { getFileLink, submitRegistrationForm, subscribeNewsletter } from "../../lib/actions";
+
 
 const DeveloperRegistrationSection = () => {
 
     const pathname = usePathname();
     const [file, setFile] = useState(null);
-    const [ndaCheck, setNdaCheck] = useState(true);
+    const [ndaCheck, setNdaCheck] = useState(false);
+    const [registrationFormSubmission, setRegistrationFormSubmission] = useState({
+        loading: false,
+        error: false,
+        status: 'Submit'
+    })
+    const [newsletterFormSubmission, setNewsletterFormSubmission] = useState({
+        loading: false,
+        error: false,
+        status: ''
+    })
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
-        phone: '',
+        mobile: '',
         companyName: '',
         technology: '',
         joiningDays: '',
         jobTitle: '',
         preferredLocation: '',
     });
+
+    const checkFields = () => {
+        if(!formData.fullname || !formData.email || !formData.mobile || !formData.technology || !formData.joiningDays || !formData.jobTitle || !formData.preferredLocation){
+            return false;
+        }
+        if(pathname.includes('/hire-developer') && !formData.companyName){
+            return false;
+        }
+        return true;
+    }
 
     const onDrop = useCallback(acceptedFiles => {
         if(acceptedFiles.length === 0) return;
@@ -56,9 +78,35 @@ const DeveloperRegistrationSection = () => {
 
     const handleRegistrationSubmit = async (e) => {
         e.preventDefault();
-        
-        const data = new FormData()
+        const isFormValid = checkFields();
 
+        if(!isFormValid){
+            setRegistrationFormSubmission((prevState) => ({
+                ...prevState,
+                error: true,
+                loading: false,
+                status: 'Please fill all the fields'
+            }))
+
+            setTimeout(()=>{
+                setRegistrationFormSubmission((prevState) => ({
+                    ...prevState,
+                    error: false,
+                    loading: false,
+                    status: 'Submit'
+                }))
+            },5000)
+
+            return;
+        }
+        
+        setRegistrationFormSubmission((prevState) => ({
+            ...prevState,
+            loading: true,
+            status: 'Submitting...'
+        }))
+        const data = new FormData()
+        
         if(file){
             const link = await getFileLink(file);
             data.append('fileLink', link);
@@ -67,26 +115,145 @@ const DeveloperRegistrationSection = () => {
             data.append('fileLink', '');
         }
 
-        data.append('ndaCheck', ndaCheck);
+        if(!file){
+            setRegistrationFormSubmission((prevState) => ({
+                ...prevState,
+                error: true,
+                loading: false,
+                status: 'Please upload a file'
+            }))
 
+            setTimeout(()=>{
+                setRegistrationFormSubmission((prevState) => ({
+                    ...prevState,
+                    error: false,
+                    loading: false,
+                    status: 'Submit'
+                }))
+            },5000)
+
+            return;
+        }
+        
+        data.append('ndaCheck', ndaCheck);
+        
         Object.keys(formData).forEach(key => {
             data.append(key, formData[key]);
         });
-
+        
         data.append('userType', pathname==="/hireme" ? "individual" : "company");
         data.append("companyName", pathname==="/hireme" ? "" : formData.companyName);
-
+        
+        
         
         const response = await submitRegistrationForm(data)
+
+        if(response.success){
+            setTimeout(() => {
+                setRegistrationFormSubmission((prevState) => ({
+                    ...prevState,
+                    loading: false,
+                    status: response.message
+                }));
+                setFormData({
+                    fullname: '',
+                    email: '',
+                    mobile: '',
+                    companyName: '',
+                    technology: '',
+                    joiningDays: '',
+                    jobTitle: '',
+                    preferredLocation: ''
+                });
+                setFile(null);
+            }, 4000)
+        }
+        else{
+            setTimeout(() => {
+                setRegistrationFormSubmission((prevState) => ({
+                    error: true,
+                    loading: false,
+                    status: response.message
+                }));
+                setFile(null);
+                setNdaCheck(false);
+                setFormData({
+                    fullname: '',
+                    email: '',
+                    mobile: '',
+                    companyName: '',
+                    technology: '',
+                    joiningDays: '',
+                    jobTitle: '',
+                    preferredLocation: ''
+                });
+            }, 4000)
+        }
+        setTimeout(() => {
+            setRegistrationFormSubmission((prevState) => ({
+                error: false,
+                loading: false,
+                status: 'Submit'
+            }));
+        }, 8000);
     };
 
     const handleNewsletterSubmit = async (e) => {
         e.preventDefault();
         const subscribedEmail = e.target.email.value;
+        if(!subscribedEmail){
+            setNewsletterFormSubmission({
+                error: true,
+                loading: false,
+                status: 'Please enter your email'
+            });
+
+            setTimeout(()=>{
+                setNewsletterFormSubmission((prevState) => ({
+                    ...prevState,
+                    error: false,
+                    status: ''
+                }))
+            },3000)
+
+            return;
+        }
+        setNewsletterFormSubmission((prevState) => ({
+            ...prevState,
+            loading: true,
+            status: 'Subscribing...'
+        }))
         const formData = new FormData();
         formData.append('email', subscribedEmail);
 
         const response = await subscribeNewsletter(formData);
+        if(response.success){
+            setTimeout(() => {
+                setNewsletterFormSubmission((prevState) => ({
+                    ...prevState,
+                    loading: false,
+                    status: response.message
+                }));
+                e.target.email.value = '';
+            }, 4000)
+        }
+        else{
+            setTimeout(() => {
+                setNewsletterFormSubmission({
+                    error: true,
+                    loading: false,
+                    status: response.message
+                });
+                e.target.email.value = '';
+            }, 4000)
+        }
+        setTimeout(() => {
+            setNewsletterFormSubmission({
+                loading: false,
+                error: false,
+                status: ''
+            });
+        }, [8000])
     }
 
     return (
@@ -111,7 +278,7 @@ const DeveloperRegistrationSection = () => {
                                         name="fullname"
                                         id="fullname"
                                         placeholder="Full Name"
-                                        value={formData.name}
+                                        value={formData.fullname}
                                         onChange={handleInputChange}
                                         className="w-full px-3 pb-3 border-b-2 focus:outline-none"
                                     />
@@ -130,15 +297,15 @@ const DeveloperRegistrationSection = () => {
                                 <div className="w-[548px] py-3">
                                     <input
                                         type="text"
-                                        name="phone"
-                                        id="phone"
+                                        name="mobile"
+                                        id="mobile"
                                         placeholder="Phone"
-                                        value={formData.phone}
+                                        value={formData.mobile}
                                         onChange={handleInputChange}
                                         className="w-full px-3 pb-3 border-b-2 focus:outline-none"
                                     />
                                 </div>
-                                {pathname==='/hire-developer' && <div className="w-[548px] py-3">
+                                {pathname.includes('/hire-developer') && <div className="w-[548px] py-3">
                                     <input
                                         type="text"
                                         name="companyName"
@@ -219,12 +386,18 @@ const DeveloperRegistrationSection = () => {
                                         </div>
                                     </label>
                                 </div>
-                                <button type="submit" className="bg-[#008F17]  text-white px-8 py-2 rounded-md w-[548px] flex justify-center items-center  ">
-                                    <span className="text-base"> SUBMIT </span>
+                                <button type="submit" className={`${(registrationFormSubmission.error && checkFields()) && "cursor-not-allowed"} bg-[#008F17] text-white px-8 py-2 rounded-md w-[548px] flex justify-center items-center`}>
+                                    <span className="text-base flex items-center space-x-4"> 
+                                        {registrationFormSubmission.loading ? <ImSpinner3 /> : <></>}
+                                        {registrationFormSubmission.error ? "Submit" : registrationFormSubmission.status} 
+                                    </span>
                                 </button>
-                                <div className="flex space-x-2 items-center w-[365px">
+                                <div className="flex space-x-2 items-center w-[365px]">
                                     <input checked={ndaCheck} onChange={()=>{setNdaCheck(!ndaCheck)}} id="nda-check" type="checkbox" value="" className="w-4 h-4 text-blue-500 bg-gray-100 border-gray-300 rounded" />
                                     <label htmlFor="nda-check" className="ms-2 text-sm font-normal text-[#383C3E] ">I want to protect my data by siging an NDA</label>
+                                </div>
+                                <div className={`text-center w-[548px] ${!registrationFormSubmission.error ? 'text-[#008F17]' : 'text-red-600'}`}>
+                                    {registrationFormSubmission.error && registrationFormSubmission.status}
                                 </div>
                             </div>
                         </form>
@@ -251,20 +424,23 @@ const DeveloperRegistrationSection = () => {
                             <h1 className="font-bold mb-5">Would you like to join our newsletter ?</h1>
                             <form 
                                 onSubmit={handleNewsletterSubmit}
-                                className="flex justify-between items-start">
-                                <div className="w-[262px] h-[76px]">
+                                className="flex justify-between items-start"
+                            >
+                                <div className="w-[262px] h-9">
                                     <input
                                         type="email"
                                         name="email"
                                         id="email"
                                         placeholder="Email"
-                                        className="w-full px-3 pb-3 border-b-2 focus:outline-none"
+                                        className="w-full px-3 pb-2 border-b-2 focus:outline-none"
                                     />
                                 </div>
                                 <button className="bg-[#008F17] text-white w-[71px] h-8  flex justify-center items-center  ">
-                                    &#10004;
+                                    { !newsletterFormSubmission.loading ? <>&#10004;</> : <ImSpinner3 /> }
                                 </button>
+
                             </form>
+                            <div className={`text-center mt-4 ${ !newsletterFormSubmission.error ? 'text-[#008F17]' : 'text-red-600'}`}>{newsletterFormSubmission.status}</div>
                         </div>
                     </div>
                 </div>
