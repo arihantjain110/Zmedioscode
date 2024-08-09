@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
+import Image from "next/image";
+
 const SingleBlog = () => {
   return (
     <div className='container-ack  pt-5 md:pt-16 md:px-0 px-5 md:pb-0 pb-10'>

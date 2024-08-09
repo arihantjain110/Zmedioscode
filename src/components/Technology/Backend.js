@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BiMessageAltDetail } from "react-icons/bi";
+import Image from "next/image";
 import ComponentHead from "../Common/ComponentHead";
 
 const Backend = () => {
@@ -85,7 +86,7 @@ const Backend = () => {
             <>
               <div className={`${item.cols} group `} key={index}>
                 {index===4?<div>
-                  <img src={item.src} className=" " />
+                  <img alt="" src={item.src} className=" " />
                 </div>:
                 <div className="relative text-center py-6 border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-sm hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[17rem]">
                   <div className="flex justify-center items-center ">

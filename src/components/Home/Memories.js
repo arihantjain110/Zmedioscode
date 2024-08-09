@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
+import Image from "next/image";
 import ComponentHead from "../Common/ComponentHead";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 

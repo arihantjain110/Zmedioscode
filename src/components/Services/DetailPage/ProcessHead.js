@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const ProccessHead = ({processhead, processsub, processdesc, processimg}) => {

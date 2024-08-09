@@ -1,26 +1,47 @@
 import Link from "next/link";
 import React from "react";
-import { FiMessageSquare } from "react-icons/fi";
 import { IoMdCall, IoMdMail } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingButtons = () => {
   return (
-    <div className=" fixed flex items-center justify-between py-5 top-60 right-0 z-50">
+    <div className="fixed flex items-center justify-between py-5 top-60 right-0 z-10">
       <div className="bg-[#F1F1F1] p-3 rounded-l-md shadow-inner">
-        <Link href="mailto:info@zmediostech.com">
-          <IoMdMail size={24} className="text-black hover:text-primary" />
-        </Link>
-        <hr className="mt-3 " />
-        <Link href="tel:+91-9319062156">
-          <IoMdCall size={24} className="text-black hover:text-primary mt-3" />
-        </Link>
-        <hr className="mt-3 " />
-        <Link href="https://wa.me/91-9319062156 ">
-          <FiMessageSquare
-            size={24}
-            className="text-black hover:text-primary mt-3"
-          />
-        </Link>
+        <div className="relative group">
+          <Link href="mailto:info@zmediostech.com" target="_blank">
+            <IoMdMail
+              size={24}
+              className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+            />
+            <span className="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
+              Mail
+            </span>
+          </Link>
+        </div>
+        <hr className="mt-3" />
+        <div className="relative group mt-3">
+          <Link href="tel:+91-9319062156" target="_blank">
+            <IoMdCall
+              size={24}
+              className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+            />
+            <span className="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
+              Phone
+            </span>
+          </Link>
+        </div>
+        <hr className="mt-3" />
+        <div className="relative group mt-3">
+          <Link href="https://wa.me/91-9319062156" target="_blank">
+            <FaWhatsapp
+              size={24}
+              className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+            />
+            <span className="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
+              Whatsapp
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -28,17 +29,17 @@ const Banner = () => {
           </div>
           <div className="col-span-2"></div>
           <div className="rounded-lg row-span-2">
-            <img src="/assets/images/memories/img4.png" />
+            <img src="/assets/images/memories/img4.png" alt="" />
           </div>
           <div className="rounded-lg">
-            <img src="/assets/images/memories/img3.png" />
+            <img src="/assets/images/memories/img3.png" alt="" />
           </div>
           <div className="rounded-lg"></div>
           <div className="rounded-lg">
             {/* <img src="/assets/images/memories/img4.png" /> */}
           </div>
           <div className="rounded-lg">
-            <img src="/assets/images/memories/img5.png" />
+            <img src="/assets/images/memories/img5.png" alt="" />
           </div>
         </div>
         {/* images section end */}
