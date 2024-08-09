@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { ImSpinner3 } from 'react-icons/im';
 import { submitEnquiryForm } from '../../lib/actions';
 
 const EnquiryFormModal = () => {
@@ -10,7 +11,18 @@ const EnquiryFormModal = () => {
         mobile: '',
         message: '',
     });
-    const [formSubmissionStatus, setFormSubmissionStatus] = useState('Submit')
+    const [formSubmission, setFormSubmission] = useState({
+        loading: false,
+        error: false,
+        status: "Submit"
+    })
+
+    const checkFields = () => {
+        if(!formData.name || !formData.email || !formData.mobile || !formData.message ){
+            return false;
+        }
+        return true;
+    }
 
     useEffect(() => {
       // Check if the form has been shown before
@@ -36,34 +48,70 @@ const EnquiryFormModal = () => {
         
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormSubmissionStatus('Submitting...');
+
+        const isFormValid = checkFields();
+        if(!isFormValid){
+            setFormSubmission((prevState) => ({
+                ...prevState,
+                error: true,
+                status: 'All fields are required',
+            }))
+            setTimeout(()=>{
+                setFormSubmission((prevState)=>({
+                    ...prevState, 
+                    error: false, 
+                    status: 'Submit'
+                }));
+            },4000)
+            return;
+        }
+
         const data = new FormData();
 
         Object.keys(formData).forEach(key => {
             data.append(key, formData[key]);
         });
 
+        setFormSubmission((prevState)=>({
+            ...prevState,
+            loading: true,
+            status: 'Submitting...'
+        }))
         const response = await submitEnquiryForm(data);  
 
         if(response.success){
             setTimeout(() => {
-                setFormSubmissionStatus(response.message);
+                setFormSubmission((prevState)=>({
+                    ...prevState,
+                    loading: false,
+                    status: response.message,
+                }));
                 setFormData({
                     name: '',
                     email: '',
                     mobile: '',
                     message: '',
                 });
-            }, 3000)
+            }, 2000)
 
             setTimeout(() => {
-                setFormSubmissionStatus('Submit');
+                setFormSubmission((prevState)=>({
+                    ...prevState,
+                    status: 'Submit',
+                }));
+            }, 4000);
+
+            setTimeout(() => {
                 handleCloseForm();
-            }, 5000);
+            }, 7000)
         }
         else{
             setTimeout(() => {
-                setFormSubmissionStatus(response.message);
+                setFormSubmission((prevState)=>({
+                    error: true,
+                    loading: false,
+                    status: response.message,
+                }));
                 setFormData({
                     name: '',
                     email: '',
@@ -72,8 +120,12 @@ const EnquiryFormModal = () => {
                 });
             }, 3000)
             setTimeout(() => {
-                setFormSubmissionStatus('Submit');
-            }, 5000);
+                setFormSubmission((prevState)=>({
+                    ...prevState,
+                    error: false,
+                    status: 'Submit',
+                }));
+            }, 6000);
         }
     }
 
@@ -151,8 +203,16 @@ const EnquiryFormModal = () => {
                     </div>
                     <button type="submit" className="w-full button-3 bg-secondary hover:bg-primary flex justify-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         <div className="eff-3"></div>
-                        <span className='text-base flex items-center '>{formSubmissionStatus}</span>
+                        <span className='text-base flex items-center '>
+                            {formSubmission.loading && <ImSpinner3 />}
+                            {formSubmission.error ? "Submit" : formSubmission.status}
+                        </span>
                     </button>
+                    {formSubmission.error && 
+                        <div className='text-center mt-4 text-red-600 w-full'>
+                            {formSubmission.status}
+                        </div>
+                    }
                 </form>
             </div>
         </div>

@@ -67,7 +67,7 @@ export const submitEnquiryForm = async (formData) => {
         const response = await axios.post('/api/form-submit/enquiry', { name, email, mobile, message });
         return {
             success: response.status===200 ? true : false,
-            message: response.status===200 ? 'Enquiry submitted successfully' : "Error! Please try again later"
+            message: response.status===200 ? 'Enquiry submitted successfully!!' : "Error! Please try again later"
         };
     }
     catch(error){
