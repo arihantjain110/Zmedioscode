@@ -22,13 +22,13 @@ const HeaderLogo = () => {
             <div className="flex justify-between items-center space-x-6 col-span-4">
                 <Link href="/hireme">
                     <div className="flex justify-end items-center px-2 py-2 rounded-md bg-orange-500 text-white">
-                        <FiArrowUpRight size={20} />
+                        {/* <FiArrowUpRight size={20} /> */}
                         <h2>Hire Me</h2>
                     </div>    
                 </Link>
                 <Link href="/hire-developer">
                     <div className="flex justify-end items-center px-2 py-2 rounded-md bg-orange-500 text-white">
-                        <FiArrowUpRight size={20} />
+                        {/* <FiArrowUpRight size={20} /> */}
                         <h2>On Demand Developer</h2>
                     </div>    
                 </Link>
