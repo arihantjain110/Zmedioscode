@@ -325,8 +325,12 @@ const DeveloperRegistrationSection = () => {
                                         className="w-full px-2 pb-3 border-b-2 focus:outline-none"
                                     >
                                         <option value="">Technology</option>
-                                        <option value="reactjs">React</option>
+                                        <option value="Java">Java</option>
                                         <option value="vuejs">VueJS</option>
+                                        <option value="reactjs">React</option>
+                                        <option value="iOS">iOS</option>
+                                        <option value="Android">Android</option>
+                                        <option value="Python">Python</option>
                                     </select>
                                 </div>
                                 <div className="w-[548px] py-3">
@@ -360,10 +364,15 @@ const DeveloperRegistrationSection = () => {
                                         className="w-full px-2 pb-3 border-b-2 focus:outline-none"
                                     >
                                         <option value="">Preferred Location</option>
-                                        <option value="US">United States</option>
-                                        <option value="CA">Canada</option>
-                                        <option value="FR">France</option>
-                                        <option value="DE">Germany</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="NCR">NCR</option>
+                                        <option value="Noida">Noida</option>
+                                        <option value="Gurugram">Gurugram</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                        <option value="Nagpur">Nagpur</option>
+                                        <option value="Jaipur">Jaipur</option>
                                     </select>
                                 </div>
                                 <div {...getRootProps()}>
