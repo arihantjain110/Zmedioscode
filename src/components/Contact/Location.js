@@ -3,6 +3,7 @@ import React from "react"
 import { BiPhoneCall } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import Image from "next/image";
 
 const Location = () => {
   return (

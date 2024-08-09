@@ -1,0 +1,22 @@
+import Footer from "../components/OnDemandDeveloper/footer";
+import Header from "../components/Common/Header";
+import DeveloperRegistrationSection from "../components/Common/DeveloperRegistratonForm";
+import FreelancerSearch from "../components/OnDemandDeveloper/freelancerSearch";
+import Head from "next/head";
+import React from "react";
+
+const HireDeveloper = () => {
+    return (
+        <>
+            <Head>
+                <title>Hire Developer</title>
+            </Head>
+            <Header />
+            {/* <DeveloperRegistrationSection /> */}
+            <FreelancerSearch />
+            <Footer />
+        </>
+    );
+};
+
+export default HireDeveloper;

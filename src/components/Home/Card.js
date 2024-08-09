@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Card = () => {

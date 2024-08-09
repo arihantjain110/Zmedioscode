@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DetailPage = () => {
   const employment = [
@@ -86,7 +87,7 @@ const DetailPage = () => {
           <div className="flex flex-col items-center justify-left">
             <img
               src="/assets/images/advisor/advisorone.png"
-              alt=" "
+              alt=""
               className=" w-[200px] rounded-lg md:absolute -top-10  right-[2rem]"
             />
             <div className=" pt-8 md:px-12 px-5">

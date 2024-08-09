@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ComponentHead from "../Common/ComponentHead";
+import Image from "next/image";
 
 const Advisors = () => {
   const advisor = [

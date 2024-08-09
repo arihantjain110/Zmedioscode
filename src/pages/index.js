@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import Footer from "../components/Common/Footer";
 import Banner from "../components/Home/Banner";
@@ -15,29 +15,32 @@ import Card from "../components/Home/Card";
 import OurServices from "../components/Home/OurServices";
 import Portfolio from "../components/Home/Portfolio";
 import OurGroups from "../components/Home/OurGroups";
+import EnquiryModal from "../components/Home/EnquiryModal";
 const index = () => {
-  return (
-    <>
-      <Head>
-        <title>Zmedios Technology Private Limited.</title>
-      </Head>
-      <Header />
-      <Banner />
-      <About />
-      <OurServices />
-      <OurGroups />
-      {/* <Advisors /> */}
-      <Memories />
-      <Card />
-      <Portfolio />
-      {/* <Leaders /> */}
-      {/* <Videos /> */}
-      <Clients />
-      <Blogs />
-      <Testimonial />
-      <Footer />
-    </>
-  );
+
+    return (
+        <>
+            <Head>
+                <title>Zmedios Technology Private Limited.</title>
+            </Head>
+            <Header />
+            <EnquiryModal />
+            <Banner />
+            <About />
+            <OurServices />
+            <OurGroups />
+            {/* <Advisors /> */}
+            <Memories />
+            <Card />
+            <Portfolio />
+            {/* <Leaders /> */}
+            {/* <Videos /> */}
+            <Clients />
+            <Blogs />
+            <Testimonial />
+            <Footer />
+        </>
+    );
 };
 
 export default index;
