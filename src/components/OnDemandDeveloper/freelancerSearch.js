@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import { freelancerData } from '../../lib/data';
 import FreelancerCard from './freelancerCard';
