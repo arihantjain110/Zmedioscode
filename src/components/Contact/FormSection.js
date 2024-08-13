@@ -44,7 +44,7 @@ const FormSection = () => {
             setFormSubmission((prevState)=>({...prevState, error: true, status: 'Please fill all the fields'}));
             setTimeout(()=>{
                 setFormSubmission((prevState)=>({...prevState, error: false, status: 'SEND'}));
-            },4000)
+            },3000)
             return;
         }
         const data = new FormData();
@@ -66,7 +66,7 @@ const FormSection = () => {
                     service: '',
                     message: '',
                 });
-            },4000)
+            },1000)
         }
         else{
             setTimeout(()=>{
@@ -90,7 +90,7 @@ const FormSection = () => {
                 loading:false,
                 status: 'SEND'
             })
-        },8000)
+        },5000)
     }
 
     return (
