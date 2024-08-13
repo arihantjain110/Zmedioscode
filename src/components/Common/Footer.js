@@ -27,7 +27,7 @@ const Footer = () => {
               <p className="text-sm text-justify">
                 Zmedios Supports Startup & Enterprises in Developing World-Class Products. We help organizations capitalize on cutting-edge technologies and employ robust frameworks and efficient workflows to create a robust and scalable product.
               </p>
-              <div className="flex space-x-5">
+              {/* <div className="flex space-x-5">
                 <Link href="">
                   <svg
                     className="svgimg"
@@ -66,7 +66,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="md:col-span-5 p-2">
               <h2 className="text-xl font-semibold text-black">EXPLORE</h2>
