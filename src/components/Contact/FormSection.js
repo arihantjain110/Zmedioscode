@@ -54,7 +54,14 @@ const FormSection = () => {
         });
         
         setFormSubmission((prevState)=>({...prevState, loading: true, status: 'Sending...'}));
-        const response = await submitContactUsForm(data);
+        
+        
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Details Sent Successfully!'
+        }
+        // const response = await submitContactUsForm(data);
         
         if(response.success){
             setTimeout(()=>{

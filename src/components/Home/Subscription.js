@@ -41,7 +41,13 @@ const Subscription = () => {
             status: 'Subscribing...'
         });
 
-        const response = await subscribeNewsletter(formData);
+
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Successfully subscribed!'
+        }
+        // const response = await subscribeNewsletter(formData);
 
         if(response.success){
             setTimeout(()=>{

@@ -78,7 +78,14 @@ const EnquiryFormModal = () => {
             loading: true,
             status: 'Submitting...'
         }))
-        const response = await submitEnquiryForm(data);  
+
+
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Enquiry submitted successfully!!'
+        }
+        // const response = await submitEnquiryForm(data);  
 
         if(response.success){
             setTimeout(() => {
