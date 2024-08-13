@@ -1,4 +1,4 @@
-const { connectToDB } = require('./src/lib/dbConnect')
+// const { connectToDB } = require('./src/lib/dbConnect')
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
@@ -12,7 +12,8 @@ const handle = app.getRequestHandler()
  
 app.prepare().then(async () => {
 
-    await connectToDB(); // Connect to MongoDB before starting the server
+    // Temporarily not connecting to MongoDB until the server issue is resolved
+    // await connectToDB(); // Connect to MongoDB before starting the server
 
     createServer(async (req, res) => {
         try {
