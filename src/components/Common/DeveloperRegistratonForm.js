@@ -95,7 +95,7 @@ const DeveloperRegistrationSection = () => {
                     loading: false,
                     status: 'Submit'
                 }))
-            },5000)
+            },4000)
 
             return;
         }
@@ -130,7 +130,7 @@ const DeveloperRegistrationSection = () => {
                     loading: false,
                     status: 'Submit'
                 }))
-            },5000)
+            },4000)
 
             return;
         }
@@ -166,7 +166,7 @@ const DeveloperRegistrationSection = () => {
                     preferredLocation: ''
                 });
                 setFile(null);
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -195,7 +195,7 @@ const DeveloperRegistrationSection = () => {
                 loading: false,
                 status: 'Submit'
             }));
-        }, 8000);
+        }, 5000);
     };
 
     const handleNewsletterSubmit = async (e) => {
@@ -235,7 +235,7 @@ const DeveloperRegistrationSection = () => {
                     status: response.message
                 }));
                 e.target.email.value = '';
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -253,7 +253,7 @@ const DeveloperRegistrationSection = () => {
                 error: false,
                 status: ''
             });
-        }, [8000])
+        }, [5000])
     }
 
     return (

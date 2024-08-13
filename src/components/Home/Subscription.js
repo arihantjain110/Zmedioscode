@@ -51,7 +51,7 @@ const Subscription = () => {
                     status: 'Subscribed!!'
                 }));
                 e.target.email.value = '';
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -69,7 +69,7 @@ const Subscription = () => {
                 error: false,
                 status: 'Subscribe'
             });
-        }, [8000])
+        }, [5000])
     }
 
     return (
