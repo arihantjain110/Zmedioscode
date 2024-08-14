@@ -24,7 +24,7 @@ const index = () => {
                 <title>Zmedios Technology Private Limited.</title>
             </Head>
             <Header />
-            <EnquiryModal />
+            {/* <EnquiryModal /> */}
             <Banner />
             <About />
             <OurServices />

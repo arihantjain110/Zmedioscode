@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 const Band = () => {
@@ -13,12 +14,14 @@ const Band = () => {
         Accelerate your website creation process like never before with our revolutionary solution. Say goodbye to long development cycles and hello to a lightning-fast journey from idea to live site. Our cutting-edge platform combines simplicity and power, allowing you to effortlessly bring your vision to life in record time.
         </p>
         <div className="pt-4 flex justify-center items-center">
-        <button className="button-2 px-12 py-2 rounded-md">
-            <div className="eff-2"></div>
-            <span className="text-base flex items-center ">
-              Connect Now
-            </span>
-          </button>
+            <Link href='/contact'>
+                <button className="button-2 px-12 py-2 rounded-md">
+                    <div className="eff-2"></div>
+                    <span className="text-base flex items-center ">
+                    Connect Now
+                    </span>
+                </button>
+            </Link>
         </div>
       </div>
       <div>

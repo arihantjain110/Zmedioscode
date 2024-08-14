@@ -26,7 +26,7 @@ const industryDetailsPage = () => {
         <ComponentHead
           title="Sample"
           sub="Work Sample"
-          head="Lorem ipsum dolor sit amet consectetur. Leo tellus in maecenas tincidunt urna vulputate. Elit amet nam nulla "
+          head="Explore some of our most impactful projects, where innovation meets excellence. From cutting-edge technology to groundbreaking research, our work speaks for itself."
         />
 
         <CardSlider />
@@ -34,7 +34,7 @@ const industryDetailsPage = () => {
         <ComponentHead
           title="Advisors"
           sub="Our Advisors"
-          head="Lorem ipsum dolor sit amet consectetur. Leo tellus in maecenas tincidunt urna vulputate. Elit amet nam nulla "
+          head="Meet our team of world-renowned experts who bring decades of experience in medicine, research, and innovation. Their guidance helps us shape the future of healthcare and science."
         />
         <Advisors />
         <Footer />

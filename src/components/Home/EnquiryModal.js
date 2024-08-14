@@ -141,8 +141,8 @@ const EnquiryFormModal = () => {
     if (!isOpen) return null;
 
     return (
-        <div className="absolute right-16 w-[32%] h-[61%]   z-20 flex items-center ">
-            <div className="bg-zinc-100/80 p-6 rounded-lg shadow-lg w-full space-y-4">
+        <div className="hidden md:flex absolute right-16 w-full h-full z-20 items-center ">
+            <div className="bg-zinc-100/80 px-6 pt-6 pb-8 rounded-lg shadow-lg w-full space-y-0">
                 <div className='flex justify-between items-center '>
                     <h2 className="text-2xl">Enquiry Form</h2>
                     <button
@@ -167,8 +167,8 @@ const EnquiryFormModal = () => {
                             className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-50 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         />
                     </div>
-                    <div className='flex gap-4'>
-                        <div className="mb-4">
+                    <div className='flex gap-4 w-full'>
+                        <div className="mb-4 w-1/2">
                             <label className="block text-gray-900 text-sm font-bold mb-2" htmlFor="email">
                                 Email
                             </label>
@@ -181,7 +181,7 @@ const EnquiryFormModal = () => {
                                 className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-50 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
                         </div>
-                        <div className="mb-4">
+                        <div className="mb-4 w-1/2">
                             <label className="block text-gray-900 text-sm font-bold mb-2" htmlFor="mobile">
                                 Mobile
                             </label>

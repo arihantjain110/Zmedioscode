@@ -55,14 +55,14 @@ const Banner = () => {
                   sagittis leo duis enim mi massa etiam.
                 </div> */}
 
-                <div className="pt-4">
+                {/* <div className="pt-4">
                   <Link href="industryDetailsPage">
                     <button className="bg-secondary hover:bg-primary text-white px-8 py-2 rounded-md flex items-center">
                       <span className="text-base"> Know More </span>
                       <MdKeyboardArrowRight className=" text-base text-white hover:text-" />
                     </button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
