@@ -4,50 +4,90 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 const Advisors = () => {
-  const advisor = [
+//   const advisor = [
+//     {
+//       id: 1,
+
+//       image: "/assets/images/advisor/advisorone.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       id: 2,
+
+//       image: "/assets/images/advisor/advisortwo.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       id: 3,
+
+//       image: "/assets/images/advisor/advisorthree.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       id: 4,
+
+//       image: "/assets/images/advisor/advisortwo.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       id: 5,
+
+//       image: "/assets/images/advisor/advisorthree.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       id: 6,
+
+//       image: "/assets/images/advisor/advisorone.png",
+//       name: "Layan  Alrahmain, M.D.",
+//       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//   ];
+
+const advisor = [
     {
       id: 1,
-
-      image: "/assets/images/advisorone.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/advisorthree.png",
+      name: "Dr. Anthony Fauci",
+      desc: "Dr. Anthony Fauci is an American immunologist who has served as the director of the National Institute of Allergy and Infectious Diseases (NIAID) since 1984. He has made significant contributions to HIV/AIDS research and other infectious diseases.",
     },
     {
       id: 2,
-
-      image: "/assets/images/advisortwo.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/advisortwo.png",
+      name: "Dr. Jane Goodall",
+      desc: "Dr. Jane Goodall is a British primatologist and anthropologist, best known for her long-term study of wild chimpanzees in Tanzania. She is also a leading conservationist and advocate for environmental issues.",
     },
     {
       id: 3,
-
-      image: "/assets/images/advisorthree.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/mahesh.png",
+      name: "Dr. Atul Gawande",
+      desc: "Dr. Atul Gawande is an Indian American surgeon, writer, and public health researcher. He is known for his work on healthcare, particularly in improving surgical safety and the quality of healthcare systems globally.",
     },
     {
       id: 4,
-
-      image: "/assets/images/advisortwo.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/ashwani.png",
+      name: "Dr. Robert Langer",
+      desc: "Dr. Robert Langer is an Indian American engineer, scientist, and entrepreneur. He is one of the pioneers of biomedical engineering and has significantly contributed to the development of drug delivery systems and tissue engineering.",
     },
     {
       id: 5,
-
-      image: "/assets/images/advisorthree.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/advisorone.png",
+      name: "Dr. Kizzmekia Corbett",
+      desc: "Dr. Kizzmekia Corbett is an American immunologist and viral immunologist. She was a key scientist behind the development of the Moderna COVID-19 vaccine, contributing to the rapid advancement of vaccine technology.",
     },
     {
       id: 6,
-
-      image: "/assets/images/advisorone.png",
-      name: "Layan  Alrahmain, M.D.",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting Industry. Lorem Ipsum has been the Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "/assets/images/advisor/aditi.png",
+      name: "Dr. Elizabeth Blackburn",
+      desc: "Dr. Elizabeth Blackburn is an Australian-American molecular biologist who won the Nobel Prize in Physiology or Medicine in 2009 for her work on telomeres and the enzyme telomerase, which play a role in aging and cancer.",
     },
   ];
+
   const settings = {
     className: "center",
     slidesToShow: 3,

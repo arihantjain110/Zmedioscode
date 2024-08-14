@@ -28,11 +28,11 @@ const Blogs = () => {
               However, managing interactions between these services can become complex, especially when dealing with multiple front-end applications.
             </div>
             <div className="pb-5 flex justify-between">
-              <Link href="/blogDetailPage">
+              {/* <Link href="/blogDetailPage">
                 <button className="text-black  py-2 text-sm  border-primary border-b-2">
                   Read More
                 </button>
-              </Link>
+              </Link> */}
               {/* <div className="flex space-x-4">
                 <svg
                   width="18"
