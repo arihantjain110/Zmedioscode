@@ -11,7 +11,8 @@ const FloatingSocialIcons = () => {
                     <Link href="https://www.instagram.com/zmedios_technology_pvt_ltd_/?hl=en" target="_blank">
                         <FaFacebook
                             size={24}
-                            className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+                            color="blue"
+                            className="transition-transform transform group-hover:scale-150"
                         />
                         <span className="absolute left-8 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
                             Facebook
@@ -23,7 +24,8 @@ const FloatingSocialIcons = () => {
                     <Link href="https://www.instagram.com/zmedios_technology_pvt_ltd_/?hl=en" target="_blank">
                         <FaInstagram
                             size={24}
-                            className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+                            color="red"
+                            className="transition-transform transform group-hover:scale-150"
                         />
                         <span className="absolute left-8 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
                             Instagram
@@ -35,7 +37,8 @@ const FloatingSocialIcons = () => {
                     <Link href="https://www.linkedin.com/company/zmedios-technology-pvt-ltd/" target="_blank">
                         <CiLinkedin
                             size={24}
-                            className="text-black hover:text-primary transition-transform transform group-hover:scale-150"
+                            color="#004182"
+                            className="transition-transform transform group-hover:scale-150"
                         />
                         <span className="absolute left-8 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black p-1 rounded shadow-lg">
                             LinkedIn

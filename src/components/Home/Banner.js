@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -5,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
 // import { HiLightBulb } from "react-icons/hi";
 import Link from "next/link";
+import EnquiryModal from "./EnquiryModal";
 import Image from "next/image";
 const Banner = () => {
   const settings = {
@@ -207,6 +209,9 @@ const Banner = () => {
                 </div>
               </li>
             </ul>
+          </div>
+          <div className="md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-28 top-6 md:right-[3.6rem] right-7 rounded-lg  mt-2  px-5 ">
+            <EnquiryModal />
           </div>
         </div>
       </div>

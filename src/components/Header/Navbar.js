@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Disclosure } from "@headlessui/react";
@@ -154,7 +155,7 @@ const Navbar = () => {
                   </Link>
                  
                   <Link
-                    href="/services/ecommerce-developement-company"
+                    href="/services/ecommerce-development-company"
                     className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                   >
                    Ecommerce Development

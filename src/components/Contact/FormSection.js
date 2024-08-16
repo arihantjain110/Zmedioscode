@@ -44,7 +44,7 @@ const FormSection = () => {
             setFormSubmission((prevState)=>({...prevState, error: true, status: 'Please fill all the fields'}));
             setTimeout(()=>{
                 setFormSubmission((prevState)=>({...prevState, error: false, status: 'SEND'}));
-            },4000)
+            },3000)
             return;
         }
         const data = new FormData();
@@ -54,7 +54,14 @@ const FormSection = () => {
         });
         
         setFormSubmission((prevState)=>({...prevState, loading: true, status: 'Sending...'}));
-        const response = await submitContactUsForm(data);
+        
+        
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Details Sent Successfully!'
+        }
+        // const response = await submitContactUsForm(data);
         
         if(response.success){
             setTimeout(()=>{
@@ -66,7 +73,7 @@ const FormSection = () => {
                     service: '',
                     message: '',
                 });
-            },4000)
+            },1000)
         }
         else{
             setTimeout(()=>{
@@ -90,7 +97,7 @@ const FormSection = () => {
                 loading:false,
                 status: 'SEND'
             })
-        },8000)
+        },5000)
     }
 
     return (

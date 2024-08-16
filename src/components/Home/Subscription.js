@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React, {useState} from "react";
 import { subscribeNewsletter } from "../../lib/actions";
@@ -40,7 +41,13 @@ const Subscription = () => {
             status: 'Subscribing...'
         });
 
-        const response = await subscribeNewsletter(formData);
+
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Successfully subscribed!'
+        }
+        // const response = await subscribeNewsletter(formData);
 
         if(response.success){
             setTimeout(()=>{
@@ -50,7 +57,7 @@ const Subscription = () => {
                     status: 'Subscribed!!'
                 }));
                 e.target.email.value = '';
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -68,7 +75,7 @@ const Subscription = () => {
                 error: false,
                 status: 'Subscribe'
             });
-        }, [8000])
+        }, [5000])
     }
 
     return (

@@ -105,9 +105,9 @@ const Backend = () => {
                     {/* if link will be used only in one in maping */}
                     <Link href={item.link ? item?.link : ""}>
                       {/* <Link href={item.link}> */}
-                      <button className="text-black py-2 text-sm border-b group-hover:border-primary group-hover:border-b-2">
+                      {/* <button className="text-black py-2 text-sm border-b group-hover:border-primary group-hover:border-b-2">
                         Know More
-                      </button>
+                      </button> */}
                     </Link>
                   </div>
                 </div>}

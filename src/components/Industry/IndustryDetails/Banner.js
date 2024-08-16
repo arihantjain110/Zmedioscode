@@ -27,19 +27,18 @@ const Banner = () => {
             <div className=" md:px-0 px-2 pb-10 md:pb-0  relative">
               <div className="">
                 <div className="text-3xl   font-semibold ">
-                  Lorem Ipsum dolor sit amet Eget at auctor purus
+                Welcome to Our World of Innovation and Excellence
                 </div>
                 <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  pb-4 md:pt-8 pt-4">
-                  Lorem ipsum dolor sit amet consectetur. Sapien porttitor non
-                  ultrices id enim lectus sagittis viverra interdum. Nisi
-                  lobortis tincidunt convallis viverra. Scelerisque sed orci
-                  amet proin cras quam pellentesque. Sollicitudin sed velit nunc
-                  nunc morbi sed aliquam.
+                  We are committed to pushing the boundaries of science and technology, 
+                  bringing together some of the brightest minds in the industry. Our advisors, 
+                  who are experts in their fields, help guide us towards groundbreaking discoveries 
+                  and advancements that shape the future of healthcare and research.
                 </div>
                 <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  py-4">
-                  Lorem ipsum dolor sit amet consectetur. Fermentum tortor et
-                  arcu pellentesque tempor cursus cursus amet odio. Orci eu
-                  sagittis leo duis enim mi massa etiam.
+                  With decades of experience and a passion for innovation, our team is dedicated 
+                  to improving lives through cutting-edge solutions and a deep understanding of 
+                  the challenges facing the world today.
                 </div>
 
               

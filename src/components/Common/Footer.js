@@ -27,7 +27,7 @@ const Footer = () => {
               <p className="text-sm text-justify">
                 Zmedios Supports Startup & Enterprises in Developing World-Class Products. We help organizations capitalize on cutting-edge technologies and employ robust frameworks and efficient workflows to create a robust and scalable product.
               </p>
-              <div className="flex space-x-5">
+              {/* <div className="flex space-x-5">
                 <Link href="">
                   <svg
                     className="svgimg"
@@ -66,7 +66,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="md:col-span-5 p-2">
               <h2 className="text-xl font-semibold text-black">EXPLORE</h2>
@@ -134,13 +134,35 @@ const Footer = () => {
               <div className="flex space-x-10 py-4">
                 <ul className="">
                   <li className="flex space-x-2 items-center pt-4 group cursor-pointer">
-                    <GoLocation
+                    {/* <GoLocation
                       size={24}
                       className="text-black group-hover:text-primary mt-3"
-                    />
-
+                    /> */}
+                    <div className="inline-flex items-center  ">
+                        <img
+                            src="/assets/images/india.png"
+                            alt=""
+                            className="  rounded-lg w-6 h-6 mx-auto "
+                        />
+                    </div>
                     <h2 className="text-sm md:w-[90%]">
                       JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram, Haryana 122018
+                    </h2>
+                  </li>
+                  <li className="flex space-x-2 items-center pt-4 group cursor-pointer">
+                    {/* <GoLocation
+                      size={24}
+                      className="text-black group-hover:text-primary mt-3"
+                    /> */}
+                    <div className="inline-flex items-center border-2  ">
+                        <img
+                            src="/assets/images/SingaporeFlag.jpg"
+                            alt=""
+                            className="w-6 h-6 mx-auto "
+                        />
+                    </div>
+                    <h2 className="text-sm md:w-[90%]">
+                        location160 Robinson Rd, #14-08 SBF Center, Singapore 068914
                     </h2>
                   </li>
                   <Link href="tel:+91-9319062156">
