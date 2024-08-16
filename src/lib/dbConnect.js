@@ -1,5 +1,6 @@
-"use server"
-import mongoose from "mongoose";
+// "use server"
+// import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const connection = {};
 const maxRetries = 5;
@@ -18,6 +19,7 @@ const connectWithRetry = async (retries) => {
         
         const db = await mongoose.connect(MONGODB_URI);
         connection.isConnected = db.connections[0].readyState;
+        console.log("Connected to database successfully.");
         // const db = await mongoose.connect(process.env.MONGODB_URI || '');
         // connection.isConnected = db.connections[0].readyState;
     } catch (error) {
@@ -34,6 +36,12 @@ const connectWithRetry = async (retries) => {
     }
 };
 
-export const connectToDB = async () => {
-    await connectWithRetry(maxRetries);
+// export const connectToDB = async () => {
+//     await connectWithRetry(maxRetries);
+// };
+
+module.exports = {
+    connectToDB: async () => {
+        await connectWithRetry(maxRetries);
+    }
 };

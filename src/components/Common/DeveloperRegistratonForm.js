@@ -95,7 +95,7 @@ const DeveloperRegistrationSection = () => {
                     loading: false,
                     status: 'Submit'
                 }))
-            },5000)
+            },4000)
 
             return;
         }
@@ -130,7 +130,7 @@ const DeveloperRegistrationSection = () => {
                     loading: false,
                     status: 'Submit'
                 }))
-            },5000)
+            },2000)
 
             return;
         }
@@ -146,7 +146,13 @@ const DeveloperRegistrationSection = () => {
         
         
         
-        const response = await submitRegistrationForm(data)
+        // const response = await submitRegistrationForm(data)
+
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Registration successful!'
+        }
 
         if(response.success){
             setTimeout(() => {
@@ -166,7 +172,7 @@ const DeveloperRegistrationSection = () => {
                     preferredLocation: ''
                 });
                 setFile(null);
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -195,7 +201,7 @@ const DeveloperRegistrationSection = () => {
                 loading: false,
                 status: 'Submit'
             }));
-        }, 8000);
+        }, 5000);
     };
 
     const handleNewsletterSubmit = async (e) => {
@@ -226,7 +232,14 @@ const DeveloperRegistrationSection = () => {
         const formData = new FormData();
         formData.append('email', subscribedEmail);
 
-        const response = await subscribeNewsletter(formData);
+
+        // Temporary success response till the API is ready
+        const response = {
+            success: true,
+            message: 'Successfully subscribed!'
+        }
+        // const response = await subscribeNewsletter(formData);
+
         if(response.success){
             setTimeout(() => {
                 setNewsletterFormSubmission((prevState) => ({
@@ -235,7 +248,7 @@ const DeveloperRegistrationSection = () => {
                     status: response.message
                 }));
                 e.target.email.value = '';
-            }, 4000)
+            }, 1000)
         }
         else{
             setTimeout(() => {
@@ -253,7 +266,7 @@ const DeveloperRegistrationSection = () => {
                 error: false,
                 status: ''
             });
-        }, [8000])
+        }, [5000])
     }
 
     return (
@@ -426,7 +439,7 @@ const DeveloperRegistrationSection = () => {
                             <h1 className="font-bold mb-5">For Quick Inquiries</h1>
                             <p className="flex space-x-3 w-[262px]">
                                 <Image src="/assets/images/india.png" width={20} height={20} alt="india flag" />
-                                <span>+91-9340609004</span>
+                                <span>+91-9319062156</span>
                             </p>
                         </div>
                         <div className="w-[357px]">

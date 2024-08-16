@@ -2,52 +2,98 @@ import React from "react";
 import Image from "next/image";
 
 const List = () => {
-  const clientsData = [
+//   const clientsData = [
+//     {
+//       id: 1,
+
+//       image: "/assets/images/testimonialone.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "The project is a grand success. The user feedback is absolutely overwhelming.",
+//     },
+//     {
+//       id: 2,
+
+//       image: "/assets/images/testimonialtwo.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "Lorem Ipsum is simply dummy text of the printing andtypesetting industryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+//     },
+//     {
+//       id: 3,
+
+//       image: "/assets/images/testimonialthree.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "Lorem Ipsum is simply dummy text of the printing andtypesetting industryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+//     },
+//     {
+//       id: 4,
+
+//       image: "/assets/images/testimonialone.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "Lorem Ipsum is simply dummy text of the printing andtypesettin gindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+//     },
+//     {
+//       id: 5,
+//       image: "/assets/images/testimonialtwo.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "Lorem Ipsum is simply dummy text of the printing andtypeset tingindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+//     },
+//     {
+//       id: 6,
+//       image: "/assets/images/testimonialthree.png",
+//       text: "Name",
+//       designation: "(Designation)",
+//       para: "Lorem Ipsum is simply dummy text of the printing andtypesetti ngindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+//     },
+//   ];
+
+
+const clientsData = [
     {
       id: 1,
-
       image: "/assets/images/testimonialone.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "The project is a grand success. The user feedback is absolutely overwhelming.",
+      text: "John Doe",
+      designation: "CEO, Tech Innovators Inc.",
+      para: "The collaboration with your team has exceeded our expectations. The project is a grand success, and user feedback has been overwhelmingly positive.",
     },
     {
       id: 2,
-
       image: "/assets/images/testimonialtwo.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "Lorem Ipsum is simply dummy text of the printing andtypesetting industryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+      text: "Sarah Johnson",
+      designation: "Product Manager, Creative Solutions",
+      para: "The level of professionalism and expertise demonstrated throughout the project was outstanding. We couldn't have asked for a better partner.",
     },
     {
       id: 3,
-
       image: "/assets/images/testimonialthree.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "Lorem Ipsum is simply dummy text of the printing andtypesetting industryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+      text: "Michael Smith",
+      designation: "CTO, Future Tech",
+      para: "Your team's innovative approach and attention to detail have significantly enhanced our product offering. We're thrilled with the results.",
     },
     {
       id: 4,
-
       image: "/assets/images/testimonialone.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "Lorem Ipsum is simply dummy text of the printing andtypesettin gindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+      text: "Emily Davis",
+      designation: "Director of Operations, Global Enterprises",
+      para: "The seamless integration of the solution into our existing systems was impressive. We look forward to future collaborations.",
     },
     {
       id: 5,
       image: "/assets/images/testimonialtwo.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "Lorem Ipsum is simply dummy text of the printing andtypeset tingindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+      text: "David Lee",
+      designation: "Head of Marketing, Visionary Creations",
+      para: "The project was delivered on time and within budget, and the quality exceeded our expectations. Your team truly understands our needs.",
     },
     {
       id: 6,
       image: "/assets/images/testimonialthree.png",
-      text: "Name",
-      designation: "(Designation)",
-      para: "Lorem Ipsum is simply dummy text of the printing andtypesetti ngindustryLorem Ipsum is simply dummy text of the printing and typesetting Industry typese",
+      text: "Sophia Brown",
+      designation: "Managing Director, Innovative Ventures",
+      para: "Working with your team has been a game-changer for our business. The solution provided has opened up new opportunities for us.",
     },
   ];
 
@@ -71,9 +117,10 @@ const List = () => {
             </div>
           </div>
           <p className="text-base text-gray-400 text-center w-[80%] mx-auto ">
-            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+            {/* Nunc convallis semper justo quis tempor. Praesent molestie, lorem
             sed imperdiet tempor, libero urna semper urna, facilisis vulputate
-            velit arcu vitae mi. Donec ac nisi ex
+            velit arcu vitae mi. Donec ac nisi ex */}
+            Hear what our clients have to say about their experience working with us.
           </p>
         </div>
         <div>

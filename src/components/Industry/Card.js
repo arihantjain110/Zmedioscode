@@ -71,12 +71,12 @@ const Card = () => {
                 <p className="text-gray-500 text-sm mb-3">
                  {item.subtitle}
                 </p>
-                <Link
+                {/* <Link
                   href="/industryDetailsPage"
                   className="text-black font-semibold hover:underline underline-offset-2 decoration-primary text-sm"
                 >
                   Know More
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

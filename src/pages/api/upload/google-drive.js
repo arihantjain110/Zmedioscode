@@ -16,7 +16,7 @@ const googleAuthorize = async () => {
     const jwtClient = new google.auth.JWT(
         process.env.GDRIVE_CLIENT_EMAIL,
         null,
-        process.env.GDRIVE_PRIVATE_KEY,
+        process.env.GDRIVE_PRIVATE_KEY.replace(/\\n/gm, "\n"),
         SCOPE
     );
 
