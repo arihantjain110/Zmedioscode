@@ -90,7 +90,6 @@ const About = () => {
     <div className="bg-[#F6F8F9] py-10">
       <div className="md:grid grid-cols-5 gap-4 items-center mobile-hide">
         <div className="col-span-2 md:px-0 px-5 pb-10 md:pb-0 ">
-
           <div className="">
             <div className="md:w-[95%] pl-16 w-full md:text-base text-xs text-textcolor text-justify font-text pb-4">
               <div className="line-heading">
@@ -107,11 +106,18 @@ const About = () => {
               </div>
               <p className="mb-2">
                 {" "}
-                Zmedios Technology Pvt.Ltd.  is a global Information technology, system integration and consulting company, incepted in 2013, we are the trusted partner of many organizations across the Asian continent(including but not limited to Lepton Maps,HCL, Tech GIS, Railtel, Nodal Agency etc.) and are now diversifying across the Globe.
+                Zmedios Technology Pvt.Ltd. is a global Information technology,
+                system integration and consulting company, incepted in 2013, we
+                are the trusted partner of many organizations across the Asian
+                continent(including but not limited to Lepton Maps,HCL, Tech
+                GIS, Railtel, Nodal Agency etc.) and are now diversifying across
+                the Globe.
               </p>
               <p className="mb-2">
                 {" "}
-                Our service spectrum includes Web solutions, Desktop solutions, Mobility Solutions, Logistics System,POS, ERP and eCommerce Solutions
+                Our service spectrum includes Web solutions, Desktop solutions,
+                Mobility Solutions, Logistics System,POS, ERP and eCommerce
+                Solutions
               </p>
               <div className="flex justify-start pb-10 pt-5">
                 <Link href="/about">
@@ -132,15 +138,15 @@ const About = () => {
         <div className="col-span-3 AboutSliderSection">
           <Slider {...settings} className=" mx-auto">
             {aboutdata?.map((item, index) => (
-                <div className="group py-2 relative SldrDtaAbout" key={index}>
-                  <div className="px-2">
-                    <img
-                      src={item.image}
-                      alt=" "
-                      className="  rounded-lg  w-full"
-                    />
-                  </div>
+              <div className="group py-2 relative SldrDtaAbout" key={index}>
+                <div className="px-2">
+                  <img
+                    src={item.image}
+                    alt=" "
+                    className="  rounded-lg  w-full"
+                  />
                 </div>
+              </div>
             ))}
           </Slider>
         </div>
@@ -164,8 +170,9 @@ const About = () => {
             <div className="w-full text-base text-textcolor text-justify font-text  pb-4 ">
               Zmedios Technology Pvt Ltd is an award winning product
               conceptualization & development company that partners with
-              businesses to create digital experiences to their customer&apos;s love,
-              across strategy, design, mobile applications and web technologies.
+              businesses to create digital experiences to their customer&apos;s
+              love, across strategy, design, mobile applications and web
+              technologies.
             </div>
             <div className="w-full text-base text-textcolor text-justify font-text  py-4">
               Over the last Eight years, we have employed technology as a
@@ -195,15 +202,15 @@ const About = () => {
         <div className="pb-5">
           <Slider {...settings} className=" mx-auto">
             {aboutdata.map((item) => (
-                <div className="group relative" key={item}>
-                  <div className="px-2">
-                    <img
-                      src={item.image}
-                      alt=" "
-                      className="  rounded-lg  md:w-[90%]"
-                    />
-                  </div>
+              <div className="group relative" key={item}>
+                <div className="px-2">
+                  <img
+                    src={item.image}
+                    alt=" "
+                    className="  rounded-lg  md:w-[90%]"
+                  />
                 </div>
+              </div>
             ))}
           </Slider>
         </div>

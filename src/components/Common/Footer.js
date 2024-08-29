@@ -6,7 +6,8 @@ import { GoLocation } from "react-icons/go";
 import Subscription from "../Home/Subscription";
 const Footer = () => {
   return (
-    <div className="mt-0 relative  md:mt-12"
+    <div
+      className="mt-0 relative  md:mt-12"
       style={{
         backgroundImage: 'url("/assets/images/backgroundfooter.png")',
       }}
@@ -21,11 +22,20 @@ const Footer = () => {
             <div className="md:col-span-4  space-y-4">
               <Link href="/">
                 <div>
-                  <img width={192} height={16} src="/assets/images/ZmediosLogo.png" className="w-48" alt="" />
+                  <img
+                    width={192}
+                    height={16}
+                    src="/assets/images/ZmediosLogo.png"
+                    className="w-48"
+                    alt=""
+                  />
                 </div>
               </Link>
               <p className="text-sm text-justify">
-                Zmedios Supports Startup & Enterprises in Developing World-Class Products. We help organizations capitalize on cutting-edge technologies and employ robust frameworks and efficient workflows to create a robust and scalable product.
+                Zmedios Supports Startup & Enterprises in Developing World-Class
+                Products. We help organizations capitalize on cutting-edge
+                technologies and employ robust frameworks and efficient
+                workflows to create a robust and scalable product.
               </p>
               {/* <div className="flex space-x-5">
                 <Link href="">
@@ -105,7 +115,6 @@ const Footer = () => {
                 </ul>
 
                 <ul className="explore">
-                  
                   <Link href="/career">
                     <li className="text-sm hover:text-primary">
                       <span className="">Career</span>
@@ -139,14 +148,15 @@ const Footer = () => {
                       className="text-black group-hover:text-primary mt-3"
                     /> */}
                     <div className="inline-flex items-center  ">
-                        <img
-                            src="/assets/images/india.png"
-                            alt=""
-                            className="  rounded-lg w-6 h-6 mx-auto "
-                        />
+                      <img
+                        src="/assets/images/india.png"
+                        alt=""
+                        className="  rounded-lg w-6 h-6 mx-auto "
+                      />
                     </div>
                     <h2 className="text-sm md:w-[90%]">
-                      JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram, Haryana 122018
+                      JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram,
+                      Haryana 122018
                     </h2>
                   </li>
                   <li className="flex space-x-2 items-center pt-4 group cursor-pointer">
@@ -155,14 +165,15 @@ const Footer = () => {
                       className="text-black group-hover:text-primary mt-3"
                     /> */}
                     <div className="inline-flex items-center border-2  ">
-                        <img
-                            src="/assets/images/SingaporeFlag.jpg"
-                            alt=""
-                            className="w-6 h-6 mx-auto "
-                        />
+                      <img
+                        src="/assets/images/SingaporeFlag.jpg"
+                        alt=""
+                        className="w-6 h-6 mx-auto "
+                      />
                     </div>
                     <h2 className="text-sm md:w-[90%]">
-                        location160 Robinson Rd, #14-08 SBF Center, Singapore 068914
+                      location160 Robinson Rd, #14-08 SBF Center, Singapore
+                      068914
                     </h2>
                   </li>
                   <Link href="tel:+91-9319062156">
@@ -247,8 +258,11 @@ const Footer = () => {
           <div className="text-center py-5 text-sm md:px-0 px-5">
             <p>
               {" "}
-              © Copyright 2023 <span className="font-semibold">Zmedios Technology PVT LTD</span> | All Rights
-              Reserved
+              © Copyright 2024{" "}
+              <span className="font-semibold">
+                Zmedios Technology PVT LTD
+              </span>{" "}
+              | All Rights Reserved
             </p>
           </div>
         </div>
