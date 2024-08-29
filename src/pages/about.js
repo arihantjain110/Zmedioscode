@@ -14,7 +14,35 @@ const About = () => {
   return (
     <div className="">
       <Head>
-        <title>About Us</title>
+        <header>
+          <title>About Us | Zmedios Technology Private Limited</title>
+          <meta
+            name="description"
+            content="Learn about Zmedios Technology Pvt. Ltd., a leading IT company offering web solutions, mobile applications, and digital services since 2013."
+          />
+          <meta
+            name="keywords"
+            content="Zmedios Technology, IT company, web development, mobile applications, digital services, about us"
+          />
+          <meta
+            property="og:title"
+            content="About Us | Zmedios Technology Private Limited"
+          />
+          <meta
+            property="og:description"
+            content="Zmedios Technology Pvt. Ltd. is a global IT and consulting company, trusted by leading organizations across Asia and expanding globally."
+          />
+          <meta
+            property="og:image"
+            content="/assets/images/about/about-slide-1.png"
+          />
+          <meta property="og:url" content="https://zmediostech.com/about" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="canonical" href="https://zmediostech.com/about" />
+        </header>
       </Head>
       <Header />
       <Banner />
