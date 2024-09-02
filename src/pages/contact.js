@@ -10,7 +10,18 @@ const contact = () => {
     <>
       <Header />
       <Head>
-        <title>Contact</title>
+        <title>Contact Us - Zmedios</title>
+        <meta
+          name="description"
+          content="Get in touch with Zmedios for expert advice and support. Contact us via email, phone, or visit our locations in India and the USA."
+        />
+        <meta property="og:title" content="Contact Us - Zmedios" />
+        <meta
+          property="og:description"
+          content="Connect with our experts for professional advice and support. Available via email, phone, or visit our locations."
+        />
+        <meta property="og:url" content="https://www.zmedios.com/contact" />
+        <meta property="og:type" content="website" />
       </Head>
       <FormSection />
       <Location />

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -108,19 +108,19 @@ const Banner = () => {
         <Slider {...settings} className="mx-auto relative">
           {clientsData.map((item, index) => (
             // <>
-              <div className="group SldrImgDta" key={index}>
-                <div className="relative text-center">
-                  <div className="">
-                    <img
-                      src={item.image}
-                      alt=" "
-                      height={450}
-                      width={450}
-                      className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
-                    />
-                  </div>
+            <div className="group SldrImgDta" key={index}>
+              <div className="relative text-center">
+                <div className="">
+                  <Image
+                    src={item.image}
+                    alt=" "
+                    height={450}
+                    width={450}
+                    className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
+                  />
                 </div>
               </div>
+            </div>
             // </>
           ))}
         </Slider>
@@ -133,13 +133,20 @@ const Banner = () => {
                     {" "}
                     Innovation at its finest{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" width={16} height={16}  className="w-9 bulb" alt="" />
+                  <Image
+                    src="/assets/icons/icon.png"
+                    width={16}
+                    height={16}
+                    className="w-9 bulb"
+                    alt=""
+                  />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Product Conceptualization & Development
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
-                  From concept to reality Zmedios Technology delivers game changing products for startups and fortune companies.
+                  From concept to reality Zmedios Technology delivers game
+                  changing products for startups and fortune companies.
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
@@ -160,13 +167,21 @@ const Banner = () => {
                     {" "}
                     Where Ideas Come to Life{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" width={16} height={16} className="w-9 bulb" alt="" />
+                  <Image
+                    src="/assets/icons/icon.png"
+                    width={16}
+                    height={16}
+                    className="w-9 bulb"
+                    alt=""
+                  />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Empowering The Web With Innovative Development
                 </h2>
                 <p className="text-textcolor pt-4 text-justify text-[15px] font-medium">
-                  From creativity to technology Zmedios Technology crafts designs with seamless functionality that leave a lasting impression.
+                  From creativity to technology Zmedios Technology crafts
+                  designs with seamless functionality that leave a lasting
+                  impression.
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
@@ -187,13 +202,20 @@ const Banner = () => {
                     {" "}
                     Crafting Cutting-Edge Apps{" "}
                   </span>{" "}
-                  <img src="/assets/icons/icon.png" width={16} height={16} className="w-9 bulb" alt="" />
+                  <Image
+                    src="/assets/icons/icon.png"
+                    width={16}
+                    height={16}
+                    className="w-9 bulb"
+                    alt=""
+                  />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
                   Transforming Your Brand With Mobile App Development
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
-                  From idea to app store, Zmedios Technology guides you through the Mobile App Development journey.
+                  From idea to app store, Zmedios Technology guides you through
+                  the Mobile App Development journey.
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">

@@ -10,7 +10,19 @@ const Career = () => {
   return (
     <div>
       <Head>
-        <title> Career </title>
+        <title>
+          Career Opportunities at Zmedios Technology | Join Our Team
+        </title>
+        <meta
+          name="description"
+          content="Explore career opportunities at Zmedios Technology. Join our innovative team and help turn ideas into reality. Discover job openings, company culture, and why you should join us."
+        />
+        <meta
+          name="keywords"
+          content="Zmedios Technology careers, job opportunities, join Zmedios, tech jobs, IT careers, Zmedios team"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.zmediostech.com/career" />
       </Head>
       <Header />
       <Heading
