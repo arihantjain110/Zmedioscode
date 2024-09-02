@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Slider from "react-slick";
@@ -88,16 +88,19 @@ function Memories() {
 
   return (
     <div className="container-ack px-5 md:pt-0 pt-16 w-full relative">
-      <ComponentHead
+      {/* <ComponentHead
         title="Moments"
         sub="Life At Zmedios"
         head="Creating Memories that reminds: Zmedios TechnologyCompany culture represents the core values and beliefs that guide decision-making and behavior within the organization. A strong, positive culture can be a powerful tool for attracting and retaining top talent. Companies with a culture that aligns with their employees' values tend to have more motivated and engaged workers. "
-      />
+      /> */}
 
       <div className="MemoriesSlider">
         <Slider {...settings}>
           {resumeData.map((item, idx) => (
-            <div className={idx === imgIndex ? "m_slide activeSlide" : "m_slide"} key={idx}>
+            <div
+              className={idx === imgIndex ? "m_slide activeSlide" : "m_slide"}
+              key={idx}
+            >
               {/* { <img src={item.sliderImg} alt={idx} /> } */}
             </div>
           ))}
@@ -105,7 +108,7 @@ function Memories() {
       </div>
 
       <div className="flex justify-center pt-6 ">
-        <Link href="/moments">
+        {/* <Link href="/moments">
           <button className="button-2 px-12 py-2 rounded-md">
             <div className="eff-2"></div>
             <span className="text-base flex items-center ">
@@ -113,7 +116,7 @@ function Memories() {
               <FaArrowRight className="text-base" />
             </span>
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
