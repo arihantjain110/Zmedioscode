@@ -19,7 +19,7 @@ function portfolio() {
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Zmedios Technology Private Limited" />
-        <meta property="og:title" content="Portfolio - Zmedios Technology" />
+        <meta property="og:title" content="- Zmedios Technology" />
         <meta
           property="og:description"
           content="Take a look at some of our work across various industries, showcasing our design and development capabilities."

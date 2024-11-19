@@ -10,19 +10,19 @@ import Image from "next/image";
 const aboutdata = [
   {
     id: 1,
-    image: "/assets/images/about/about-slide-1.png",
+    image: "/assets/images/blog/about/about-slide-1.png",
   },
   {
     id: 2,
-    image: "/assets/images/about/about-slide-2.png",
+    image: "/assets/images/blog/about/about-slide-2.png",
   },
   {
     id: 3,
-    image: "/assets/images/about/about-slide-3.png",
+    image: "/assets/images/blog/about/about-slide-3.png",
   },
   {
     id: 4,
-    image: "/assets/images/about/about-slide-4.png",
+    image: "/assets/images/blog/about/about-slide-4.png",
   },
 ];
 
@@ -121,12 +121,10 @@ const About = () => {
               </p>
               <div className="flex justify-start pb-10 pt-5">
                 <Link href="/about">
-                  <button className=" button-2  px-8 py-2 rounded-md">
-                    <div className="eff-2"></div>
-                    <span className="text-base flex items-center ">
-                      {" "}
+                  <button className="relative inline-flex items-center justify-start px-5 py-2 overflow-hidden font-medium transition-all bg-orange-400 rounded-xl hover:bg-white group">
+                    <span className="w-48 h-48 rounded rotate-[-40deg] bg-orange-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                    <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                       Know More
-                      <MdKeyboardArrowRight className=" text-base" />
                     </span>
                   </button>
                 </Link>
@@ -140,6 +138,7 @@ const About = () => {
             {aboutdata?.map((item, index) => (
               <div className="group py-2 relative SldrDtaAbout" key={index}>
                 <div className="px-2">
+                  {console.log(item)}
                   <img
                     src={item.image}
                     alt=" "

@@ -9,11 +9,19 @@ const Card = () => {
       para: "lorem",
       text: "lorem",
       designation: "lorem",
+      title: 'Shipping',
+      subtitle: 'Shipping can involve various modes of transportation, including vessels such as cargo ships, container ships, tankers, and bulk carriers. Each mode serves specific purposes and accommodates different types of cargo, ranging from automobiles and machinery to oil, grains, and consumer goods.'
+    },
+    {
+      id: 2,
+      para: "lorem",
+      text: "lorem",
+      designation: "lorem",
       title: 'Healthcare',
       subtitle: 'The healthcare sector works to lengthen, safeguard, and enhance your quality of life. In order to improve your health, healthcare practitioners collaborate as a network of specialists that provide medical supplies and equipment.'
     },
     {
-      id: 2,
+      id: 3,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
@@ -21,7 +29,7 @@ const Card = () => {
       subtitle: 'Schools, colleges, institutions, and universities make up the education sector. Students enrolled in elementary through high schools, colleges and universities, and training facilities that offer industrial, professional, and vocational programmes get instruction and training from any educational institution in this field.'
     },
     {
-      id: 3,
+      id: 4,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
@@ -29,7 +37,7 @@ const Card = () => {
       subtitle: 'Businesses, corporations, banks, and other financial institutions make up the financial sector. By offering financial intermediary services, managing, allocating, and moving financial capital, the financial industry contributes considerably to the economy.'
     },
     {
-      id: 4,
+      id: 5,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
@@ -37,7 +45,7 @@ const Card = () => {
       subtitle: 'The field of real estate encompasses a wide range of property-related activities, including the development, leasing, estimation, marketing, and management of commercial, residential, agricultural, and industrial assets.'
     },
     {
-      id: 5,
+      id: 6,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
@@ -45,7 +53,7 @@ const Card = () => {
       subtitle: 'The field of industrial automation mainly deals with the automation of industrial machinery and processes. To do so, procedures for manufacturing, quality control, and material handling are improved using a combination of information technologies, specialised equipment and robots.'
     },
     {
-      id: 6,
+      id: 7,
       para: "lorem",
       text: "lorem",
       designation: "lorem",

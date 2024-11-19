@@ -22,7 +22,7 @@ const IndustryWeServe = () => {
           />
           <meta
             name="keywords"
-            content="Zmedios industries, industry solutions, technological solutions, industry support, sector services"
+            content="Zmedios industries,  solutions, technological solutions, industry support, sector services"
           />
           <meta name="robots" content="index, follow" />
           <meta name="author" content="Zmedios Technology Private Limited" />

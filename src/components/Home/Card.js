@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Image from "next/image";
@@ -12,7 +12,7 @@ const Card = () => {
       clone.ariaHidden = true;
       item.append(clone);
     });
-  }, [])
+  }, []);
 
   return (
     <div className="container-ack pt-16 px-5">
@@ -30,12 +30,10 @@ const Card = () => {
 
               <div className="flex justify-left pt-5">
                 <Link href="/contact">
-                  <button className=" button-2 px-8 py-2 rounded-md">
-                    <div className="eff-2"></div>
-                    <span className="text-base flex items-center ">
-                      {" "}
+                  <button className="relative inline-flex items-center justify-start px-4 py-2 overflow-hidden font-medium transition-all bg-orange-400 rounded-xl hover:bg-white group">
+                    <span className="w-48 h-48 rounded rotate-[-40deg] bg-orange-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                    <span className="relative w-full  text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                       Contact Us
-                      <MdKeyboardArrowRight className=" text-base" />
                     </span>
                   </button>
                 </Link>
@@ -83,43 +81,38 @@ const Card = () => {
               </div>
               <div className="card-slider">
                 <div className="card-slider-items">
-                  {
-                    [1, 1, 1, 1, 1]?.map((item, index) => {
-                      return (
-                        <div key={index} className="item">
-                          <img
-                           src="/assets/images/contact_5.jpeg "
-                            alt=""
-                            width="300"
-                            height="450"
-                          />
-                        </div>
-                      )
-                    })
-                  }
+                  {[1, 1, 1, 1, 1]?.map((item, index) => {
+                    return (
+                      <div key={index} className="item">
+                        <img
+                          src="/assets/images/contact_5.jpeg "
+                          alt=""
+                          width="300"
+                          height="450"
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="card-slider hidden-m">
                 <div className="card-slider-items">
-                  {
-                    [1, 1, 1, 1, 1]?.map((item, index) => {
-                      return (
-                        <div key={index} className="item">
-                          <img
-                            src="/assets/images/contact_1.jpeg "
-                            alt=""
-                            width="300"
-                            height="650"
-                          />
-                        </div>
-                      )
-                    })
-                  }
+                  {[1, 1, 1, 1, 1]?.map((item, index) => {
+                    return (
+                      <div key={index} className="item">
+                        <img
+                          src="/assets/images/contact_1.jpeg "
+                          alt=""
+                          width="300"
+                          height="650"
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

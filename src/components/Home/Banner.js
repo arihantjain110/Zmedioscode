@@ -105,26 +105,20 @@ const Banner = () => {
       }}
     >
       <div className=" md:px-0 px-5 HomePageSlider md:pb-20 pb-5 md:pt-0 pt-5">
-        <Slider {...settings} className="mx-auto relative">
-          {clientsData.map((item, index) => (
-            // <>
-            <div className="group SldrImgDta" key={index}>
-              <div className="relative text-center">
-                <div className="">
-                  <Image
-                    src={item.image}
-                    alt=" "
-                    height={450}
-                    width={450}
-                    className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
-                  />
-                </div>
-              </div>
+        <div className="group SldrImgDta">
+          <div className="relative text-center">
+            <div className="">
+              <video
+                src={"/assets/images/bg-video.mp4"}
+                autoPlay
+                loop
+                muted
+                className="rounded-lg mx-auto md:h-full"
+              />
             </div>
-            // </>
-          ))}
-        </Slider>
-        <div className="">
+          </div>
+        </div>
+        <div className="hidden md:block">
           <div className="bg-zinc-100/80	 boxshadowbanner  md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-0 top-6 md:left-[3.6rem] left-7 rounded-lg  mt-2  px-5 ">
             <ul id="text-slider" className="container">
               <li className="active">
@@ -148,14 +142,12 @@ const Banner = () => {
                   From concept to reality Zmedios Technology delivers game
                   changing products for startups and fortune companies.
                 </p>
-                <div className="pt-10 w-full">
+                <div className="pt-10 w-full text-center ">
                   <Link href="/contact">
-                    <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">
-                      <div className="eff-3"></div>
-                      <span className="text-base flex items-center ">
-                        {" "}
+                    <button className="relative inline-flex items-center justify-start px-12 py-2 overflow-hidden font-medium transition-all bg-orange-400 rounded-xl hover:bg-orange-400 group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-orange-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                         Discover Now
-                        <MdKeyboardArrowRight className=" text-base" />
                       </span>
                     </button>
                   </Link>
@@ -183,21 +175,19 @@ const Banner = () => {
                   designs with seamless functionality that leave a lasting
                   impression.
                 </p>
-                <div className="pt-10 w-full">
+                <div className="pt-10 w-full text-center ">
                   <Link href="/contact">
-                    <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">
-                      <div className="eff-3"></div>
-                      <span className="text-base flex items-center ">
-                        {" "}
+                    <button className="relative inline-flex items-center justify-start px-12 py-2 overflow-hidden font-medium transition-all bg-orange-400 rounded-xl hover:bg-orange-400 group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-orange-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                         Discover Now
-                        <MdKeyboardArrowRight className=" text-base" />
                       </span>
                     </button>
                   </Link>
                 </div>
               </li>
               <li>
-                <div className="flex justify-start items-center space-x-1">
+                <div className="flex justify-start items-center space-x-1 ">
                   <span className="text-primary md:text-sm text-base uppercase font-semibold">
                     {" "}
                     Crafting Cutting-Edge Apps{" "}
@@ -217,14 +207,12 @@ const Banner = () => {
                   From idea to app store, Zmedios Technology guides you through
                   the Mobile App Development journey.
                 </p>
-                <div className="pt-10 w-full">
+                <div className="pt-10 w-full text-center">
                   <Link href="/contact">
-                    <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">
-                      <div className="eff-3"></div>
-                      <span className="text-base flex items-center ">
-                        {" "}
+                    <button className="relative inline-flex items-center justify-start px-12 py-2 overflow-hidden font-medium transition-all bg-orange-400 rounded-xl hover:bg-orange-400 group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-orange-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
                         Discover Now
-                        <MdKeyboardArrowRight className=" text-base" />
                       </span>
                     </button>
                   </Link>
@@ -232,9 +220,9 @@ const Banner = () => {
               </li>
             </ul>
           </div>
-          <div className="md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-28 top-6 md:right-[3.6rem] right-7 rounded-lg  mt-2  px-5 ">
+          {/* <div className="md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-28 top-6 md:right-[3.6rem] right-7 rounded-lg  mt-2  px-5 ">
             <EnquiryModal />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

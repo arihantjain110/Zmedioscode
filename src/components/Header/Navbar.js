@@ -435,7 +435,7 @@ const Navbar = () => {
                     : "group dropdown hover:text-primary md:flex hidden nav-item text-sm  font-semibold nav-desk hover:border-b-2 hover:duration-150 border-b-secondary  group relative cursor-pointer text-black"
                 }
               >
-                Industry We Serve
+                Serve
               </li>
             </Link>
             {/* for mobile start */}

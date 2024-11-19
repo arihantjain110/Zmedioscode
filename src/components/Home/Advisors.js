@@ -65,7 +65,7 @@ const Advisors = () => {
                     <img
                       src={item.image}
                       alt="advisor"
-                      className="rounded-[100%] w-20 h-20 mx-auto rounded-[100%]"
+                      className="rounded-[100%] w-20 h-20 mx-auto"
                     />
                   </div>
 
