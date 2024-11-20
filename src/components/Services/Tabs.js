@@ -186,7 +186,7 @@ const Tabs = () => {
                 <div className="service-card" key={index}>
                   <div>
                     <div className="group p-6 " key="id">
-                      <div className="sservice-content relative text-center  flex flex-col justify-between border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-[0px_0px_20px#f7ce4680] hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[28rem] ">
+                      <div className="service-content relative text-center  flex flex-col justify-between border-2 border-[#F6F8F9] duration duration-200 group-hover:-translate-y-2  hover:drop-shadow-[0px_0px_20px#f7ce4680] hover:bg-[#F6F8F9]/40 hover:border-2 rounded-xl md:h-[28rem] ">
                         <div className=" ">
                           <img
                             src={item.image}
@@ -203,9 +203,9 @@ const Tabs = () => {
                           {item.desc}
                         </p>
 
-                        <div className="pb-5">
+                        <div className="pb-5 cursor-pointer">
                           <Link href={item.link}>
-                            <button className="text-primary font-semibold py-2 text-sm border-b-2 group-hover:border-primary group-hover:border-b-2">
+                            <button className="text-primary cursor-pointer font-semibold py-2 text-sm border-b-2 group-hover:border-primary group-hover:border-b-2">
                               Know More
                             </button>
                           </Link>
@@ -241,9 +241,9 @@ const Tabs = () => {
                           {item.desc}
                         </p>
 
-                        <div className="pb-5">
+                        <div className="pb-5 cursor-pointer">
                           <Link href={item.link}>
-                            <button className="text-primary font-semibold py-2 text-sm border-b-2 group-hover:border-primary group-hover:border-b-2">
+                            <button className="text-primary cursor-pointer font-semibold py-2 text-sm border-b-2 group-hover:border-primary group-hover:border-b-2">
                               Know More
                             </button>
                           </Link>
@@ -279,7 +279,7 @@ const Tabs = () => {
                           {item.desc}
                         </p>
 
-                        <div className="pb-5">
+                        <div className="pb-5 cursor-pointer">
                           <Link href={item.link}>
                             <button className="text-primary font-semibold py-2 text-sm border-b-2 group-hover:border-primary group-hover:border-b-2">
                               Know More

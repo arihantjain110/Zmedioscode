@@ -29,15 +29,11 @@ const Banner = () => {
             <div className=" md:px-0 px-2 pb-10 md:pb-0  relative">
               <div className="">
                 <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  pb-4 md:pt-8 pt-4 mb-7">
-                  Zmedios collaborates with a diverse range of industries to provide technological
-                  solutions and support. By leveraging their expertise in information technology,
-                  Zmedios assists businesses in optimizing their operations, enhancing productivity,
-                  and achieving their goals. Their services encompass a broad spectrum of industries.
-                  Some of the companies we serve are healthcare, educational, financial and tour and
-                  travel industry etc. These are just a few examples of the industries that Zmedios
-                  works with. Their expertise and adaptability enable them to cater to the unique
-                  technological needs of various sectors, enabling businesses to thrive in an increasingly
-                  digital world.
+                Shipping & Freight Forwarding Software Development
+                ZMedios Technology specializes in developing comprehensive, scalable, and efficient shipping and 
+                freight forwarding software that enhances the logistics and transportation sector. Whether you are 
+                a freight forwarder, shipping company, or logistics provider, our solutions help streamline operations, optimize costs, 
+                and provide real-time visibility into shipments, deliveries, and inventory mana
                 </div>
                 {/* <div className="text-3xl   font-bold ">
                   Lorem Ipsum dolor sit amet Eget at auctor purus

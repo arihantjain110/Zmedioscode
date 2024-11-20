@@ -25,15 +25,16 @@ const Banner = () => {
               power of technology
             </div>
             <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  pb-4">
-              We are all about changing lives and solving problems. With our team of experts,
-              we are here to turn an idea into a successful product that exceeds expectations.
+            ZMedios Technology, established in 2013, is a forward-thinking technology company dedicated to providing cutting-edge 
+            software solutions that cater to the evolving needs of businesses across various industries. With over a decade of expertise,
+            we specialize in the design, development, and deployment of custom web and mobile applications, with a strong focus on logistics, 
 
 
             </div>
-            <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  py-4">
+            {/* <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  py-4">
               Zmedios is known for its innovative approach, teamwork, and commitment to excellence.
               Our only goal is to deliver the best solutions and meet the clients needs, and help them achieve their goals.
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

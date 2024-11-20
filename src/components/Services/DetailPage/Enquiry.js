@@ -1,6 +1,8 @@
 import React from "react";
 
 const Enquiry = () => {
+
+  
   return (
     <div className="bg-[#282828]">
       <div className="container-ack md:px-0 px-5">
@@ -12,13 +14,13 @@ const Enquiry = () => {
             <div className="">
               <div className="absolute md:top-[5rem] top-[4rem] inset-x-0 flex justify-left">
                 <div className="text-[40px] text-left text-white font-bold max-w-xl">
-                 Have A Query?
+                  Have A Query?
                 </div>
               </div>
 
               <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  py-4">
-              Yes, We Can Help You With Your Ideas, Challenges & Ambitions!!
-Let&apos;s make things work. Just tell us the requirements.
+                Yes, We Can Help You With Your Ideas, Challenges & Ambitions!!
+                Let&apos;s make things work. Just tell us the requirements.
               </div>
             </div>
           </div>
@@ -34,7 +36,7 @@ Let&apos;s make things work. Just tell us the requirements.
                     type="text"
                     id="name"
                     name="name"
-                    className="  p-2  outline-none bg-[#D9D9D9]/50 rounded-md w-full text-white"
+                    className="  p-2  outline-none bg-slate-500 rounded-md w-full text-white"
                   />
                 </div>
                 <div className="w-full">
@@ -44,7 +46,7 @@ Let&apos;s make things work. Just tell us the requirements.
                   <input
                     type="text"
                     id="mail"
-                    className="  p-2  outline-none bg-[#D9D9D9]/50 rounded-md w-full text-white"
+                    className="  p-2  outline-none bg-slate-500 rounded-md w-full text-white"
                     name="mail"
                   />
                 </div>
@@ -59,7 +61,7 @@ Let&apos;s make things work. Just tell us the requirements.
                     type="text"
                     id="phone"
                     name="phone"
-                    className="  p-2  outline-none bg-[#D9D9D9]/50 rounded-md w-full text-white"
+                    className="  p-2  outline-none bg-slate-500 rounded-md w-full text-white"
                     value=""
                   />
                 </div>
@@ -70,7 +72,7 @@ Let&apos;s make things work. Just tell us the requirements.
                   <input
                     type="text"
                     id="subject"
-                    className="  p-2  outline-none bg-[#D9D9D9]/50 rounded-md w-full text-white"
+                    className="  p-2  outline-none bg-slate-500 rounded-md w-full text-white"
                     name="subject"
                     value=""
                   />
@@ -83,7 +85,7 @@ Let&apos;s make things work. Just tell us the requirements.
                 <textarea
                   id="message"
                   name="message"
-                  className="  p-2  outline-none bg-[#D9D9D9]/50 rounded-md w-full text-white"
+                  className="  p-2  outline-none bg-slate-500 rounded-md w-full text-white"
                   rows="4"
                 />{" "}
               </div>

@@ -10,7 +10,7 @@ const Card = () => {
       text: "lorem",
       designation: "lorem",
       title: 'Shipping',
-      subtitle: 'Shipping can involve various modes of transportation, including vessels such as cargo ships, container ships, tankers, and bulk carriers. Each mode serves specific purposes and accommodates different types of cargo, ranging from automobiles and machinery to oil, grains, and consumer goods.'
+      subtitle: 'ZMedios Technology specializes in developing comprehensive, scalable, and efficient shipping and freight forwarding software that enhances the logistics and transportation sector. Whether you are a freight forwarder, shipping company, or logistics provider, our solutions help streamline operations, optimize costs, and provide real-time visibility into shipments, deliveries, and inventory management'
     },
     {
       id: 2,
@@ -59,6 +59,22 @@ const Card = () => {
       designation: "lorem",
       title: 'Tour and Travel Industry',
       subtitle: 'One of the biggest service sectors in the world and one that is becoming more and more significant in the current era is the travel sector. It is focused on the movement of individuals between different locations and the needs they have when traveling.'
+    },
+    {
+      id: 8,
+      para: "lorem",
+      text: "lorem",
+      designation: "lorem",
+      title: 'ERP and Supply Chain Solutions',
+      subtitle: 'One of the biggest service sectors in the world and one that is becoming more and more significant in the current era is the travel sector. It is focused on the movement of individuals between different locations and the needs they have when traveling.'
+    },
+    {
+      id: 9,
+      para: "lorem",
+      text: "lorem",
+      designation: "lorem",
+      title: 'Web & Mobile Application Development',
+      subtitle: 'At ZMedios Technology, we provide custom web and mobile app development services, tailored to fit the unique needs of businesses in the shipping and logistics industry. Our mobile apps ensure that customers, warehouse teams, drivers, and logistics managers stay connected and informed about the status of goods in transit.'
     },
   ];
   return (

@@ -2,7 +2,6 @@ import Footer from "../components/Common/Footer";
 import Header from "../components/Common/Header";
 import Backend from "../components/Technology/Backend";
 import Section from "../components/Technology/Section";
-
 import Head from "next/head";
 import React from "react";
 import Heading from "../components/Common/Heading";
