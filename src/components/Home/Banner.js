@@ -78,7 +78,10 @@ const Banner = () => {
                   Pre-Filtered & Verified Talent Pool – Access thoroughly vetted
                   candidates to streamline your hiring process.
                 </h2>
-
+                <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
+                  From concept to reality Zmedios Technology delivers game
+                  changing products for startups and fortune companies.
+                </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
                     <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">
@@ -112,7 +115,11 @@ const Banner = () => {
                   time and recruitment costs while securing the best
                   professionals for your team.
                 </h2>
-
+                <p className="text-textcolor pt-4 text-justify text-[15px] font-medium">
+                  From creativity to technology Zmedios Technology crafts
+                  designs with seamless functionality that leave a lasting
+                  impression.
+                </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
                     <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">
@@ -145,7 +152,10 @@ const Banner = () => {
                   Technical Screening Layer – Every candidate undergoes an
                   additional round of technical evaluation.
                 </h2>
-
+                <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
+                  From idea to app store, Zmedios Technology guides you through
+                  the Mobile App Development journey.
+                </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
                     <button className="button-3 bg-secondary hover:bg-primary text-white px-12 py-3 justify-center rounded-md flex items-center w-full text-center">

@@ -1696,7 +1696,7 @@ body:not(.device-touch) .clients-grid li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 350px;
+    bottom: 200px;
     position: relative;
     gap: 20px;
   }
