@@ -31,3 +31,8 @@ yarn-error.log*
 # vercel
 .vercel
 .env
+
+echo "public/assets/firstZm.mp4" >> .gitignore
+echo "public/assets/secondZm.mov" >> .gitignore
+echo "public/assets/images/6071061_Data_Business_3840x2160.mov" >> .gitignore
+
