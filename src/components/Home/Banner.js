@@ -172,7 +172,7 @@ const Banner = () => {
             </ul>
           </div>
           <div className="md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-28 top-6 md:right-[3.6rem] right-7 rounded-lg  mt-2  px-5 ">
-            <EnquiryModal />
+            {/* <EnquiryModal /> */}
           </div>
         </div>
       </div>

@@ -242,8 +242,8 @@ const FormSection = () => {
               <div className="flex space-x-2 cursor-pointer ">
                 <GrMapLocation size={25} className="fill-orange" />
                 <p className="text-primary ">
-                  JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram, Haryana
-                  122018{" "}
+                  MiQB Executive Coworking Space C-25, C Block, Sector 58,
+                  Noida, Uttar Pradesh 201301s
                 </p>
               </div>
             </div>
