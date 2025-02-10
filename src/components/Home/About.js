@@ -105,20 +105,40 @@ const About = () => {
                 </div>
               </div>
               <p className="mb-2">
-                {" "}
-                Zmedios Technology Pvt.Ltd. is a global Information technology,
-                system integration and consulting company, incepted in 2013, we
-                are the trusted partner of many organizations across the Asian
-                continent(including but not limited to Lepton Maps,HCL, Tech
-                GIS, Railtel, Nodal Agency etc.) and are now diversifying across
-                the Globe.
+                At Zmedios Technology Pvt Ltd, we are a dynamic global IT,
+                system integration, and consulting company founded in 2013. With
+                our roots deeply embedded in Asia, we have become a trusted
+                partner to leading organizations across the continent, including
+                giants like Lepton Maps, HCL, Tech GIS, Railtel, and Nodal
+                Agency, among others. Now, we are expanding our expertise and
+                services worldwide.
               </p>
               <p className="mb-2">
-                {" "}
-                Our service spectrum includes Web solutions, Desktop solutions,
-                Mobility Solutions, Logistics System,POS, ERP and eCommerce
-                Solutions
+                We specialize in providing end-to-end technology solutions,
+                including Web Solutions, Mobile Solutions, ERP, Logistics
+                Systems, POS, and eCommerce Platforms. Our services are designed
+                to streamline business operations and drive transformation
+                through innovation.
               </p>
+
+              <p className="mb-2">
+                In addition to our technology solutions, we also offer IT and
+                Non-IT Staffing services globally. We help organizations build
+                and scale their teams by providing access to pre-filtered and
+                thoroughly vetted talent pools. From contract developers to
+                long-term staffing, we ensure that businesses have access to the
+                best professionals in the industry. Our recruitment solutions
+                include technical screenings to guarantee that each candidate
+                meets the highest standards.
+              </p>
+
+              <p className="mb-2">
+                Our team is committed to delivering the best-in-class IT
+                solutions and staffing services that meet the unique needs of
+                every client, ensuring successful outcomes and long-term
+                business growth.
+              </p>
+
               <div className="flex justify-start pb-10 pt-5">
                 <Link href="/about">
                   <button className=" button-2  px-8 py-2 rounded-md">
