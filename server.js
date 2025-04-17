@@ -23,7 +23,7 @@ app.use("/api/form-submit/enquiry", enquiryFormRoutes);
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = "localhost";
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // Next.js setup
 const NextApp = next({ dev, hostname, port });
