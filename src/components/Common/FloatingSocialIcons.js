@@ -25,7 +25,7 @@ const FloatingSocialIcons = () => {
         <hr className="mt-3" />
         <div className="relative group mt-3">
           <Link
-            href="https://www.instagram.com/zmedios_technology_pvt_ltd_/?hl=en"
+            href="https://www.instagram.com/zmediostechnology/"
             target="_blank"
           >
             <FaInstagram
