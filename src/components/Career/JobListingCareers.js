@@ -10,11 +10,10 @@ const JobListData = [
     id: 1,
     name: "Front-end Developer ",
     discription:
-    "We’re looking for a mid-level Front-end Developer to join our team.",
+      "We’re looking for a mid-level Front-end Developer to join our team.",
     experice: "4-5 Years",
     Salary: "10-20 LPA",
-    Skills:
-      "Java Script, React.js, HTML, CSS, Bootstrap",
+    Skills: "Java Script, React.js, HTML, CSS, Bootstrap",
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ const JobListData = [
       "We’re looking for a mid-level Back-end Developer to join our team.",
     experice: "5-7 Years",
     Salary: "10-20 LPA",
-    Skills:
-      "Python, PHP, Java, C#",
+    Skills: "Python, PHP, Java, C#",
   },
   {
     id: 3,
@@ -33,8 +31,7 @@ const JobListData = [
       "We’re looking for a mid-level Back-end Developer to join our team.",
     experice: "5-7 Years",
     Salary: "10-20 LPA",
-    Skills:
-      "Java, Ruby, PHP or Python",
+    Skills: "Java, Ruby, PHP or Python",
   },
 ];
 const JobListingCareers = () => {
@@ -188,17 +185,15 @@ const JobListingCareers = () => {
                       </h2>
                       <div className="px-8 flex flex-col justify-center h-96 pt-20 space-y-6">
                         <div className="">
-                          <h2 className="text-4xl">Lorem ipsum</h2>
+                          <h2 className="text-4xl">
+                            Apply Now and Take the Next Step in Your Career!
+                          </h2>
                         </div>
-                        <p className="">
-                          Lorem ipsum dolor sit amet consectetur.
-                        </p>
+
                         <p className="text-gray-600">
-                          Lorem ipsum dolor sit amet consectetur. Ut molestie
-                          fermentum a eu sed iaculis feugiat quam. Curabitur
-                          turpis amet placerat neque consectetur. At nam velit
-                          ipsum sed senectus. Fermentum aliquet pretium volutpat
-                          lectus cursus aliquet.
+                          Fill in your details and upload your resume to apply
+                          for this opportunity. Our team will review your
+                          application and get in touch with you soon.
                         </p>
                       </div>
 
@@ -207,7 +202,7 @@ const JobListingCareers = () => {
                           Join Our Team!
                         </h1>
                         <p className="font-normal text-sm">
-                          Lorem ipsum dolor sit amet consectetur.
+                          Ensure your contact details are accurate
                         </p>
                         <form className="mt-6 space-y-3 text-sm">
                           <div className="">
@@ -275,10 +270,6 @@ const JobListingCareers = () => {
                               required
                             />
                           </div>
-                          <p className="text-sm py-4">
-                            Lorem ipsum dolor sit amet consectetur. Accumsan ut
-                            ultricies lectus sem nunc.
-                          </p>
                           <button
                             type="submit"
                             className="w-full py-3 rounded-xl font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"

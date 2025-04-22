@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Disclosure } from "@headlessui/react";
@@ -89,12 +90,44 @@ const Navbar = () => {
                   </span>{" "}
                 </p>
               </Link>
+
               <div className="group-hover:block z-[999] shadow-lg shadow-black/30 dropdown-menu absolute hidden transition-all  duration-300 translate-y-2 h-auto top-[2.1rem] md:-left-10 ">
                 <div className="top-0 bg-white flex py-5">
-                  <div className="p-1 text-black text-xs  w-80 text-left flex flex-col rounded-l-md  border-r-2 border-primary">
+                  <div className="p-1 text-black text-xs  w-60 text-left flex flex-col  border-r-2 border-primary">
                     <p className=" text-black text-base font-bold px-4 py-5 ">
-                      {" "}
-                      Product Conceptualization{" "}
+                      Staffing
+                    </p>
+                    <Link
+                      href={`/staffing?type=resource-staffing`}
+                      className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
+                    >
+                      IT & Non-IT Resource Staffing
+                    </Link>
+                    <Link
+                      href={`/staffing?type=contract-staffing`}
+                      className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
+                    >
+                      Contract Staffing Solutions
+                    </Link>
+
+                    <Link
+                      href={`/staffing?type=permanent-staffing`}
+                      className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
+                    >
+                      Permanent Staffing
+                    </Link>
+
+                    <Link
+                      href={`/staffing?type=employee-leasing`}
+                      className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
+                    >
+                      Employee Leasing Services
+                    </Link>
+                  </div>
+
+                  <div className="p-1 text-black text-xs  w-70 text-left flex flex-col rounded-l-md  border-r-2 border-primary">
+                    <p className=" text-black text-base font-bold px-4 py-5 ">
+                      Product Conceptualization
                     </p>
 
                     <Link

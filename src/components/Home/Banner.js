@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -8,68 +7,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import EnquiryModal from "./EnquiryModal";
 import Image from "next/image";
-const Banner = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    centerPadding: "180px",
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    dots: false,
-    infinite: true,
-    arrows: true,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 1200,
-    lazyLoad: true,
-    accessibility: true,
-    cssEase: "ease-out",
-    swipeToSlide: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "0px",
-        },
-      },
-    ],
-  };
-  const clientsData = [
-    {
-      id: 1,
-      image: "/assets/images/banner/1.webp",
-    },
-    {
-      id: 2,
-      image: "/assets/images/banner/2.webp",
-    },
-    {
-      id: 3,
-      image: "/assets/images/banner/3.webp",
-    },
-  ];
 
+const Banner = () => {
   useEffect(() => {
     let list = [].slice.call(document.querySelector(".container").children);
 
@@ -97,35 +36,29 @@ const Banner = () => {
 
     setInterval(slideShow, 4500);
   }, []);
+
   return (
     <div
       className="bg-right"
       style={{
-        backgroundImage: 'url("/assets/images/mainbackground.png ")',
+        backgroundImage: 'url("/assets/images/mainbackground.png")',
       }}
     >
-      <div className=" md:px-0 px-5 HomePageSlider md:pb-20 pb-5 md:pt-0 pt-5">
-        <Slider {...settings} className="mx-auto relative">
-          {clientsData.map((item, index) => (
-            // <>
-            <div className="group SldrImgDta" key={index}>
-              <div className="relative text-center">
-                <div className="">
-                  <Image
-                    src={item.image}
-                    alt=" "
-                    height={450}
-                    width={450}
-                    className="rounded-lg mx-auto md:h-full h-[450px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            // </>
-          ))}
-        </Slider>
+      <div className="md:px-0 px-5 HomePageSlider pb-5 md:pt-0 pt-5">
+        <video width="100%" height="100%" autoPlay muted loop playsInline>
+          <source src="/assets/Data.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="button_wrap">
+          <button className="home_btn"># IT Outsourcing </button>
+          <button className="home_btn"># UI/UX Designer </button>
+          <button className="home_btn"># Contractual Developers </button>
+          <button className="home_btn"># Within 48 Hours </button>
+        </div>
+
         <div className="">
-          <div className="bg-zinc-100/80	 boxshadowbanner  md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-0 top-6 md:left-[3.6rem] left-7 rounded-lg  mt-2  px-5 ">
+          <div className="bg-zinc-100/80 boxshadowbanner  md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-0 top-6 md:left-[3.6rem] left-7 rounded-lg  mt-2  px-5 ">
             <ul id="text-slider" className="container">
               <li className="active">
                 <div className="flex justify-start items-center space-x-1">
@@ -142,7 +75,8 @@ const Banner = () => {
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Product Conceptualization & Development
+                  Pre-Filtered & Verified Talent Pool – Access thoroughly vetted
+                  candidates to streamline your hiring process.
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
                   From concept to reality Zmedios Technology delivers game
@@ -154,13 +88,14 @@ const Banner = () => {
                       <div className="eff-3"></div>
                       <span className="text-base flex items-center ">
                         {" "}
-                        Discover Now
-                        <MdKeyboardArrowRight className=" text-base" />
+                        Enquire Now
+                        <MdKeyboardArrowRight className="text-base" />
                       </span>
                     </button>
                   </Link>
                 </div>
               </li>
+
               <li>
                 <div className="flex justify-start items-center space-x-1">
                   <span className="text-primary md:text-sm text-base uppercase font-semibold">
@@ -176,7 +111,9 @@ const Banner = () => {
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Empowering The Web With Innovative Development
+                  Faster Hiring, Lower Costs, Better Talent – Reduce turnaround
+                  time and recruitment costs while securing the best
+                  professionals for your team.
                 </h2>
                 <p className="text-textcolor pt-4 text-justify text-[15px] font-medium">
                   From creativity to technology Zmedios Technology crafts
@@ -189,13 +126,14 @@ const Banner = () => {
                       <div className="eff-3"></div>
                       <span className="text-base flex items-center ">
                         {" "}
-                        Discover Now
+                        Contact Now
                         <MdKeyboardArrowRight className=" text-base" />
                       </span>
                     </button>
                   </Link>
                 </div>
               </li>
+
               <li>
                 <div className="flex justify-start items-center space-x-1">
                   <span className="text-primary md:text-sm text-base uppercase font-semibold">
@@ -211,7 +149,8 @@ const Banner = () => {
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Transforming Your Brand With Mobile App Development
+                  Technical Screening Layer – Every candidate undergoes an
+                  additional round of technical evaluation.
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
                   From idea to app store, Zmedios Technology guides you through
@@ -223,7 +162,7 @@ const Banner = () => {
                       <div className="eff-3"></div>
                       <span className="text-base flex items-center ">
                         {" "}
-                        Discover Now
+                        Enquire Now
                         <MdKeyboardArrowRight className=" text-base" />
                       </span>
                     </button>
@@ -233,7 +172,7 @@ const Banner = () => {
             </ul>
           </div>
           <div className="md:px-10 py-12 md:w-[32%] w-[85%] absolute md:top-28 top-6 md:right-[3.6rem] right-7 rounded-lg  mt-2  px-5 ">
-            <EnquiryModal />
+            {/* <EnquiryModal /> */}
           </div>
         </div>
       </div>

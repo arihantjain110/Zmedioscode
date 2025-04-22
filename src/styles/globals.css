@@ -47,7 +47,7 @@ h6 {
 }
 
 .container-ack {
-  max-width: 1100px;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -1691,4 +1691,54 @@ body:not(.device-touch) .clients-grid li a {
     top: 50%;
   }
    */
+
+.button_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 200px;
+    position: relative;
+    gap: 20px;
+  }
   
+  .home_btn {
+    background: #ffaa18b3;
+    color: black;
+    padding: 10px 14px;
+    border-radius: 5px;
+
+  }
+
+.staffing_content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(103, 69, 53, 0.51); 
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 20px;
+  height: 60vh;
+  overflow: auto;
+}
+
+.para_txt{
+  line-height: 35px;
+  font-size: 14px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(103, 69, 53, 0.51); 
+}
+

@@ -50,8 +50,8 @@ const Location = () => {
                 <div className="text-xs">
                   <h2 className="font-semibold">ADDRESS</h2>
                   <p className="text-primary">
-                    JMD MEGAPOLIS, IV, Badshahpur Sohna Rd Hwy, Gurugram,
-                    Haryana 122018
+                    MiQB Executive Coworking Space C-25, C Block, Sector 58,
+                    Noida, Uttar Pradesh 201301
                   </p>
                 </div>
               </div>

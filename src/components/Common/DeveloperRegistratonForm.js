@@ -549,12 +549,10 @@ const DeveloperRegistrationSection = () => {
           </div>
           <div className="flex flex-col items-center mt-16 space-y-10 text-[#383C3E]">
             <div className="w-[357px]">
-              <h1 className="font-bold mb-5">Offices</h1>
+              <h1 className="font-bold mb-5">Office Address</h1>
               <p className="">
-                India
-                <br />
-                IV, JMD MEGAPOLIS, Badshahpur Sohna Rd Hwy, Bhondsi, Gurugram,
-                Haryana 122018
+              MiQB Executive Coworking Space C-25, C Block, Sector 58,
+              Noida, Uttar Pradesh 201301
               </p>
             </div>
             <div className="w-[357px]">

@@ -1,4 +1,4 @@
-import Footer from "../components/OnDemandDeveloper/footer";
+import Footer from "../components/OnDemandDeveloper/Footer";
 import Header from "../components/Common/Header";
 import DeveloperRegistrationSection from "../components/Common/DeveloperRegistratonForm";
 import FreelancerSearch from "../components/OnDemandDeveloper/freelancerSearch";

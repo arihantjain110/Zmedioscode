@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Head from "next/head";
 import Image from "next/image";
 
-const CareerDetails = ()=> {
+const CareerDetails = () => {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -282,6 +282,6 @@ const CareerDetails = ()=> {
       <Footer />
     </>
   );
-}
+};
 
 export default CareerDetails;
