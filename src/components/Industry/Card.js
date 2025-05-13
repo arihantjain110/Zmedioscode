@@ -10,47 +10,63 @@ const Card = () => {
       text: "lorem",
       designation: "lorem",
       title: 'Healthcare',
-      subtitle: 'The healthcare sector works to lengthen, safeguard, and enhance your quality of life. In order to improve your health, healthcare practitioners collaborate as a network of specialists that provide medical supplies and equipment.'
+      subtitle: 'Make the patient data rich insights with interactive dashboards for better diagnosis and operational efficiency. Imagine treatment trends, hospital performance and future analysis for the delivery of better care. Our solutions help health professionals make data -driven decisions faster.'
     },
     {
       id: 2,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
-      title: 'Educational',
-      subtitle: 'Schools, colleges, institutions, and universities make up the education sector. Students enrolled in elementary through high schools, colleges and universities, and training facilities that offer industrial, professional, and vocational programmes get instruction and training from any educational institution in this field.'
+      title: 'Real Estate',
+      subtitle: 'Customer preferences via the track market trend, valuation of properties and dynamic bleeding and comparative analysis. Imagine sales pipelines, ROI estimates and demographic data to adapt investments. Make decisions on decisions about decisions, sales and leasing with real time. '
     },
     {
       id: 3,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
-      title: 'Financial',
-      subtitle: 'Businesses, corporations, banks, and other financial institutions make up the financial sector. By offering financial intermediary services, managing, allocating, and moving financial capital, the financial industry contributes considerably to the economy.'
+      title: ' Machinery & Manufacturing',
+      subtitle: 'The performance of the monitoring tool, the production efficiency and the supply chain logistics with a real -time dashboard. Provision for maintenance needs and reduces shutdown using IoT-driven visual analysis. Improve quality control and operational workflows with date -driven insights.'
     },
     {
       id: 4,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
-      title: 'Real Estate',
-      subtitle: 'The field of real estate encompasses a wide range of property-related activities, including the development, leasing, estimation, marketing, and management of commercial, residential, agricultural, and industrial assets.'
+      title: 'Finance',
+      subtitle: 'Detect fraud, examine chance, and tune portfolio overall performance through superior financial dashboards and forecasting models. Visualize marketplace traits, customer behavior, and transaction patterns for smarter investments. Enhance compliance and reporting with clear, audit-equipped statistics visuals.'
     },
     {
       id: 5,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
-      title: 'Industrial Automation',
-      subtitle: 'The field of industrial automation mainly deals with the automation of industrial machinery and processes. To do so, procedures for manufacturing, quality control, and material handling are improved using a combination of information technologies, specialised equipment and robots.'
+      title: 'E-Commerce',
+      subtitle: 'Analyze customers journey, sales stretch and inventory with interactive visual reports. Customize prices, reproduction and UX using heat map and behavioral analysis. Promote the conversion by converting large data to action-rich retail strategies.'
     },
     {
       id: 6,
       para: "lorem",
       text: "lorem",
       designation: "lorem",
-      title: 'Tour and Travel Industry',
-      subtitle: 'One of the biggest service sectors in the world and one that is becoming more and more significant in the current era is the travel sector. It is focused on the movement of individuals between different locations and the needs they have when traveling.'
+      title: ' Education',
+      subtitle: 'Track students performance, registration trends and institutional efficiency in making data -dashboard attractive. Imagine learning results, resource allocation and demographic insights for better planning. Strengthen teachers and administrators with evidence -based decision equipment.'
+    },
+     {
+      id: 7,
+      para: "lorem",
+      text: "lorem",
+      designation: "lorem",
+      title: 'Tourism & Hospitality',
+      subtitle: 'Measure the trends for ordering, guest satisfaction and seasonal demand through intuitive travel analysis. Imagine coating rates, revenue streams and marketing of ROI for smart operations. Increase customer experiences with data -driven privatization.'
+    },
+     {
+      id: 8,
+      para: "lorem",
+      text: "lorem",
+      designation: "lorem",
+      title: 'Retail',
+      subtitle: 'Purchasing patterns, stock levels and customer demographics with dynamic retail. Customize store layouts, promotion and supply chains using visual trend analysis. Real time, sales and loyalty with data-driven strategies.'
     },
   ];
   return (

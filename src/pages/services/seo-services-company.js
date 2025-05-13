@@ -86,13 +86,13 @@ const SeoAgency = () => {
   const cards = [
     {
       id: 1,
-      para: "Our modernization solutions revolutionize your applications' performance, scalability, agility, & maintainability. We enable seamless integration with emerging technologies, optimize infrastructure, & streamline workflows to ensure your applications are future-proof.",
+      //para: "Our modernization solutions revolutionize your applications' performance, scalability, agility, & maintainability. We enable seamless integration with emerging technologies, optimize infrastructure, & streamline workflows to ensure your applications are future-proof.",
       bgcolor: "bg-[#fff]",
       cols: "md:col-span-2",
       textcolor: "text-secondary",
       display: "hidden",
-      maintitle: "Revitalize",
-      subtitle: "Revolutionize Your Applications With Modernization Solutions",
+      //maintitle: "Revitalize",
+      subtitle: "What Sets Zmedios Tech Apart as Your SEO Partner?",
     },
     {
       id: 2,
@@ -186,13 +186,21 @@ const SeoAgency = () => {
         }}
       >
         <Banner
-          bannertitle="Make your systems efficient & scalable with our app modernization expertise"
-          bannersubtext="Get your app back on track for growth with our practice-driven app modernization skills. We provide full-scope app modernization services you can start using quickly to fix, boost, and revamp your systems with teams that have worked for over 160 companies."
+          bannertitle="Search Engine Optimization Services"
+          bannersubtext="Each brand wants visibility, but not all brands are found. This is the place where Zemdio's tech comes from. We specialize in search engine optimization services, which do not take into account your site - they really drive traffic, real lead and real development. If you are looking for affordable SEO services that do not cut the corners and give the average result, you are in the right place. As a reliable SEO agency, we bring your digital -looking life without blowing your marketing budget by marketing your ranking and maximizing your return."
           serviceimg="/assets/images/aboutusimg3.png"
-          servicehead="Put your present in order so you can focus on scaling up for new users"
-          servicedesc1="Popular apps often fall victim to their own success. They grow fast to satisfy business requirements, patched up ad-hoc by different teams. Eventually, they become sluggish and difficult to maintain, let alone extend and improve. App modernization can turn it all around."
-          servicedesc2="The Zmedios Technology development teams have been called to the rescue of many legacy projects. In their course, our developers carried out tech stack migrations and consolidations, refactored codebases, designed and redesigned architectures, moved from a monolith to microservices, and performed architecture audits."
+          servicehead="Why SEO is the Backbone of Online Success"
+          servicedesc1="Search engines are the first points for most online experiences. When your viewers seek services or products provided by you, your site should be the first thing they find. This discovery is the power of search engine optimization services. But it's not just about high ranking - it's about attracting the right visitors who convert to loyal customers."
+          servicedesc2="With billions of daily discoveries, ignoring SEO means losing valuable occasions. A solid SEO strategy ensures long -term visibility online and helps your business stay in front of the basket. In Zmedios Tech, we make sure your business is not just participating - it dominates."
         />
+         <Banner
+  reverse={true} // <-- This flips the layout
+  serviceimg="/assets/images/aboutusimg4.jpg"
+  servicehead="Affordable SEO Services That Fit Every Budget"
+  servicedesc1="The big SEO does not have to break the bank. We believe that any business - no matter how large or small it is - is eligible for quality search engine optimization services. Our affordable SEO services are designed to be cost-effective, flexible and the result."
+  servicedesc2="We offer more pricing packages to suit your unique needs. Whether you need a full-scale SEO campaign or just a monthly tune-up, we make professional adaptation available without compromising on quality."
+/>
+
       </div>
       <Cards card={cards} />
       <div className="container-ack md:px-0 px-5">

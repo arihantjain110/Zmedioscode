@@ -1,102 +1,82 @@
 import React from "react";
 
-const Cards = ({card}) => {
-
+const Cards = ({ card }) => {
   return (
     <div className="container-ack md:px-0 px-5">
+      {/* Desktop View */}
       <div className="md:grid lg:grid-cols-4 md:grid-cols-2 px-5 md:py-20 py-10 gap-8 hidden">
         {card.map((item, index) => (
-          <>
-            <div className={`${item.cols} `} key={index}>
-              <div
-                className={`${item.bgcolor} px-3 pb-5 h-full  rounded-2xl shadow-box`}
-              >
-                <div className={`${item.display}`}>
-                  {item.icon}
-                </div>
-                <div className="relative">
-                  <div className={`${item.main}`}>
-                    {item.maintitle ? (
-                      <div className="tracking-wider text-left textorange font-bold">
-                        {item.maintitle}{" "}
-                      </div>
-                    ) : null}
+          <div className={`${item.cols}`} key={index}>
+            <div className={`${item.bgcolor} px-3 pb-5 h-full rounded-2xl shadow-box`}>
+              <div className={item.display}>{item.icon}</div>
+              <div className="relative">
+                {item.maintitle && (
+                  <div className="text-orange-400 tracking-wider text-left font-bold text-5xl mb-2">
+                    {item.maintitle}
                   </div>
-                  <div className={`${item.main}`}>
-                    {item.subtitle ? (
-                      <div className="text-3xl font-bold absolute md:top-[3.8rem] top-[3rem]">
-                        {item.subtitle}{" "}
-                      </div>
-                    ) : null}
-                    <div className="load-wrapp relative bottom-[-5px]">
-                          <div className="load">
-                            <div className="line"></div>
-                            <div className="line"></div>
-                            <div className="line"></div>
-                          </div>
-                        </div>
+                )}
+                {item.subtitle && (
+                  <h2 className="text-2xl font-bold mb-2 text-left">
+                    {item.subtitle}
+                  </h2>
+                )}
+                {item.subsubtitle && (
+                  <h3 className="text-lg font-medium text-gray-500 mb-4 text-left">
+                    {item.subsubtitle}
+                  </h3>
+                )}
+                <div className="load-wrapp mb-4">
+                  <div className="load flex space-x-1">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
                   </div>
-                  <h5
-                    className={`${item.textcolor} ${item.textsize} ${item.fontbold} py-2 font-semibold `}
-                  >
-                    {" "}
-                    {item.title}
-                  </h5>
                 </div>
-                <p
-                  className={`${item.textcolor} text-justify pt-1 leading-relaxed text-sm text-textcolor`}
-                >
-                  {item.para}
-                </p>
               </div>
+              <p className={`${item.textcolor} text-justify leading-relaxed text-sm`}>
+                {item.para}
+              </p>
             </div>
-          </>
+          </div>
         ))}
       </div>
 
-      <div>
-        <div className="md:hidden block ">
-          {card.map((item, index) => (
-            <>
-              <div className={`${item.cols} `} key={index}>
-                <div
-                  className={`${item.bgcolor} px-3 pb-5 h-full  rounded-2xl shadow-box my-10`}
-                >
-                  <div className={`${item.display}`}>
-                    {item.icon}
+      {/* Mobile View */}
+      <div className="md:hidden block">
+        {card.map((item, index) => (
+          <div className={`${item.cols}`} key={index}>
+            <div className={`${item.bgcolor} px-3 pb-5 rounded-2xl shadow-box my-10`}>
+              <div className={item.display}>{item.icon}</div>
+              <div className="relative">
+                {item.maintitle && (
+                  <div className="text-4xl text-orange-400 text-center font-bold mb-3">
+                    {item.maintitle}
                   </div>
-                  <div className="relative">
-                    <div className={`${item.main}`}>
-                      {item.maintitle ? (
-                        <div className="md:text-[6.5rem] text-[4.6rem] text-white tracking-wider text-center texttransparent font-bold  md:pt-10 ">
-                          {item.maintitle}{" "}
-                        </div>
-                      ) : null}
-                    </div>
-                    <div className={`${item.main}`}>
-                      {item.subtitle ? (
-                        <div className="absolute md:top-[6.5rem] top-5 md:left-[3rem] text-3xl font-semibold ">
-                          {item.subtitle}{" "}
-                        </div>
-                      ) : null}
-                    </div>
-                    <h5
-                      className={`${item.textcolor} ${item.textsize} ${item.border} ${item.fontbold}  py-2 font-semibold  `}
-                    >
-                      {" "}
-                      {item.title}
-                    </h5>
+                )}
+                {item.subtitle && (
+                  <h2 className="text-xl font-bold mb-2 text-left">
+                    {item.subtitle}
+                  </h2>
+                )}
+                {item.subsubtitle && (
+                  <h3 className="text-base font-medium text-gray-500 mb-4 text-left">
+                    {item.subsubtitle}
+                  </h3>
+                )}
+                <div className="load-wrapp mb-4">
+                  <div className="load flex space-x-1">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
                   </div>
-                  <p
-                    className={`${item.textcolor}  text-justify pt-1 leading-relaxed text-sm text-textcolor`}
-                  >
-                    {item.para}
-                  </p>
                 </div>
               </div>
-            </>
-          ))}
-        </div>
+              <p className={`${item.textcolor} text-justify leading-relaxed text-sm`}>
+                {item.para}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

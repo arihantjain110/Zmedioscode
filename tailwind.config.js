@@ -13,7 +13,16 @@ module.exports = {
       colors: {
         primary: "#FFBF00",
         secondary: "#1c1e22",
-        textcolor:"#868789",
+        textcolor: "#868789",
+      },
+      keyframes: {
+        underline: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(6px)' },
+        },
+      },
+      animation: {
+        underline: 'underline 1.2s ease-in-out infinite',
       },
     },
   },
