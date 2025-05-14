@@ -18,7 +18,7 @@ const Enquiry = () => {
 
               <div className="md:w-[95%] w-full text-base text-textcolor text-justify font-text  py-4">
               Yes, We Can Help You With Your Ideas, Challenges & Ambitions!!
-Let&apos;s make things work. Just tell us the requirements.
+              Let&apos;s make things work. Just tell us the requirements.
               </div>
             </div>
           </div>

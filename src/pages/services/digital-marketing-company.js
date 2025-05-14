@@ -46,44 +46,44 @@ const Marketing = () => {
     //   desc: "In some cases, it may be more feasible to replace an existing application with a new solution rather than attempting to modernize it. This approach involves rebuilding the application from scratch, leveraging modern technologies and design principles.",
     // },
   ];
-  const techs = [
-    {
-      id: "1",
-      img: "/assets/images/service/node.svg",
-      name: "Node.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "2",
-      img: "/assets/images/service/react.svg",
-      name: "React.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "3",
-      img: "/assets/images/service/angularjs.svg",
-      name: "Angular",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "4",
-      img: "/assets/images/service/laravel.svg",
-      name: "Laravel",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "5",
-      img: "/assets/images/service/typescript.svg",
-      name: "Typescript",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "6",
-      img: "/assets/images/service/nextjs.svg",
-      name: "Next.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-  ];
+  // const techs = [
+  //   {
+  //     id: "1",
+  //     img: "/assets/images/service/node.svg",
+  //     name: "Node.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "2",
+  //     img: "/assets/images/service/react.svg",
+  //     name: "React.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "3",
+  //     img: "/assets/images/service/angularjs.svg",
+  //     name: "Angular",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "4",
+  //     img: "/assets/images/service/laravel.svg",
+  //     name: "Laravel",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "5",
+  //     img: "/assets/images/service/typescript.svg",
+  //     name: "Typescript",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "6",
+  //     img: "/assets/images/service/nextjs.svg",
+  //     name: "Next.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  // ];
 const cards = [
   {
     id: 1,
@@ -309,14 +309,14 @@ const cards = [
 
 
       <Cards card={cards} />
-      <div className="container-ack md:px-0 px-5">
+      {/* <div className="container-ack md:px-0 px-5">
         <ComponentHead
           title="Technology"
           sub="Digital Marketing"
           head="The technology stack for Digital Marketing can vary depending on the specific requirements of the application and the chosen modernization approach."
         />
         <Technology tech={techs} />
-      </div>
+      </div> */}
 
       <div>
         <div
@@ -325,15 +325,15 @@ const cards = [
               'url("/assets/images/service/servicebackground.png")',
           }}
         >
-          <div className="container-ack md:px-0 px-5">
+          {/* <div className="container-ack md:px-0 px-5">
             <ProcessHead
               processhead="Services"
               processsub="Other Services"
-              // processdesc="Your business just requires more than an online look - it requires a powerful strategy to stand out and fast scale. In Zmedios Tech, we offer groundbreaking digital marketing services that are ready to speed up developments, generate quality lines and improve the brand. Whether you are a start -up or a growing business, our customized digital marketing strategy ensures that you are ahead of the competition. From SEO and PPC to social media and e -mail marketing, we help you reach the right audience with the right message, especially when it comes to digital marketing services for small businesses who want to expand their footsteps"
+              processdesc="Your business just requires more than an online look - it requires a powerful strategy to stand out and fast scale. In Zmedios Tech, we offer groundbreaking digital marketing services that are ready to speed up developments, generate quality lines and improve the brand. Whether you are a start -up or a growing business, our customized digital marketing strategy ensures that you are ahead of the competition. From SEO and PPC to social media and e -mail marketing, we help you reach the right audience with the right message, especially when it comes to digital marketing services for small businesses who want to expand their footsteps"
               processimg="/assets/images/service/videoservice.png"
             />
             <Process process={processes} />
-          </div>
+          </div> */}
         </div>
         <div className="h-[7.5rem]"
           style={{
@@ -341,13 +341,13 @@ const cards = [
           }}></div>
       </div>
 
-      <Work />
+      {/* <Work /> */}
       {/* <Section /> */}
          <Faq  faqData={faqData}/>
-      <Enquiry />
+      {/* <Enquiry /> */}
    
 
-      <Clients />
+      {/* <Clients /> */}
       <Footer />
     </div>
   );
