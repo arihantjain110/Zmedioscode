@@ -9,8 +9,6 @@ import Work from "../components/Services/DetailPage/Work";
 import Technology from "../components/Services/DetailPage/Technology";
 import Enquiry from "../components/Services/DetailPage/Enquiry";
 import ProcessHead from "../components/Services/DetailPage/ProcessHead";
-
-
 import Process from "../components/Services/DetailPage/Process";
 
 const Services = () => {
@@ -107,7 +105,7 @@ const Services = () => {
       <div className="container-ack md:px-0 px-5">
         <ComponentHead
           title="Technology"
-          sub="Digital Marketing"
+          sub="Technical Stack"
           head="The technology stack for Digital Marketing can vary depending on the specific requirements of the application and the chosen modernization approach."
         />
         <Technology tech={techs} />
