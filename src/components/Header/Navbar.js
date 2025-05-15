@@ -226,7 +226,7 @@ const Navbar = () => {
                       Public Relations (PR)
                     </Link>
                     <Link
-                      href="/services/digital-marketing-company"
+                      href="/services/digital-marketing-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink   rounded-md px-4 py-2 text-sm"
                     >
                       Digital Marketing Strategy
@@ -239,20 +239,20 @@ const Navbar = () => {
                     </Link>
 
                     <Link
-                      href="/services/social-media-marketing-agency"
+                      href="/services/social-media-marketing-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Social Media Marketing (SMM)
                     </Link>
 
                     <Link
-                      href="/services/sem-services-company"
+                      href="/services/search-engine-marketing-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Search Engine Marketing (SEM)
                     </Link>
                     <Link
-                      href="/services/seo-services-company"
+                      href="/services/search-engine-optimization-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Search Engine Optimization (SEO)

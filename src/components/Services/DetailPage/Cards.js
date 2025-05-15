@@ -1,11 +1,30 @@
 import React from "react";
 
 const Cards = ({ card }) => {
+  const introCard = card.find((item) => item.id === 1);
+  const otherCards = card.filter((item) => item.id !== 1);
+
   return (
     <div className="container-ack md:px-0 px-5">
+      {/* Intro Section */}
+      {introCard && (
+        <div className="w-full pt-10 pb-0"> {/* top padding only */}
+          <div className={`${introCard.bgcolor} px-3 pb-5 rounded-2xl shadow-box max-w-4xl mx-auto`}>
+            {introCard.subtitle && (
+              <h2 className="text-2xl font-bold mb-2 text-center text-secondary">
+                {introCard.subtitle}
+              </h2>
+            )}
+            <p className={`${introCard.textcolor} text-center leading-relaxed text-sm`}>
+              {introCard.para}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Desktop View */}
-      <div className="md:grid lg:grid-cols-4 md:grid-cols-2 px-5 md:py-20 py-10 gap-8 hidden">
-        {card.map((item, index) => (
+      <div className="md:grid lg:grid-cols-4 md:grid-cols-2 px-5 md:py-10 py-10 gap-8 hidden">
+        {otherCards.map((item, index) => (
           <div className={`${item.cols}`} key={index}>
             <div className={`${item.bgcolor} px-3 pb-5 h-full rounded-2xl shadow-box`}>
               <div className={item.display}>{item.icon}</div>
@@ -43,7 +62,7 @@ const Cards = ({ card }) => {
 
       {/* Mobile View */}
       <div className="md:hidden block">
-        {card.map((item, index) => (
+        {otherCards.map((item, index) => (
           <div className={`${item.cols}`} key={index}>
             <div className={`${item.bgcolor} px-3 pb-5 rounded-2xl shadow-box my-10`}>
               <div className={item.display}>{item.icon}</div>
