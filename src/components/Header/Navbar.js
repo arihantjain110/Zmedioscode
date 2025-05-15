@@ -181,7 +181,7 @@ const Navbar = () => {
                       Web Development
                     </Link>
                     <Link
-                      href="/services/app-modernization-services"
+                      href="/services/application-modernization-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       App Modernization
@@ -232,7 +232,7 @@ const Navbar = () => {
                       Digital Marketing Strategy
                     </Link>
                     <Link
-                      href="/services/media-buying-agency"
+                      href="/services/media-buying-and-planning-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Media Buying and Planning

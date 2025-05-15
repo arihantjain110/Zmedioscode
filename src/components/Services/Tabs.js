@@ -119,7 +119,7 @@ const serviceData = [
     image: "/assets/images/service/serviceimg1.png",
     name: "App Modernization",
     desc: "App modernization is the process of revitalising existing applications to leverage modern technologies, enhance performance, improve user experiences, and align with evolving business needs.",
-    link: "/services/app-modernization-services",
+    link: "/services/application-modernization-services",
   },
   {
     id: 4,
@@ -185,7 +185,7 @@ const DigitalModernization = [
     image: "/assets/images/service/MediaBuyingandplanning.png",
     name: "Media Buying and Planning",
     desc: "Our media buying and planning services ensure that your ads reach the right audience at the right time and place. We devise a strategic media plan, negotiate ad placements, manage your media budget, and track the performance of your ads to provide maximum ROI.",
-    link: "/services/media-buying-agency",
+    link: "/services/media-buying-and-planning-services",
   },
 ];
 const Tabs = () => {

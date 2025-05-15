@@ -4,13 +4,13 @@ import Footer from '../../components/Common/Footer';
 import Header from "../../components/Common/Header";
 import Banner from "../../components/Services/DetailPage/Banner";
 import Cards from "../../components/Services/DetailPage/Cards";
-import Technology from "../../components/Services/DetailPage/Technology";
+// import Technology from "../../components/Services/DetailPage/Technology";
 import ComponentHead from "../../components/Common/ComponentHead";
 import Process from "../../components/Services/DetailPage/Process";
 import ProcessHead from "../../components/Services/DetailPage/ProcessHead";
-import Work from "../../components/Services/DetailPage/Work";
-import Enquiry from "../../components/Services/DetailPage/Enquiry";
-import Clients from "../../components/Home/Clients";
+// import Work from "../../components/Services/DetailPage/Work";
+// import Enquiry from "../../components/Services/DetailPage/Enquiry";
+// import Clients from "../../components/Home/Clients";
 import Faq from "../../components/Services/DetailPage/Faq";
 const SeoAgency = () => {
   const processes = [
@@ -45,44 +45,44 @@ const SeoAgency = () => {
       desc: "In some cases, it may be more feasible to replace an existing application with a new solution rather than attempting to modernize it. This approach involves rebuilding the application from scratch, leveraging modern technologies and design principles.",
     },
   ];
-  const techs = [
-    {
-      id: "1",
-      img: "/assets/images/service/node.svg",
-      name: "Node.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "2",
-      img: "/assets/images/service/react.svg",
-      name: "React.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "3",
-      img: "/assets/images/service/angularjs.svg",
-      name: "Angular",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "4",
-      img: "/assets/images/service/laravel.svg",
-      name: "Laravel",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "5",
-      img: "/assets/images/service/typescript.svg",
-      name: "Typescript",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-    {
-      id: "6",
-      img: "/assets/images/service/nextjs.svg",
-      name: "Next.js",
-      desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
-    },
-  ];
+  // const techs = [
+  //   {
+  //     id: "1",
+  //     img: "/assets/images/service/node.svg",
+  //     name: "Node.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "2",
+  //     img: "/assets/images/service/react.svg",
+  //     name: "React.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "3",
+  //     img: "/assets/images/service/angularjs.svg",
+  //     name: "Angular",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "4",
+  //     img: "/assets/images/service/laravel.svg",
+  //     name: "Laravel",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "5",
+  //     img: "/assets/images/service/typescript.svg",
+  //     name: "Typescript",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  //   {
+  //     id: "6",
+  //     img: "/assets/images/service/nextjs.svg",
+  //     name: "Next.js",
+  //     desc: "Lorem ipsum dolor sit amet consect Sapien porttitor. ",
+  //   },
+  // ];
   const cards = [
     {
       id: 1,
