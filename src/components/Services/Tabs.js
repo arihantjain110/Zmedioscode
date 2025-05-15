@@ -126,7 +126,7 @@ const serviceData = [
     image: "/assets/images/service/serviceimg.png",
     name: "Software Development",
     desc: "Software development is the process of designing, coding, testing, and maintaining software applications. In today's fast-paced digital world, software plays a vital role in powering businesses and driving innovation.",
-    link: "/services/software-development-company",
+    link: "/services/software-development-services",
   },
   {
     id: 5,

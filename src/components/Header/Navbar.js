@@ -187,7 +187,7 @@ const Navbar = () => {
                       App Modernization
                     </Link>
                     <Link
-                      href="/services/software-development-company"
+                      href="/services/software-development-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Software Development
