@@ -133,7 +133,7 @@ const serviceData = [
     image: "/assets/images/service/serviceimg1.png",
     name: "Ecommerce Development",
     desc: "Ecommerce development involves designing and building online stores that provide an exceptional user experience, seamless transactions, and robust backend functionality.",
-    link: "/services/ecommerce-development-company",
+    link: "/services/ecommerce-development-services",
   },
   {
     id: 6,
