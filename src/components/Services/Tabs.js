@@ -67,7 +67,7 @@ const productData = [
     image: "/assets/images/service/serviceimg1.png",
     name: "Prototyping",
     desc: "A prototype is an early draft of a design used to get rapid feedback on whether the intended design works well or needs to be updated in some areas.",
-    link: "/services/ui-ux-prototyping",
+    link: "/services/rapid-prototyping-services",
   },
   {
     id: 3,

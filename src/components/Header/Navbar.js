@@ -131,7 +131,7 @@ const Navbar = () => {
                     </p>
 
                     <Link
-                      href="/services/ui-ux-prototyping"
+                      href="/services/rapid-prototyping-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Prototyping
