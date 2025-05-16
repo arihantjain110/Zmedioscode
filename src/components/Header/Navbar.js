@@ -93,7 +93,7 @@ const Navbar = () => {
 
               <div className="group-hover:block z-[999] shadow-lg shadow-black/30 dropdown-menu absolute hidden transition-all  duration-300 translate-y-2 h-auto top-[2.1rem] md:-left-10 ">
                 <div className="top-0 bg-white flex py-5">
-                  <div className="p-1 text-black text-xs  w-60 text-left flex flex-col  border-r-2 border-primary">
+                  {/* <div className="p-1 text-black text-xs  w-60 text-left flex flex-col  border-r-2 border-primary">
                     <p className=" text-black text-base font-bold px-4 py-5 ">
                       Staffing
                     </p>
@@ -123,7 +123,7 @@ const Navbar = () => {
                     >
                       Employee Leasing Services
                     </Link>
-                  </div>
+                  </div> */}
 
                   <div className="p-1 text-black text-xs  w-70 text-left flex flex-col rounded-l-md  border-r-2 border-primary">
                     <p className=" text-black text-base font-bold px-4 py-5 ">
@@ -143,25 +143,25 @@ const Navbar = () => {
                       UX Strategy
                     </Link>
                     <Link
-                      href="/services/ui-designing"
+                      href="/services/ui-design-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       UI Designing
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/services/ui-ux-research"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink   rounded-md px-4 py-2 text-sm"
                     >
                       User Research
-                    </Link>
+                    </Link> */}
                     <Link
-                      href="/services/product-usability-testing"
+                      href="/services/usability-testing-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Usability Testing
                     </Link>
                     <Link
-                      href="/services/data-visualisation"
+                      href="/services/data-visualisation-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Data Visualisation

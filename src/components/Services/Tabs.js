@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 
 const tabs = [
-  {
-    id: 1,
-    text: "Staffing",
-  },
+  // {
+  //   id: 1,
+  //   text: "Staffing",
+  // },
   {
     id: 2,
     text: "Product Conceptualization",
@@ -55,13 +55,13 @@ const Staffing = [
 ];
 
 const productData = [
-  {
-    id: 1,
-    image: "/assets/images/service/serviceimg.png",
-    name: "User Research",
-    desc: "As a leading UX research company in India, dig deep into identifying users' motivations and pain points, investigate their root causes and extract valuable insights.",
-    link: "/services/ui-ux-research",
-  },
+  // {
+  //   id: 1,
+  //   image: "/assets/images/service/serviceimg.png",
+  //   name: "User Research",
+  //   desc: "As a leading UX research company in India, dig deep into identifying users' motivations and pain points, investigate their root causes and extract valuable insights.",
+  //   link: "/services/ui-ux-research",
+  // },
   {
     id: 2,
     image: "/assets/images/service/serviceimg1.png",
@@ -88,15 +88,17 @@ const productData = [
     image: "/assets/images/service/serviceimg.png",
     name: "Usability Testing",
     desc: "We closely observe and monitor each action that a user takes and iterate designs to make the product as user friendly as possible.",
-    link: "/services/product-usability-testing",
+    link: "/services/usability-testing-services",
   },
+ 
   {
     id: 6,
     image: "/assets/images/service/serviceimg1.png",
     name: "Data Visualisation",
     desc: "We present the data in visual form and help decision-makers to identify key opportunities and impending issues.",
-    link: "/services/data-visualisation",
+    link: "/services/data-visualisation-services",
   },
+  
 ];
 
 const serviceData = [
