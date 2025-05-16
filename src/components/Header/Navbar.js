@@ -207,7 +207,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link
-                      href="/services/cloud-engineering-and-devOps"
+                      href="/services/cloud-engineering-and-devops-solutions"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink py-2  rounded-md  px-4 text-sm"
                     >
                       Cloud Engineering & DevOps
