@@ -193,7 +193,7 @@ const Navbar = () => {
                       Software Development
                     </Link>
                     <Link
-                      href="/services/product-design-company"
+                      href="/services/digital-product-design-services"
                       className=" hover:text-white hover:bg-gradient-to-r from-primary to-pink   rounded-md px-4 py-2 text-sm"
                     >
                       Digital Product Design

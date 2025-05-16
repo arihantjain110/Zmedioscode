@@ -105,7 +105,7 @@ const serviceData = [
     image: "/assets/images/service/serviceimg1.png",
     name: "Digital Product Design",
     desc: "Product design plays a crucial role in creating exceptional user experiences and driving the success of a product. It encompasses the process of understanding user needs, ideating, prototyping, and iterating to develop a functional and visually appealing product.",
-    link: "/services/product-design-company",
+    link: "/services/digital-product-design-services",
   },
   {
     id: 2,
