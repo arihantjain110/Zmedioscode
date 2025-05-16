@@ -74,7 +74,7 @@ const productData = [
     image: "/assets/images/service/serviceimg.png",
     name: "UX Strategy",
     desc: "UX strategy is the culmination of your business strategy, the value of innovation your business provides, validated user research, and frictionless user experience.",
-    link: "/services/ui-strategy",
+    link: "/services/ux-design-services",
   },
   {
     id: 4,
