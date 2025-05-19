@@ -17,70 +17,70 @@ const Portfolio = () => {
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/jindal.jpg"
+              src="/assets/images/portfolio/RealEstateImg1.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/EB.jpg"
+              src="/assets/images/portfolio/ffacImg.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/vivo.jpg"
+              src="/assets/images/portfolio/MyFinderImg1.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/insaano.jpg"
+              src="/assets/images/portfolio/RealEstateImg2.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/toir.jpg"
+              src="/assets/images/portfolio/MyFinderImg2.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/milestone.jpg"
+              src="/assets/images/portfolio/MotorFinImg2.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/kazuki.jpg"
+              src="/assets/images/portfolio/MotorFinImg1.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/c1india.jpg"
+              src="/assets/images/portfolio/ffacImg2.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/discovery.png"
+              src="/assets/images/portfolio/glowritiImg12.png"
               alt=""
             />
           </div>
           <div className="masonry-grid-item containerzoom">
             <img
               className="zoomimg drop-shadow-md"
-              src="/assets/images/portfolio/mr-furniture.jpg"
+              src="/assets/images/portfolio/glowritiImg11.png"
               alt=""
             />
           </div>

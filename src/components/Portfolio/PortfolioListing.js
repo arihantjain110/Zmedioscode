@@ -10,46 +10,46 @@ function PortfolioListing() {
       heading: 'The standard Lorem Ipsum passage, used since the 1500s',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       category: 'eco',
-      img: '/assets/images/portfolio/pro-1.1.png',
-      img2: '/assets/images/portfolio/pro-1.2.png',
-      companyName: 'Nishba',
-      companyDesc: 'At Nishba, we aim to create a modern Indian lifestyle among women. Our collections are influenced by modesty which allows women to feel fashionably feminine and unique in their own way.'
+      img: '/assets/images/portfolio/RealEstateImg1.png',
+      img2: '/assets/images/portfolio/RealEstateImg2.png',
+      companyName: 'The Palm Jebel Ali',
+      companyDesc: 'Zmedios has worked extensively with real estate agencies, developers, and property aggregators across the U.S. and India to develop cutting-edge, Al-powered digital solutions. Our mission is to empower real estate businesses to move beyond traditional marketing and into intelligent, scalable, and engaging online platforms that convert visitors into long-term clients.'
 
     },
     {
       heading: 'The standard Lorem Ipsum passage, used since the 1500s',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       category: 'web',
-      img: '/assets/images/portfolio/pro-2.1.png',
-      img2: '/assets/images/portfolio/pro-2.2.png',
-      companyName: 'Noosh',
+      img: '/assets/images/portfolio/ffacImg.png',
+      img2: '/assets/images/portfolio/ffacImg2.png',
+      companyName: 'FFAC',
       companyDesc: 'NOOSH is a Persian word that rightly expresses what we stand for - Beauty and being part of something bigger. We as a brand, hope to create an ever growing and evolving family of Noosh women who prioritise style with comfort.'
     },
     {
       heading: 'The standard Lorem Ipsum passage, used since the 1500s',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       category: 'web',
-      img: '/assets/images/portfolio/pro-3.1.png',
-      img2: '/assets/images/portfolio/pro-3.2.png',
-      companyName: 'MSi',
+      img: '/assets/images/portfolio/glowritiImg11.png',
+      img2: '/assets/images/portfolio/glowritiImg12.png',
+      companyName: 'Glowriti',
       companyDesc: 'MSI is a world leader in gaming, content creation, business & productivity and AIoT solutions. Bolstered by its cutting-edge R&D capabilities and customer-driven innovation, MSI has a wide-ranging global presence spanning over 120 countries. Its comprehensive lineup of laptops, graphics cards, monitors, motherboards, desktops, peripherals, servers, IPCs, robotic appliances, and vehicle infotainment and telematics systems are globally acclaimed.'
     },
     {
       heading: 'The standard Lorem Ipsum passage, used since the 1500s',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       category: 'web',
-      img: '/assets/images/portfolio/nestoweb1.png',
-      img2: '/assets/images/portfolio/nestoweb2.png',
-      companyName: 'MSi',
+      img: '/assets/images/portfolio/MotorFinImg1.png',
+      img2: '/assets/images/portfolio/MotorFinImg2.png',
+      companyName: 'Motor Finder',
       companyDesc: 'MSI is a world leader in gaming, content creation, business & productivity and AIoT solutions. Bolstered by its cutting-edge R&D capabilities and customer-driven innovation, MSI has a wide-ranging global presence spanning over 120 countries. Its comprehensive lineup of laptops, graphics cards, monitors, motherboards, desktops, peripherals, servers, IPCs, robotic appliances, and vehicle infotainment and telematics systems are globally acclaimed.'
     },
     {
       heading: 'The standard Lorem Ipsum passage, used since the 1500s',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       category: 'web',
-      img: '/assets/images/portfolio/RG_web1.png',
-      img2: '/assets/images/portfolio/RG_web2.png',
-      companyName: 'MSi',
+      img: '/assets/images/portfolio/MyFinderImg1.png',
+      img2: '/assets/images/portfolio/MyFinderImg2.png',
+      companyName: 'My Finder',
       companyDesc: 'MSI is a world leader in gaming, content creation, business & productivity and AIoT solutions. Bolstered by its cutting-edge R&D capabilities and customer-driven innovation, MSI has a wide-ranging global presence spanning over 120 countries. Its comprehensive lineup of laptops, graphics cards, monitors, motherboards, desktops, peripherals, servers, IPCs, robotic appliances, and vehicle infotainment and telematics systems are globally acclaimed.'
     },
     {
@@ -233,7 +233,7 @@ function PortfolioListing() {
                     </div>
                   </div>
                   <div className='grid grid-cols-12 gap-4 py-5'>
-                    <div className='col-span-6'>
+                    <div className='col-span-6 '>
                       <img src={item.img2} className="rounded-md h-100 w-full" alt="" />
                     </div>
                     <div className='col-span-6'>
