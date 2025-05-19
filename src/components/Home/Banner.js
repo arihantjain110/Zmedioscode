@@ -51,7 +51,7 @@ const Banner = () => {
         </video>
 
         <div className="button_wrap">
-          <button className="home_btn"># IT Outsourcing </button>
+          {/* <button className="home_btn"># IT Outsourcing </button> */}
           <button className="home_btn"># UI/UX Designer </button>
           <button className="home_btn"># Contractual Developers </button>
           <button className="home_btn"># Within 48 Hours </button>
@@ -62,9 +62,9 @@ const Banner = () => {
             <ul id="text-slider" className="container">
               <li className="active">
                 <div className="flex justify-start items-center space-x-1">
-                  <span className="text-primary md:text-sm text-base uppercase font-semibold">
+                  <span className="text-orange-700 md:text-sm text-base uppercase font-semibold">
                     {" "}
-                    Innovation at its finest{" "}
+                    SMART TALENT DELIVERY{" "}
                   </span>{" "}
                   <Image
                     src="/assets/icons/icon.png"
@@ -75,12 +75,10 @@ const Banner = () => {
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Pre-Filtered & Verified Talent Pool – Access thoroughly vetted
-                  candidates to streamline your hiring process.
+                  Delivering Talent Excellence – Every hire is pre-vetted with precision and aligned to your business needs.
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
-                  From concept to reality Zmedios Technology delivers game
-                  changing products for startups and fortune companies.
+                  From sourcing to onboarding, Zmedios Technology ensures top-tier professionals through seamless IT & Non-IT Staffing Services. 
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
@@ -98,9 +96,9 @@ const Banner = () => {
 
               <li>
                 <div className="flex justify-start items-center space-x-1">
-                  <span className="text-primary md:text-sm text-base uppercase font-semibold">
+                  <span className="text-orange-700 md:text-sm text-base uppercase font-semibold">
                     {" "}
-                    Where Ideas Come to Life{" "}
+                    INNOVATING BUSINESS TECH{" "}
                   </span>{" "}
                   <Image
                     src="/assets/icons/icon.png"
@@ -111,14 +109,10 @@ const Banner = () => {
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Faster Hiring, Lower Costs, Better Talent – Reduce turnaround
-                  time and recruitment costs while securing the best
-                  professionals for your team.
+                  Empowering Your Business – We build secure, scalable, and future-ready digital solutions.
                 </h2>
                 <p className="text-textcolor pt-4 text-justify text-[15px] font-medium">
-                  From creativity to technology Zmedios Technology crafts
-                  designs with seamless functionality that leave a lasting
-                  impression.
+                  From app modernization to full-stack development, Zmedios Technology drives your IT transformation with innovation and agility.
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
@@ -136,25 +130,23 @@ const Banner = () => {
 
               <li>
                 <div className="flex justify-start items-center space-x-1">
-                  <span className="text-primary md:text-sm text-base uppercase font-semibold">
+                  <span className="text-orange-700 md:text-sm text-base uppercase font-semibold">
                     {" "}
-                    Crafting Cutting-Edge Apps{" "}
+                    PERFORMANCE-DRIVEN MARKETING{" "}
                   </span>{" "}
                   <Image
                     src="/assets/icons/icon.png"
                     width={16}
                     height={16}
-                    className="w-9 bulb"
+                    className="w-9 bulb "
                     alt=""
                   />
                 </div>
                 <h2 className="text-secondary md:text-[28px] text-lg font-bold leading-[1.2] pt-3">
-                  Technical Screening Layer – Every candidate undergoes an
-                  additional round of technical evaluation.
+                  Boosting Digital Visibility – Your brand deserves measurable marketing impact, not just clicks.
                 </h2>
                 <p className="text-textcolor pt-4 text-[15px] text-justify font-medium">
-                  From idea to app store, Zmedios Technology guides you through
-                  the Mobile App Development journey.
+                  From SEO to paid ads, Zmedios Technology crafts data-driven strategies to accelerate your digital growth and brand presence. 
                 </p>
                 <div className="pt-10 w-full">
                   <Link href="/contact">
