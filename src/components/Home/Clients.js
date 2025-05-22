@@ -8,185 +8,184 @@ const clientsData = [
   {
     id: 1,
 
-    image: "/assets/images/clients/jindal-steel.png",
+    image: "/assets/images/clients/motorfin.png",
   },
   {
     id: 2,
 
-    image: "/assets/images/clients/c1-india.png",
+    image: "/assets//images/clients/palmjebelali.png",
   },
   {
     id: 3,
 
-    image: "/assets/images/clients/rsm.png",
+    image: "/assets/images/clients/ffacc.png",
   },
   {
     id: 4,
 
-    image: "/assets//images/clients/discovery-land.png",
+    image: "/assets//images/clients/glow.png",
   },
   {
     id: 5,
 
-    image: "/assets//images/clients/dancewala-studio.png",
+    image: "/assets/images/clients/myfin.png",
   },
   {
     id: 6,
 
-    image: "/assets//images/clients/ehesas.png",
+    image: "/assets//images/clients/palmm.png",
   },
-  {
-    id: 7,
+  // {
+  //   id: 7,
 
-    image: "/assets//images/clients/expert-buddy.png",
-  },
-  {
-    id: 8,
+  //   image: "/assets//images/clients/expert-buddy.png",
+  // },
+  // {
+  //   id: 8,
 
-    image: "/assets//images/clients/ezzy.png",
-  },
-  {
-    id: 9,
+  //   image: "/assets//images/clients/ezzy.png",
+  // },
+  // {
+  //   id: 9,
 
-    image: "/assets//images/clients/flexi-world.png",
-  },
-  {
-    id: 10,
+  //   image: "/assets//images/clients/flexi-world.png",
+  // },
+  // {
+  //   id: 10,
 
-    image: "/assets//images/clients/mr-furniture.png",
-  },
-  {
-    id: 11,
+  //   image: "/assets//images/clients/mr-furniture.png",
+  // },
+  // {
+  //   id: 11,
 
-    image: "/assets//images/clients/grande-arte.png",
-  },
-  {
-    id: 12,
+  //   image: "/assets//images/clients/grande-arte.png",
+  // },
+  // {
+  //   id: 12,
 
-    image: "/assets//images/clients/i2v.png",
-  },
-  {
-    id: 13,
+  //   image: "/assets//images/clients/i2v.png",
+  // },
+  // {
+  //   id: 13,
 
-    image: "/assets//images/clients/insaano-health.png",
-  },
-  {
-    id: 14,
+  //   image: "/assets//images/clients/insaano-health.png",
+  // },
+  // {
+  //   id: 14,
 
-    image: "/assets//images/clients/intech-logo.png",
-  },
-  {
-    id: 15,
+  //   image: "/assets//images/clients/intech-logo.png",
+  // },
+  // {
+  //   id: 15,
 
-    image: "/assets//images/clients/jindal-arogya.png",
-  },
-  {
-    id: 16,
+  //   image: "/assets//images/clients/jindal-arogya.png",
+  // },
+  // {
+  //   id: 16,
 
-    image: "/assets//images/clients/kazuki-official.png",
-  },
-  {
-    id: 17,
+  //   image: "/assets//images/clients/kazuki-official.png",
+  // },
+  // {
+  //   id: 17,
 
-    image: "/assets//images/clients/lords-logo.png",
-  },
-  {
-    id: 18,
+  //   image: "/assets//images/clients/lords-logo.png",
+  // },
+  // {
+  //   id: 18,
 
-    image: "/assets//images/clients/milestone.png",
-  },
-  {
-    id: 19,
+  //   image: "/assets//images/clients/milestone.png",
+  // },
+  // {
+  //   id: 19,
 
-    image: "/assets//images/clients/Nesto-Hub.png",
-  },
-  {
-    id: 20,
+  //   image: "/assets//images/clients/Nesto-Hub.png",
+  // },
+  // {
+  //   id: 20,
 
-    image: "/assets//images/clients/peptone-logo.png",
-  },
-  {
-    id: 21,
+  //   image: "/assets//images/clients/peptone-logo.png",
+  // },
+  // {
+  //   id: 21,
 
-    image: "/assets//images/clients/plumber-babu.png",
-  },
-  {
-    id: 22,
+  //   image: "/assets//images/clients/plumber-babu.png",
+  // },
+  // {
+  //   id: 22,
 
-    image: "/assets//images/clients/pplacd.png",
-  },
-  {
-    id: 23,
+  //   image: "/assets//images/clients/pplacd.png",
+  // },
+  // {
+  //   id: 23,
 
-    image: "/assets//images/clients/rg-consultancy.png",
-  },
-  {
-    id: 24,
+  //   image: "/assets//images/clients/rg-consultancy.png",
+  // },
+  // {
+  //   id: 24,
 
-    image: "/assets//images/clients/ripik-ai.png",
-  },
-  {
-    id: 25,
+  //   image: "/assets//images/clients/ripik-ai.png",
+  // },
+  // {
+  //   id: 25,
 
-    image: "/assets//images/clients/simran.png",
-  },
-  {
-    id: 26,
+  //   image: "/assets//images/clients/simran.png",
+  // },
+  // {
+  //   id: 26,
 
-    image: "/assets//images/clients/toir.png",
-  },
-  {
-    id: 27,
+  //   image: "/assets//images/clients/toir.png",
+  // },
+  // {
+  //   id: 27,
 
-    image: "/assets//images/clients/wonderland.png",
-  },
-  {
-    id: 28,
+  //   image: "/assets//images/clients/wonderland.png",
+  // },
+  // {
+  //   id: 28,
 
-    image: "/assets//images/clients/xposure.png",
-  },
-  {
-    id: 29,
+  //   image: "/assets//images/clients/xposure.png",
+  // },
+  // {
+  //   id: 29,
 
-    image: "/assets//images/clients/carritos.png",
-  },
-  {
-    id: 30,
+  //   image: "/assets//images/clients/carritos.png",
+  // },
+  // {
+  //   id: 30,
 
-    image: "/assets//images/clients/coal-giene.png",
-  },  
-  {
-    id: 31,
+  //   image: "/assets//images/clients/coal-giene.png",
+  // },
+  // {
+  //   id: 31,
 
-    image: "/assets//images/clients/greenupmyspaces.png",
-  },
-  {
-    id: 32,
+  //   image: "/assets//images/clients/greenupmyspaces.png",
+  // },
+  // {
+  //   id: 32,
 
-    image: "/assets//images/clients/sanjh.png",
-  },
-  {
-    id: 33,
+  //   image: "/assets//images/clients/sanjh.png",
+  // },
+  // {
+  //   id: 33,
 
-    image: "/assets//images/clients/payments-pro.png",
-  },
-  {
-    id: 34,
+  //   image: "/assets//images/clients/payments-pro.png",
+  // },
+  // {
+  //   id: 34,
 
-    image: "/assets//images/clients/vivo.png",
-  },
-  {
-    id: 35,
+  //   image: "/assets//images/clients/vivo.png",
+  // },
+  // {
+  //   id: 35,
 
-    image: "/assets//images/clients/incoin.png",
-  },
-  {
-    id: 36,
+  //   image: "/assets//images/clients/incoin.png",
+  // },
+  // {
+  //   id: 36,
 
-    image: "/assets//images/clients/itdi.png",
-  },
+  //   image: "/assets//images/clients/itdi.png",
+  // },
 ];
-
 
 const Clients = () => {
   const settings = {
@@ -290,12 +289,14 @@ const Clients = () => {
         <ul className="clients-grid grid-6 nobottommargin clearfix">
           {clientsData.map((item, index) => (
             <li key={index} className="clientzoom">
-              <img
-                src={item.image}
-                alt="Clients"
-                className="rounded-lg w-[70%] mx-auto zoom-client"
-              />
-            </li>            
+              <div className="bg-black w-[200px] h-[120px] rounded-lg flex items-center justify-center mx-auto">
+                <img
+                  src={item.image}
+                  alt="Clients"
+                  className="max-h-[80%] max-w-[80%] object-contain"
+                />
+              </div>
+            </li>
           ))}
         </ul>
 
